@@ -1,0 +1,22 @@
+[{
+    
+    "workername":"Nikky Sanders",
+    "workerjob":"security supervisor",
+    "workersalary":3658.69,
+    "workersector":"SECURITY"
+
+},{
+
+    "workername":"Mohinder Suresh",
+    "workerjob":"schemistry",
+    "workersalary":8458.69,
+    "workersector":"SCIENCIES"
+
+},{
+
+    "workername":"Arthur C. Doyle",
+    "workerjob":"writter",
+    "workersalary":5458.69,
+    "workersector":"MARKETING"
+
+}]
