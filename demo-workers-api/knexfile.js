@@ -1,3 +1,5 @@
+const dotenv=require('dotenv') 
+dotenv.config()
 
 module.exports = {
 
@@ -5,8 +7,8 @@ module.exports = {
     client: 'postgresql',
     connection: {
       database: 'worker_admin',
-      user:     'admin',
-      password: '123456'
+      user:     'postgres',
+      password: '1234'
     },
     pool: {
       min: 2,
@@ -15,12 +17,12 @@ module.exports = {
   },
 
   production: {
-    client: 'pg',
+    client: process.env.CLIENT,
     connection: {
-      host:     'ec2-44-193-150-214.compute-1.amazonaws.com',
-      database: 'd6kse4d3jmav11',
-      user:     'ptjprhygkueelm',
-      password: 'ea8c6ab8e68ce46a8be94b25d2dd533d84dc31ec237e89763493c87439f9eed1',
+      host:      process.env.HOST,
+      database:  process.env.DATABASE,
+      user:      process.env.USER,
+      password:  process.env.PASSWORD,
       ssl:       { rejectUnauthorized: false }
     }
   }

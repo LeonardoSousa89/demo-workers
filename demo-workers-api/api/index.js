@@ -2,11 +2,13 @@ const db = require('../db/db')
 
 module.exports = app => {
 
+    
+
     const signUp = async(req, res) =>{
         
     }
 
-    const sigIn = async(req, res) =>{
+    const signIn = async(req, res) =>{
 
     }
 
@@ -81,7 +83,9 @@ module.exports = app => {
     }
 
 
-return { 
+return {
+    signUp,
+    signIn,
     getData , 
     getDataById , 
     getDataByName , 
