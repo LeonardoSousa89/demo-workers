@@ -2,6 +2,14 @@ const db = require('../db/db')
 
 module.exports = app => {
 
+    const signUp = async(req, res) =>{
+        
+    }
+
+    const sigIn = async(req, res) =>{
+
+    }
+
     const getData = async(req,res) => {
         await db('workeradmin')
                     .select('*')
@@ -73,5 +81,11 @@ module.exports = app => {
     }
 
 
-return { getData , getDataById , getDataByName , postData , putData , deleteData }
+return { 
+    getData , 
+    getDataById , 
+    getDataByName , 
+    postData , 
+    putData , 
+    deleteData }
 }
