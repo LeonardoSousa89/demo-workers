@@ -39,32 +39,17 @@ $('#adm').click(function(){
 
 
 $('#git').click(function(){
-    doc.location.href = 'https://github.com/LeonardoMendes89'
+    window.open('https://github.com/LeonardoSousa89')
 })
 
 
 $('#linkedin').click(function(){
-    doc.location.href = 'https://www.linkedin.com/in/leonardo-dos-santos-sousa-238651173'
-})
-
-
-$('#facebook').click(function(){
-    doc.location.href = 'https://www.facebook.com/profile.php?id=100039697203669'
-})
-
-
-$('#twitter').click(function(){
-    doc.location.href = 'https://twitter.com/LeoSant97854129'
-})
-
-
-$('#instagram').click(function(){
-    doc.location.href = 'https://www.instagram.com/torre.digital77/'
+    window.open('https://www.linkedin.com/in/leonardo-dos-santos-sousa-238651173')
 })
 
 
 $('#site').click(function(){
-    doc.location.href = 'https://leoprofessionallog.wixsite.com/mysite'
+    window.open('https://leonardo-sousa.netlify.app/')
 })
 
 
@@ -152,11 +137,7 @@ function create_data(positioned,element,createObject){
 
 
 function storage(){
-        let user = localStorage.getItem('_USER')
-        let pass = localStorage.getItem('_PASSWORD')
-        if(!user && !pass){
-            doc.location.href = '../index.html'
-        }
+       
 }
 storage()
 

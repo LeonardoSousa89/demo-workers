@@ -4,12 +4,14 @@ $s-color:#192C54;
 $lb-color:#4C5A75;
 $l-color:#E9E9E9;
 $c-color:#E7DAD1;
+$xsl-color:#025951; 
+$pdf-color:#889C9B;
 $smoke:whitesmoke;
 $grey:#9CA1A6;
 $dark:black;
 $light:white;
 $lighter:#D0D3D9;
-$val:0.5em;
+$val:0.6em;
 $empty-val:none;
 $hidden:hidden;
 $point:pointer;
@@ -103,7 +105,7 @@ body{
               }
           }
 
-          @media screen and(max-device-width:768px){
+          @media screen and(max-width:768px){
             @include d_flex(flex,row,space-around,center);
             .togg-el{
               @include d_flex(flex,column,center,center);
@@ -120,43 +122,77 @@ body{
           color:$dark;
           padding:$val;
             .form_group{
+              // border: solid 2px red;
+              overflow: $hidden;
               @include size(60%,95%);
               @include d_flex(flex,column,space-evenly,flex-start);
-                  #id{
-                    padding:$val;
-                    outline:$empty-val;
+              #id{
+                padding:$val;
+                outline:$empty-val;
+                border:solid 1px rgba($color: #000000, $alpha: 0.3);
+                @include f_size(calculation($val,2));
+                width:calculation($val,4);
+                  &:hover{
                     border:solid 1px rgba($color: #000000, $alpha: 0.6);
-                    @include f_size(calculation($val,2));
-                    width:calculation($val,8);
-                        &:hover{
-                          box-shadow:0px 0px 3px $s-color;
-                        }
+                    box-shadow:0px 0px 3px $s-color;
                   }
-
-                  #name,#job,#salary,#sector{
-                    padding:$val;
-                    width:100%;
-                    outline:$empty-val;
-                    border:solid 1px rgba($color: #000000, $alpha: 0.6);
-                    @include f_size(calculation($val,2));  
-                        &:hover{
-                            border:solid 1px rgba($color: #000000, $alpha: 0.6);
-                            box-shadow:0px 0px 3px $s-color;
-                          }
+                }
+              #sector{
+                padding:$val;
+                width:50%;
+                outline:$empty-val;
+                border:solid 1px rgba($color: #000000, $alpha: 0.3);
+                @include f_size(calculation($val,2));  
+                &:hover{
+                  border:solid 1px rgba($color: #000000, $alpha: 0.6);
+                  box-shadow:0px 0px 3px $s-color;
                   }
+                }
+                #name,#job,#salary{
+                  @media screen and(max-width:768px){
+                    width:94%;
+                  }
+                  @media screen and(max-width:768px){
+                    width:90%;
+                  }
+                  padding:$val;
+                  width:96%;
+                  outline:$empty-val;
+                  border:solid 1px rgba($color: #000000, $alpha: 0.3);
+                  @include f_size(calculation($val,2));  
+                  &:hover{
+                      border:solid 1px rgba($color: #000000, $alpha: 0.6);
+                      box-shadow:0px 0px 3px $s-color;
+                  }
+                }
             }
             .normal_mode,.config_mode{
               margin-bottom:$val;
             }
-            #send,#clear,#edition,#getId,
+            #xsl,#pdf,#send,#clear,#edition,#getId,
             #update,#delete,#nmode{
+              @media screen and(max-width:768px){
+               
+              }
+              @include percent(0 2px);
+              @include f_size(calculation($val,2.5));
               padding:$val;
               color:$light;
               border:$empty-val;
               border-radius:$half-twelve;
-              @include percent(0 2px);
-              @include f_size(calculation($val,2.5));
               cursor:$point;
+              transition-property: all;
+              transition-duration: 0.5s;
+              &:hover{
+                color: #BB2020;
+                box-shadow: 0 0 22px #BB2020;
+              }
+            }
+            #xsl{
+              background-color:$xsl-color;
+            }
+            #pdf{
+              background-color:$pdf-color;
             }
             #send{
               background-color:$primary;
@@ -175,6 +211,10 @@ body{
             }
             #delete{
               background-color:$danger;
+              &:hover{
+                color: #6593A6;
+                box-shadow: 0 0 22px #BB2020;
+              }
             }
             #nmode{
               background-color:$darken;
@@ -204,8 +244,9 @@ body{
           @include area(ft);
           @include d_flex(flex,row,end,flex-end);
             .copy{
-              @include f_size(x-small);
+              @include f_size(small);
               padding:0.2em;
+              margin-right: 25px;
             }
         }
         @include d_grid(grid,1fr,15% 100% 5%,
@@ -213,7 +254,7 @@ body{
                         'mn mn'
                         'ft ft');
 
-        @media screen and(max-device-width:768px)
+        @media screen and(max-width:768px)
         and(orientation:landscape){
             @include size(120vh,100vw);
         }

@@ -18,16 +18,18 @@ $('#home').click(function(){
 
 
 function load_section_choices(){
-    const url         = 'data.json'
+    const url         = './data.json'
     let  workersector = document.getElementById('sector')
 
     fetch(url)
             .then(data => data.json())
             .then(data =>{
                 data.map(e=>{
-                    let digite = 1
-                    let cat = e.category
-                    create_data(workersector,cat,'option',digite)
+                    e.en.map(e=>{
+                        let digite = 1
+                        let cat = e.category
+                        create_data(workersector,cat,'option',digite)
+                    })
                 })
             })
             .catch()
@@ -288,15 +290,6 @@ $('.adm').click(function(){
 
 
 function storage(){
-    let user = localStorage.getItem('_USER')
-    let pass = localStorage.getItem('_PASSWORD')
-    if(!user && !pass){
-        doc.location.href = '../index.html'
-    }
+
 }
 storage()
-
-setInterval(function(){
-    localStorage.removeItem('_USER')
-    localStorage.removeItem('_PASSWORD')    
-},90000);

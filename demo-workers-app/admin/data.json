@@ -1,27 +1,36 @@
 [
-    {
-        "category":"LOGISTICS"
+   {
+        "en": [
+
+            {
+                "category":"TRANSPORTS AND LOGISTICS"
+            },{
+                "category":"ENGINEERING"
+            },{
+                "category":"MARKETING"
+            },{
+                "category":"SCIENCIES"
+            },{
+                "category":"SECURITY"
+            },{
+                "category":"COMPUTING"
+            },{
+                "category":"SELL"
+            },{
+                "category":"BUY"
+            },{
+                "category":"ADMINISTRATION"
+            },{
+                "category":"CLEAN UP"
+            },{
+                "category":"RH"
+            },{
+                "category":"MARKET"
+            },{
+                "category": "CINEMA AND THEATER"
+            }
+        ]
     },{
-        "category":"ENGINEERING"
-    },{
-        "category":"MARKETING"
-    },{
-        "category":"SCIENCIES"
-    },{
-        "category":"SECURITY"
-    },{
-        "category":"T.I"
-    },{
-        "category":"SELL"
-    },{
-        "category":"BUY"
-    },{
-        "category":"ADMINISTRATION"
-    },{
-        "category":"CLEAN UP"
-    },{
-        "category":"RH"
-    },{
-        "category":"MARKET"
+        "pt": []
     }
 ]

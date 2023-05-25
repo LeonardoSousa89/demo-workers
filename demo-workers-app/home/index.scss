@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 $b-color:#141F3C;
 $s-color:#192C54;
 $lb-color:#4C5A75;
@@ -14,6 +15,7 @@ $empty-val:none;
 $hidden:hidden;
 $null:0;
 $half-rem:0.5rem;
+
 @mixin display($scr){
     display:$scr;
 }
@@ -52,12 +54,13 @@ $half-rem:0.5rem;
 %alternative_font{
   font-family: 'Rubik', sans-serif;
 } 
+
 body{
+  @include percent(0);
+  @include size(100vh,100vw);
   font-family: 'Bebas Neue', cursive;
   overflow:$hidden;
   background:$s-color;
-  @include percent(0);
-  @include size(100vh,100vw);
   color:$light;
   .experience{
     display:none;
@@ -66,14 +69,22 @@ body{
       height:100vh;
       header{
         @include area(header);
-        @include d_flex(flex,row,space-evenly,center);
+        @include d_flex(flex,row,space-between,center);
         .togg-el{
           display:none;
         }
+        div{
+          width: 55%;
+          @include d_flex(flex,row,space-between,center);
           h4{
             @include f_size(2.5rem);
           }
-          span{
+          img{
+            @include size(50px,50px);
+            cursor: pointer;
+          }
+        } 
+        span{
             font-weight:bold;
             @include f_size(1.2rem);
             background-color:$dark;
@@ -87,12 +98,12 @@ body{
                 color:$dark;
                 cursor:pointer;
               }
-            @media screen and(max-device-width:768px)
+            @media screen and(max-width:768px)
             {
                 display:none;
             }
           }
-        @media screen and(max-device-width:768px){
+        @media screen and(max-width:768px){
             padding:2em;
             @include d_flex(flex,row,space-between,center);
             .togg-el{
@@ -115,6 +126,11 @@ body{
       aside{
         @include area(aside);
         @include d_flex(flex,column,space-evenly,center);
+        .aside-info{
+          strong ,i{
+            font-size: 50px;
+          }
+        }
         #search{
           width:90%;
           outline:none;
@@ -127,7 +143,7 @@ body{
             }
         }
 
-        @media screen and(max-device-width:768px){
+        @media screen and(max-width:768px){
           .aside-info{
             display:none;
           }
@@ -187,21 +203,21 @@ body{
           }
 
           @media screen 
-          and(max-device-width:651px)
+          and(max-width:651px)
           and(orientation:landscape) {
             ul{
               @include f_size(small);
             }
           }
           @media screen 
-          and(max-device-width:533px)
+          and(max-width:533px)
           and(orientation:landscape) {
             ul{
               @include f_size(x-small);
             }
           }
           @media screen 
-          and(max-device-width:320px)
+          and(max-width:320px)
           and(orientation:landscape) {
             ul{
               @include f_size(xx-small);
@@ -221,7 +237,7 @@ body{
             padding:0.3em;
             @include area(cp);
             @include d_flex(flex,column,flex-end,end);
-            @include f_size(x-small);
+            @include f_size(small);
           }
           .social{
             background:#BB2020;
@@ -229,6 +245,7 @@ body{
             @include d_flex(flex,row,space-evenly,center);
             i{
               cursor:pointer;
+              font-size: 30px;
             }
           }
           .author{
@@ -238,12 +255,12 @@ body{
               i{
                 @include percent(0.2rem);
               }
-              @media screen and(max-device-width:768px){
+              @media screen and(max-width:768px){
                  display:none;   
               }
           }
 
-          @media screen and(max-device-width:768px){
+          @media screen and(max-width:768px){
             @include d_grid(grid,1fr,60% 40%,
             'scl   scl'
             'cp     cp'
@@ -255,7 +272,7 @@ body{
       'aside main'
       'footer footer');
 
-      @media screen and(max-device-width:768px)
+      @media screen and(max-width:768px)
       and(orientation:landscape){
         @include d_grid(grid,1fr,30% 20% 85% 15%,
         'header header'
@@ -263,13 +280,13 @@ body{
         'main    main'
         'footer footer');
       }
-      @media screen and(max-device-width:768px)
+      @media screen and(max-width:768px)
       and(orientation:portrait){
           display:none;
       }
     }
 
-    @media screen and(max-device-width:768px)
+    @media screen and(max-width:768px)
     and(orientation:portrait){
       .experience{
         @include f_size(1.5rem);
@@ -282,7 +299,7 @@ body{
       }
     }
 
-    @media screen and(max-device-width:768px)
+    @media screen and(max-width:768px)
     and(orientation:landscape){
       overflow:scroll;
       @include size(150vh,100vw);

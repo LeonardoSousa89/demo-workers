@@ -4,12 +4,12 @@ body .container main {
   font-family: 'Rubik', sans-serif; }
 
 body {
-  font-family: 'Bebas Neue', cursive;
-  overflow: hidden;
-  background: #192C54;
   margin: 0;
   height: 100vh;
   width: 100vw;
+  font-family: 'Bebas Neue', cursive;
+  overflow: hidden;
+  background: #192C54;
   color: white; }
   body .experience {
     display: none; }
@@ -23,12 +23,22 @@ body {
       grid-area: header;
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: center; }
       body .container header .togg-el {
         display: none; }
-      body .container header h4 {
-        font-size: 2.5rem; }
+      body .container header div {
+        width: 55%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; }
+        body .container header div h4 {
+          font-size: 2.5rem; }
+        body .container header div img {
+          height: 50px;
+          width: 50px;
+          cursor: pointer; }
       body .container header span {
         font-weight: bold;
         font-size: 1.2rem;
@@ -45,10 +55,10 @@ body {
           background-color: #E9E9E9;
           color: black;
           cursor: pointer; }
-        @media screen and (max-device-width: 768px) {
+        @media screen and (max-width: 768px) {
           body .container header span {
             display: none; } }
-      @media screen and (max-device-width: 768px) {
+      @media screen and (max-width: 768px) {
         body .container header {
           padding: 2em;
           display: flex;
@@ -75,6 +85,8 @@ body {
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center; }
+      body .container aside .aside-info strong, body .container aside .aside-info i {
+        font-size: 50px; }
       body .container aside #search {
         width: 90%;
         outline: none;
@@ -84,7 +96,7 @@ body {
         color: #E9E9E9; }
         body .container aside #search:hover {
           box-shadow: 0px 0px 3px #E9E9E9; }
-      @media screen and (max-device-width: 768px) {
+      @media screen and (max-width: 768px) {
         body .container aside .aside-info {
           display: none; } }
     body .container main {
@@ -128,13 +140,13 @@ body {
           body .container main .tb_search .tb-bd ul {
             padding: 0.5em;
             background-color: #000000; }
-      @media screen and (max-device-width: 651px) and (orientation: landscape) {
+      @media screen and (max-width: 651px) and (orientation: landscape) {
         body .container main ul {
           font-size: small; } }
-      @media screen and (max-device-width: 533px) and (orientation: landscape) {
+      @media screen and (max-width: 533px) and (orientation: landscape) {
         body .container main ul {
           font-size: x-small; } }
-      @media screen and (max-device-width: 320px) and (orientation: landscape) {
+      @media screen and (max-width: 320px) and (orientation: landscape) {
         body .container main ul {
           font-size: xx-small; } }
     body .container footer {
@@ -151,7 +163,7 @@ body {
         flex-direction: column;
         justify-content: flex-end;
         align-items: end;
-        font-size: x-small; }
+        font-size: small; }
       body .container footer .social {
         background: #BB2020;
         grid-area: scl;
@@ -160,7 +172,8 @@ body {
         justify-content: space-evenly;
         align-items: center; }
         body .container footer .social i {
-          cursor: pointer; }
+          cursor: pointer;
+          font-size: 30px; }
       body .container footer .author {
         padding: 0.3em;
         grid-area: atr;
@@ -170,25 +183,25 @@ body {
         align-items: flex-end; }
         body .container footer .author i {
           margin: 0.2rem; }
-        @media screen and (max-device-width: 768px) {
+        @media screen and (max-width: 768px) {
           body .container footer .author {
             display: none; } }
-      @media screen and (max-device-width: 768px) {
+      @media screen and (max-width: 768px) {
         body .container footer {
           display: grid;
           grid-template-columns: 1fr;
           grid-template-rows: 60% 40%;
           grid-template-areas: "scl   scl" "cp     cp"; } }
-    @media screen and (max-device-width: 768px) and (orientation: landscape) {
+    @media screen and (max-width: 768px) and (orientation: landscape) {
       body .container {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 30% 20% 85% 15%;
         grid-template-areas: "header header" "aside  aside" "main    main" "footer footer"; } }
-    @media screen and (max-device-width: 768px) and (orientation: portrait) {
+    @media screen and (max-width: 768px) and (orientation: portrait) {
       body .container {
         display: none; } }
-  @media screen and (max-device-width: 768px) and (orientation: portrait) {
+  @media screen and (max-width: 768px) and (orientation: portrait) {
     body .experience {
       font-size: 1.5rem;
       display: flex;
@@ -201,7 +214,7 @@ body {
       body .experience .phone {
         height: 80%;
         width: 95%; } }
-  @media screen and (max-device-width: 768px) and (orientation: landscape) {
+  @media screen and (max-width: 768px) and (orientation: landscape) {
     body {
       overflow: scroll;
       height: 150vh;
