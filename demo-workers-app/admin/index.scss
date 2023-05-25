@@ -139,6 +139,7 @@ body{
               @include size(60%,95%);
               @include d_flex(flex,column,space-evenly,flex-start);
               #id{
+                display: none;
                 padding:$val;
                 outline:$empty-val;
                 border:solid 1px rgba($color: #000000, $alpha: 0.3);

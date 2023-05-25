@@ -78,18 +78,22 @@ function clear(){
 
 
 $('#edition').click(function(){
+    let id_btn = document.querySelector('#id')
     let normal = document.querySelector('.normal_mode')
     let config = document.querySelector('.config_mode')
 
+    id_btn.style.display = 'flex'
     normal.style.display = 'none'
     config.style.display = 'flex'
 })
 
 
 $('#nmode').click(function(){
+    let id_btn = document.querySelector('#id')
     let normal = document.querySelector('.normal_mode')
     let config = document.querySelector('.config_mode')
 
+    id_btn.style.display = 'none'
     normal.style.display = 'flex'
     config.style.display = 'none'
 })
