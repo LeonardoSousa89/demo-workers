@@ -14,22 +14,8 @@ $('#tog').click(function(){
 })
 
 
-$('.lgt').click(function(){
-    doc.location.href = '../index.html'
-    localStorage.removeItem('_USER')
-    localStorage.removeItem('_PASSWORD')
-})
-
-
 $('.adm').click(function(){
     doc.location.href = '../admin/index.html'
-})
-
-
-$('#lgt').click(function(){
-    doc.location.href = '../index.html'
-    localStorage.removeItem('_USER')
-    localStorage.removeItem('_PASSWORD')
 })
 
 
@@ -140,12 +126,6 @@ function storage(){
        
 }
 storage()
-
-
-setInterval(function(){
-    localStorage.removeItem('_USER')
-    localStorage.removeItem('_PASSWORD')    
-},90000);
 
 
 function searchPeople(id,name, job, sector, salary){

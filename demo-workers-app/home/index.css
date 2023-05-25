@@ -42,13 +42,13 @@ body {
       body .container header span {
         font-weight: bold;
         font-size: 1.2rem;
-        background-color: black;
         height: 100%;
         width: 15%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        background-color: black;
         transition-property: background-color, color;
         transition-duration: 0.5s; }
         body .container header span:hover {
@@ -60,11 +60,11 @@ body {
             display: none; } }
       @media screen and (max-width: 768px) {
         body .container header {
-          padding: 2em;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          align-items: center; }
+          align-items: center;
+          padding: 2em; }
           body .container header .togg-el {
             display: flex;
             flex-direction: column;

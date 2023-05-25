@@ -19,10 +19,10 @@ $half-rem:0.5rem;
 @mixin display($scr){
     display:$scr;
 }
- @mixin area($areas){
+@mixin area($areas){
   grid-area:$areas;
 }
- @mixin d_flex($f_display,$direction,$justify,$align){
+@mixin d_flex($f_display,$direction,$justify,$align){
   display:$f_display;
   flex-direction:$direction;
   justify-content:$justify;
@@ -87,10 +87,9 @@ body{
         span{
             font-weight:bold;
             @include f_size(1.2rem);
-            background-color:$dark;
             @include size(100%,15%);
             @include d_flex(flex,row,center,center);
-
+            background-color:$dark;
             transition-property:background-color, color;
             transition-duration:0.5s;
               &:hover{
@@ -98,14 +97,13 @@ body{
                 color:$dark;
                 cursor:pointer;
               }
-            @media screen and(max-width:768px)
-            {
+            @media screen and(max-width:768px){
                 display:none;
             }
           }
         @media screen and(max-width:768px){
+          @include d_flex(flex,row,space-between,center);
             padding:2em;
-            @include d_flex(flex,row,space-between,center);
             .togg-el{
               @include d_flex(flex,column,center,center);
               line-height:25px;
@@ -157,26 +155,26 @@ body{
         color:$light;
         @extend %alternative_font;
         @include area(main);
-          .tb{
-            width:100%;
-            box-shadow:0px 0px 5px rgba($color: $lb-color, $alpha: 0.6);
+        .tb{
+          width:100%;
+          box-shadow:0px 0px 5px rgba($color: $lb-color, $alpha: 0.6);
+          background-color:$b-color;
+          .tb-hd{
+            color:$light;
+            letter-spacing:0.1em;
             background-color:$b-color;
-              .tb-hd{
-                color:$light;
-                letter-spacing:0.1em;
-                background-color:$b-color;
-                @include f_size(x-large);
-              }
-              .tb-bd{
-                font-weight:bold;
-                color:$light;
-                letter-spacing:0.1em;
-                background-color: $lb-color;
-                    ul{
-                      padding:$val;
-                      background-color: #000000;
-                    }
-              }
+              @include f_size(x-large);
+          }
+          .tb-bd{
+            font-weight:bold;
+            color:$light;
+            letter-spacing:0.1em;
+            background-color: $lb-color;
+            ul{
+              padding:$val;
+              background-color: #000000;
+                }
+            }
           }
 
 
@@ -184,22 +182,22 @@ body{
             width:100%;
             box-shadow:0px 0px 5px rgba($color: $lb-color, $alpha: 0.6);
             background-color:$b-color;
-              .tb-hd{
-                color:$light;
-                letter-spacing:0.1em;
-                background-color:$b-color;
-                @include f_size(x-large);
+            .tb-hd{
+              color:$light;
+              letter-spacing:0.1em;
+              background-color:$b-color;
+              @include f_size(x-large);
+            }
+          .tb-bd{
+            font-weight:bold;
+            color:$light;
+            letter-spacing:0.1em;
+            background-color: $lb-color;
+            ul{
+              padding:$val;
+              background-color: #000000;
               }
-              .tb-bd{
-                font-weight:bold;
-                color:$light;
-                letter-spacing:0.1em;
-                background-color: $lb-color;
-                    ul{
-                      padding:$val;
-                      background-color: #000000;
-                    }
-              }
+            }
           }
 
           @media screen 
@@ -233,31 +231,31 @@ body{
                         'cp   scl  atr'
                         'cp   scl  atr');
 
-          .copy{
-            padding:0.3em;
-            @include area(cp);
-            @include d_flex(flex,column,flex-end,end);
-            @include f_size(small);
+        .copy{
+          padding:0.3em;
+          @include area(cp);
+          @include d_flex(flex,column,flex-end,end);
+          @include f_size(small);
+        }
+        .social{
+          background:#BB2020;
+          @include area(scl);
+          @include d_flex(flex,row,space-evenly,center);
+          i{
+            cursor:pointer;
+            font-size: 30px;
           }
-          .social{
-            background:#BB2020;
-            @include area(scl);
-            @include d_flex(flex,row,space-evenly,center);
-            i{
-              cursor:pointer;
-              font-size: 30px;
+        }
+       .author{
+          padding:0.3em;
+          @include area(atr);
+          @include d_flex(flex,row,flex-start,flex-end);
+          i{
+            @include percent(0.2rem);
+          }
+          @media screen and(max-width:768px){
+            display:none;   
             }
-          }
-          .author{
-            padding:0.3em;
-            @include area(atr);
-            @include d_flex(flex,row,flex-start,flex-end);
-              i{
-                @include percent(0.2rem);
-              }
-              @media screen and(max-width:768px){
-                 display:none;   
-              }
           }
 
           @media screen and(max-width:768px){
