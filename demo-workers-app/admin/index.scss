@@ -87,6 +87,11 @@ body{
           h4{
             @include f_size(2.5rem);
             @include percent(0 $val);
+            i{
+              @media screen and(max-width:321px){
+                display: none;
+               }
+            }
           }
           span{
             font-weight:bold;
@@ -117,12 +122,19 @@ body{
           }
         }
         main{
+          @media(max-width: 768px)and (orientation: landscape){
+            // border: solid 1px red;
+            .form_group{
+              // border: solid 1px darkmagenta;
+              padding: 3px;
+              margin-bottom: 25px;              
+            }
+          }
           @include area(mn);
           background-color:$l-color;
           color:$dark;
           padding:$val;
             .form_group{
-              // border: solid 2px red;
               overflow: $hidden;
               @include size(60%,95%);
               @include d_flex(flex,column,space-evenly,flex-start);
@@ -172,7 +184,7 @@ body{
             #xsl,#pdf,#send,#clear,#edition,#getId,
             #update,#delete,#nmode{
               @media screen and(max-width:768px){
-               
+               font-size: large;
               }
               @include percent(0 2px);
               @include f_size(calculation($val,2.5));
