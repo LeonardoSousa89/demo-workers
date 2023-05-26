@@ -212,6 +212,12 @@ body {
       flex-direction: row;
       justify-content: end;
       align-items: flex-end; }
+      @media screen and (max-width: 768px) {
+        body .container footer {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: end; } }
       body .container footer .copy {
         font-size: small;
         padding: 0.2em;

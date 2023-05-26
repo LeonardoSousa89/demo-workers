@@ -290,6 +290,9 @@ body{
             }
         }
         footer{
+          @media screen and(max-width:768px){
+            @include d_flex(flex,row,center,end);
+          }
           @include area(ft);
           @include d_flex(flex,row,end,flex-end);
             .copy{
