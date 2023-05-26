@@ -81,9 +81,6 @@ body{
         header{
           @include area(hd);
           @include d_flex(flex,row,space-between,center);
-          .togg-el{
-            display:$empty-val;
-          }
           h4{
             @include f_size(2.5rem);
             @include percent(0 $val);
@@ -92,6 +89,9 @@ body{
                 display: none;
                }
             }
+          }
+          .togg-el{
+            display:$empty-val;
           }
           span{
             font-weight:bold;
@@ -123,10 +123,26 @@ body{
         }
         main{
           @media(max-width: 768px)and (orientation: landscape){
-            // border: solid 1px red;
             .form_group{
-              // border: solid 1px darkmagenta;
-              padding: 3px;
+              font-size: small;
+              margin-bottom: 25px;              
+            }
+          }
+          @media(max-width: 650px)and (orientation: landscape){
+            .form_group{
+              font-size: x-small;
+              margin-bottom: 25px;              
+            }
+          }
+          @media(max-height: 480px)and (orientation: landscape){
+            .form_group{
+              font-size: small;
+              margin-bottom: 25px;              
+            }
+          }
+          @media(max-height: 393px)and (orientation: landscape){
+            .form_group{
+              font-size: x-small;
               margin-bottom: 25px;              
             }
           }
@@ -136,7 +152,7 @@ body{
           padding:$val;
             .form_group{
               overflow:$hidden;
-              @include size(60%,95%);
+              @include size(50%,100%);
               @include d_flex(flex,column,space-evenly,flex-start);
               #id{
                 display:none;
@@ -162,10 +178,18 @@ body{
                   }
                 }
                 #name,#job,#salary{
+                  width:100%;
+                 
                   @media screen and(max-width:768px){
+                    width:96%;
+                  }
+                  @media screen and(max-width:649px){
                     width:94%;
                   }
-                  @media screen and(max-width:768px){
+                  @media screen and(max-width:481px){
+                    width:92%;
+                  }
+                  @media screen and(max-width:369px){
                     width:90%;
                   }
                   padding:$val;
@@ -186,6 +210,18 @@ body{
             #update,#delete,#nmode{
               @media screen and(max-width:768px){
                font-size: large;
+              }
+              @media(max-width: 650px)and (orientation: landscape){
+                font-size: x-small;
+              }
+              @media screen and(max-width:512px){
+                font-size: small;
+              }
+              @media(max-height: 480px)and (orientation: landscape){
+                font-size: small;
+              }
+              @media screen and(max-width:322px){
+                font-size: x-small;
               }
               @include percent(0 2px);
               @include f_size(calculation($val,2.5));
