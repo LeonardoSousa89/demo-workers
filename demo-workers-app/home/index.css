@@ -58,6 +58,17 @@ body {
         @media screen and (max-width: 768px) {
           body .container header span {
             display: none; } }
+      @media screen and (max-width: 949px) {
+        body .container header div {
+          width: 70%; }
+        body .container header .togg-el {
+          width: 30%; } }
+      @media screen and (max-width: 826px) {
+        body .container header div h4 {
+          font-size: xx-large; }
+        body .container header div img {
+          height: 40px;
+          width: 40px; } }
       @media screen and (max-width: 768px) {
         body .container header {
           display: flex;
@@ -65,11 +76,14 @@ body {
           justify-content: space-between;
           align-items: center;
           padding: 2em; }
+          body .container header div {
+            width: 50%; }
           body .container header .togg-el {
+            width: 50%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            justify-content: end;
+            align-items: end;
             line-height: 25px; }
             body .container header .togg-el i {
               margin-bottom: 5px; }
@@ -79,13 +93,29 @@ body {
                 background-color: #E9E9E9;
                 color: black;
                 cursor: pointer; } }
+      @media screen and (max-width: 635px) {
+        body .container header div {
+          width: 60%; }
+        body .container header .togg-el {
+          width: 40%; } }
+      @media screen and (max-width: 545px) {
+        body .container header div {
+          width: 70%; }
+        body .container header .togg-el {
+          width: 30%; } }
+      @media screen and (max-width: 477px) {
+        body .container header div {
+          width: 90%; }
+        body .container header .togg-el {
+          width: 10%; } }
     body .container aside {
       grid-area: aside;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center; }
-      body .container aside .aside-info strong, body .container aside .aside-info i {
+      body .container aside .aside-info strong,
+      body .container aside .aside-info i {
         font-size: 50px; }
       body .container aside #search {
         width: 90%;
@@ -164,6 +194,13 @@ body {
         justify-content: flex-end;
         align-items: end;
         font-size: small; }
+        @media screen and (max-width: 768px) {
+          body .container footer .copy {
+            font-size: x-small;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center; } }
       body .container footer .social {
         background: #BB2020;
         grid-area: scl;
@@ -174,6 +211,9 @@ body {
         body .container footer .social i {
           cursor: pointer;
           font-size: 30px; }
+          @media screen and (max-width: 768px) {
+            body .container footer .social i {
+              font-size: 20px; } }
       body .container footer .author {
         padding: 0.3em;
         grid-area: atr;
