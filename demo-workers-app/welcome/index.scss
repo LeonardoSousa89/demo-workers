@@ -106,6 +106,17 @@ body{
           color:$s-color; 
         }
 
+        hr{
+          height: 3px;
+          border: none;
+          background: rgba($color: $s-color, $alpha: 0.5);
+          border-top-left-radius: 50%;
+          border-top-right-radius: 50%;
+          border-bottom-left-radius: 50%;
+          border-bottom-right-radius: 50%;
+          box-shadow: 0 4.5px 12px #141F3C;
+        }
+
         @media screen and(max-width:729px){
           border-top-left-radius:$half_twelve;
           border-bottom-left-radius:$half_twelve;

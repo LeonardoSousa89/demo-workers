@@ -70,6 +70,15 @@ body {
         @media screen and (max-width: 368px) {
           body .container .form-container .adm-title {
             font-size: 20px; } }
+      body .container .form-container hr {
+        height: 3px;
+        border: none;
+        background: rgba(25, 44, 84, 0.5);
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        box-shadow: 0 4.5px 12px #141F3C; }
       @media screen and (max-width: 729px) {
         body .container .form-container {
           border-top-left-radius: 6px;

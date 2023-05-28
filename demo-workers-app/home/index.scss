@@ -102,10 +102,10 @@ body {
       }
 
       span {
-        font-weight: bold;
         @include f_size(1.2rem);
         @include size(100%, 15%);
         @include d_flex(flex, row, center, center);
+        font-weight: bold;
         background-color: $dark;
         transition-property: background-color, color;
         transition-duration: 0.5s;
@@ -134,7 +134,6 @@ body {
       @media screen and(max-width:826px) {
         div {
           h4 {
-            // font-size: xx-large;
             @include f_size(xx-large);
           }
 
@@ -205,7 +204,7 @@ body {
         div{
           width: 80%;
          h4{
-          font-size: large;
+          @include f_size(large);
          }
          img{
           @include size(30px, 30px);
@@ -226,8 +225,7 @@ body {
 
         strong,
         i {
-          // font-size: 50px;
-          @include f_size(50px);
+          @include f_size(30px);
         }
       }
 
@@ -349,7 +347,6 @@ body {
         @include f_size(small);
 
         @media screen and(max-width:768px) {
-          // font-size: x-small;
           @include f_size(x-small);
           @include d_flex(flex, row, center, center);
         }
@@ -366,16 +363,13 @@ body {
 
         i {
           cursor: pointer;
-          // font-size: 30px;
           @include f_size(30px);
 
           @media screen and(max-width:768px) {
-            // font-size: 20px;
             @include f_size(20px);
           }
 
           @media screen and(max-width:321px){
-            // font-size: 10px;
             @include f_size(10px);
           }
         }

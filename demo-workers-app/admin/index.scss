@@ -151,9 +151,9 @@ body{
           color:$dark;
           padding:$val;
             .form_group{
-              overflow:$hidden;
               @include size(50%,100%);
               @include d_flex(flex,column,space-evenly,flex-start);
+              overflow:$hidden;
               #id{
                 display:none;
                 padding:$val;
@@ -209,7 +209,7 @@ body{
             #xsl,#pdf,#send,#clear,#edition,#getId,
             #update,#delete,#nmode{
               @media screen and(max-width:768px){
-               font-size: large;
+               font-size: x-large;
               }
               @media(max-width: 650px)and (orientation: landscape){
                 font-size: x-small;
