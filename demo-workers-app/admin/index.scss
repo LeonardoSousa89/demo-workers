@@ -84,6 +84,9 @@ body{
           h4{
             @include f_size(2.5rem);
             @include percent(0 $val);
+            @media screen and(max-width:240px){
+              @include f_size(1.5rem);
+            }
             i{
               @media screen and(max-width:321px){
                 display: none;
@@ -130,20 +133,27 @@ body{
           }
           @media(max-width: 650px)and (orientation: landscape){
             .form_group{
-              font-size: x-small;
-              margin-bottom: 25px;              
+              font-size: x-small;              
             }
           }
           @media(max-height: 480px)and (orientation: landscape){
             .form_group{
-              font-size: small;
-              margin-bottom: 25px;              
+              font-size: small;              
             }
           }
           @media(max-height: 393px)and (orientation: landscape){
             .form_group{
-              font-size: x-small;
-              margin-bottom: 25px;              
+              font-size: x-small;              
+            }
+          }
+          @media screen and(max-width:240px){
+            .form_group{
+              font-size: xx-small;              
+            }
+          }
+          @media screen and(max-width:321px)and (orientation: landscape){
+            .form_group{
+              font-size: 0.5em;         
             }
           }
           @include area(mn);
@@ -220,8 +230,18 @@ body{
               @media(max-height: 480px)and (orientation: landscape){
                 font-size: small;
               }
+              @media(max-width: 412px){
+                font-size: large;
+              }
               @media screen and(max-width:322px){
                 font-size: x-small;
+              }
+              @media screen and(max-width:320px){
+                font-size: small;
+              }
+              @media screen and(max-width:240px){
+                margin-top: 25px;
+                font-size: xx-small;
               }
               @include percent(0 2px);
               @include f_size(calculation($val,2.5));
@@ -296,7 +316,7 @@ body{
           @include area(ft);
           @include d_flex(flex,row,end,flex-end);
             .copy{
-              @include f_size(small);
+              @include f_size(x-small);
               padding:0.2em;
               margin-right: 25px;
             }
