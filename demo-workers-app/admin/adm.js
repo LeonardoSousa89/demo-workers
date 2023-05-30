@@ -125,6 +125,7 @@ $('#home').click(function(){
     doc.location.href = '../home/index.html'
 })
 
+
 $('#clear').click(function(){
         let id            = document.querySelector('#id')
         let workername    = document.querySelector('#name')
