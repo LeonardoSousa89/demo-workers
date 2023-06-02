@@ -1,0 +1,68 @@
+@import '../../../styles/index.scss';
+
+.header {
+    height: 16.67%;
+    background-image: url('../../../assets/advertising/header/Rectangle.png');
+
+    @media(max-width: 1024px) {
+        @include d_flex($flex, row, $center, $center);
+
+        .social-banner {
+            overflow: $hidden;
+            @include size($hundred_percent, 44.22%);
+
+            .social {
+                @include size(65.05%, $hundred_percent);
+                display: $flex;
+                align-items: $center;
+                justify-content: $center;
+
+                .social-container {
+                    display: $flex;
+                    justify-content: space-evenly;
+                    width: 80%;
+                    
+                    img {
+                        cursor: $pointer;
+                    }
+                }
+            }
+
+            .banner {
+                @include size(34.95%, $hundred_percent);
+                @include d_flex($flex, row, flex-end, end);
+
+                img {
+                    width: 100%;
+                    //dimensões originais(636.87W x 209.05H) divisão por 1,5   
+                    @include size(138.66px, 457.33px);
+                }
+            }
+        }
+
+        .app-access {
+            overflow: $hidden;
+            @include size($hundred_percent, 55.78%);
+
+            .logo>img {
+                //dimensões originais(656W x 293.47H) divisão por 1,2  
+                @include size(244.55px, 546.66px);
+                margin-top: 20%;
+            }
+
+            .acesse-aqui {
+                @include d_flex($flex, row, $center, $center);
+                img {
+                    cursor: $pointer;
+                    //dimensões originais(446W x 140.71H) divisão por 1,2  
+                    @include size(117.25px, 371.66px);
+
+                    &:hover {
+                        background: rgba($color: #000000, $alpha: 0.4);
+                    }
+                }
+            }
+        }
+    }
+
+}

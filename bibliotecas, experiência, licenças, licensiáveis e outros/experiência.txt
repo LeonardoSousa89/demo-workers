@@ -1,0 +1,18 @@
+app.netlify.com->Site settings
+
+    Site information
+    Site name
+    jordan-app
+    Owner
+    LeonardoSousa89's team
+    Site ID
+    164f5787-004e-46d9-a91f-58b247bca0fa
+
+    Created
+    Aug 25, 2021 at 1:45 AM
+    Last update
+    Yesterday at 4:10 PM
+
+dominio: https://jordan-web.netlify.app/
+
+Team: LeonardoSousa89's team

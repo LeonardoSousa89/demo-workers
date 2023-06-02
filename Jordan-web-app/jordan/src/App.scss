@@ -1,0 +1,18 @@
+@import './styles/index.scss';
+
+
+* {
+    margin: 0;
+}
+
+body {
+    height: $desktop;
+
+    .App {
+        height: $desktop;
+
+        .advertising {
+            height: $desktop;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+
+obs* a medida que instalar as dependências instalar também os tipos
+ 
+https://www.npmjs.com/package/react-router-dom
+https://www.npmjs.com/package/@types/react-router-dom
+
+https://www.npmjs.com/package/react-helmet
+https://www.npmjs.com/package/react-bootstrap
+https://www.npmjs.com/package/react-redux
+https://www.npmjs.com/package/redux
+https://www.npmjs.com/package/redux-thunk
+https://www.npmjs.com/package/react-pdf
+
+https://medium.com/@pedro.lg.cs/trabalhando-com-arquivos-xlsx-no-react-typescript-cb2bd60378db
+https://www.npmjs.com/package/exceljs
