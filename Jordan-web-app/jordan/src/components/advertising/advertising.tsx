@@ -8,7 +8,9 @@ function Advertising() {
   return (
     <div className="advertising">
       <Header />
-      <div className='main'>main area</div>
+      <div className='main'>
+        
+      </div>
       <Footer />
     </div>
   );

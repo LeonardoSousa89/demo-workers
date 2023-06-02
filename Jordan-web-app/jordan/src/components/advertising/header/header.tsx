@@ -1,5 +1,7 @@
 import './header.css';
-import { Link, NavLink } from 'react-router-dom'
+
+import { useNavigate } from 'react-router-dom'
+
 import Banner from '../../../assets/advertising/header/marketing.png'
 import Logo from '../../../assets/advertising/header/x-logo.png'
 import Github from '../../../assets/advertising/header/github.png'
@@ -10,6 +12,11 @@ import Youtube from '../../../assets/advertising/header/youtube.png'
 import Acesse_aqui from '../../../assets/advertising/header/acesse_aqui.png'
 
 function Header() {
+
+  const navigate=useNavigate()
+
+   const welcome=():void=>navigate('/welcome')
+
     return (
       <div className="header">
        
@@ -53,7 +60,7 @@ function Header() {
         <div className="acesse-aqui">
           <img src={Acesse_aqui} 
                alt="logo"
-               onClick={()=>alert('acesse aqui')}/>
+               onClick={()=>welcome()}/>
         </div>
        </div>
      
