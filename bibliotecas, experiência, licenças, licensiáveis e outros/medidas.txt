@@ -5,7 +5,9 @@ publicidade (advertising):
         altura: 594.98px equivale a 16.67% de 3586px 
 
     main:
-        altura: 880px equivale a 24.66% de 3586px
+        altura: 2093.02px equivale a 58.67% de 3586px
+            lista de info/agenda marketing(banner): 1137.02px equivale a 54.33% de 2093.02px(h)
+            relatórios e anotações xslx, pdf(banner): 956px  equivale a 45.67% de 2093.02px(h)
 
     footer:
-        altura: 2093.02px equivale a 58.67% de 3586px
+        altura: 880px equivale a 24.66% de 3586px

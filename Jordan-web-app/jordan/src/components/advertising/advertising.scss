@@ -1,6 +1,33 @@
-.main{
+@import '../../styles/index.scss';
+
+.main {
     height: 58.67%;
     // border: solid 1px darkred;
+
     @media(max-width: 1024px) {
+        .banner-agenda-info {
+            // border: solid 1px red;
+            overflow: $hidden;
+            display: $flex;
+            height: 54.33%;
+            .lista{
+                width: 44.05%;
+                img{
+                    @include size($hundred_percent, 456.51px); //width(639.12) dividido por 1.4
+                }
+            }
+            .notificacao{
+                width: 55.95%;
+                img{
+                   @include size($hundred_percent, 575.77px); //width(806.09) dividido por 1.4
+                }
+            }
+        }
+
+        .banner-relatorio-xslx-pdf {
+            // border: solid 1px blue;
+            height: 45.67%;
+            overflow: $hidden;
+        }
     }
 }
