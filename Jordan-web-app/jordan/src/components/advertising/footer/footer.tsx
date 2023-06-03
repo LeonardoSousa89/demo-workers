@@ -3,7 +3,8 @@ import './footer.css';
 function Footer() {
     return (
       <div className="footer">
-        <h1>my footer</h1>
+        <div className="play-store">play store</div>
+        <div className="contact">contact</div>
       </div>
     );
   }

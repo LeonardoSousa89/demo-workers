@@ -18,5 +18,15 @@
           height: 100%;
           width: 575.77px; }
     .main .banner-relatorio-xslx-pdf {
+      background-image: url("../../assets/advertising/main/Rectangle.png");
       height: 45.67%;
-      overflow: hidden; } }
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .main .banner-relatorio-xslx-pdf .icons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+        width: 80%; } }

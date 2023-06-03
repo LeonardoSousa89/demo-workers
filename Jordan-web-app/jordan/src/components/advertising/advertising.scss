@@ -2,32 +2,47 @@
 
 .main {
     height: 58.67%;
-    // border: solid 1px darkred;
+
 
     @media(max-width: 1024px) {
         .banner-agenda-info {
-            // border: solid 1px red;
+
             overflow: $hidden;
             display: $flex;
             height: 54.33%;
-            .lista{
+
+            .lista {
                 width: 44.05%;
-                img{
+
+                img {
                     @include size($hundred_percent, 456.51px); //width(639.12) dividido por 1.4
                 }
             }
-            .notificacao{
+
+            .notificacao {
                 width: 55.95%;
-                img{
-                   @include size($hundred_percent, 575.77px); //width(806.09) dividido por 1.4
+
+                img {
+                    @include size($hundred_percent, 575.77px); //width(806.09) dividido por 1.4
                 }
             }
         }
 
         .banner-relatorio-xslx-pdf {
-            // border: solid 1px blue;
+            background-image: url("../../assets/advertising/main/Rectangle.png");
+
             height: 45.67%;
             overflow: $hidden;
+            @include d_flex($flex, column, $center, $center);
+
+            .titulo {}
+
+            .icons {
+                display: $flex;
+                justify-content: space-between;
+                margin-top: 100px;
+                width: 80%;
+            }
         }
     }
 }
