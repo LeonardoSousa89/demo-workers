@@ -14,7 +14,7 @@
                 justify-content: $center;
                 align-items: $center;
                 .lista{
-                    // border: solid 1px red;
+                    //dimensões originais(1311W x 1034.91H) divisão por 1,2  
                     @include size(861.66px, 1092.5px);
                 }
            }
