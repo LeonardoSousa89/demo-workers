@@ -56,6 +56,8 @@
         .footer .contact .form-social .social img {
           cursor: pointer;
           margin-top: 30px; }
+          .footer .contact .form-social .social img:hover {
+            opacity: 0.8; }
         .footer .contact .form-social .social .github {
           margin-top: 100px; }
     .footer .contact .copy {

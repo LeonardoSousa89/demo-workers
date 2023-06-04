@@ -25,6 +25,8 @@
             width: 80%; }
             .header .social-banner .social .social-container img {
               cursor: pointer; }
+              .header .social-banner .social .social-container img:hover {
+                opacity: 0.8; }
         .header .social-banner .banner {
           height: 34.95%;
           width: 100%;
