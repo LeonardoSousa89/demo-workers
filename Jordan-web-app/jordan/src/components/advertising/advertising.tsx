@@ -1,8 +1,7 @@
 import "./advertising.css";
 import "../../App.css";
 
-import Notificacao from '../../assets/advertising/main/notificacao-de-lembrete.png'
-import Lista from '../../assets/advertising/main/lista-de-beneficios.png'
+import Lista from '../../assets/advertising/main/desktop-banner-agenda.png'
 import Titulo from '../../assets/advertising/main/titulo.png'
 import Pdf from '../../assets/advertising/main/pdf.png'
 import Xslx from '../../assets/advertising/main/excel.png'
@@ -16,12 +15,9 @@ function Advertising() {
       <Header />
       <div className="main">
         <div className="banner-agenda-info">
-          <div className="lista">
-            <img src={Lista} alt="lista de beneficios" />
-          </div>
-          <div className="notificacao">
-            <img src={Notificacao} alt="notificacao" />
-          </div>
+         <div className="lista-agenda">
+            <img className="lista" src={Lista} alt="beneficios" />
+         </div>
         </div>
         <div className="banner-relatorio-xslx-pdf">
           <div className="titulo">

@@ -8,24 +8,16 @@
             overflow: $hidden;
             display: $flex;
             height: 54.33%;
-
-            .lista {
-                width: 44.05%;
-                background: rgba(25, 44, 84, 0.2);
-                img {
-                    @include size($hundred_percent, 456.51px); //width(639.12) dividido por 1.4
+            background: rgba(25, 44, 84, 0.4);
+           .lista-agenda{
+                display: $flex;
+                justify-content: $center;
+                align-items: $center;
+                .lista{
+                    // border: solid 1px red;
+                    @include size(861.66px, 1092.5px);
                 }
-            }
-
-            .notificacao {
-                width: 55.95%;
-                background: rgba(25, 44, 84, 0.4);
-                filter: brightness(90%);
-                overflow: $hidden;
-                img {
-                    @include size($hundred_percent, 575.77px); //width(806.09) dividido por 1.4
-                }
-            }
+           }
         }
 
         .banner-relatorio-xslx-pdf {

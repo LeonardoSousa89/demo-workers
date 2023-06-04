@@ -6,21 +6,15 @@
     .main .banner-agenda-info {
       overflow: hidden;
       display: flex;
-      height: 54.33%; }
-      .main .banner-agenda-info .lista {
-        width: 44.05%;
-        background: rgba(25, 44, 84, 0.2); }
-        .main .banner-agenda-info .lista img {
-          height: 100%;
-          width: 456.51px; }
-      .main .banner-agenda-info .notificacao {
-        width: 55.95%;
-        background: rgba(25, 44, 84, 0.4);
-        filter: brightness(90%);
-        overflow: hidden; }
-        .main .banner-agenda-info .notificacao img {
-          height: 100%;
-          width: 575.77px; }
+      height: 54.33%;
+      background: rgba(25, 44, 84, 0.4); }
+      .main .banner-agenda-info .lista-agenda {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .main .banner-agenda-info .lista-agenda .lista {
+          height: 861.66px;
+          width: 1092.5px; }
     .main .banner-relatorio-xslx-pdf {
       background-color: rgba(25, 44, 84, 0.1);
       height: 45.67%;
