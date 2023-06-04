@@ -9,6 +9,12 @@ https://www.npmjs.com/package/@types/react-bootstrap
 https://www.npmjs.com/package/bootstrap
 https://www.npmjs.com/package/@types/bootstrap
 
+https://www.npmjs.com/package/react-toastify
+https://www.npmjs.com/package/@types/react-toastify
+
+https://www.npmjs.com/package/firebase
+https://www.npmjs.com/package/@types/firebase
+
 https://www.npmjs.com/package/react-helmet
 https://www.npmjs.com/package/react-redux
 https://www.npmjs.com/package/redux

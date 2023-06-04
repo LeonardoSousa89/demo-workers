@@ -1,53 +1,86 @@
 @import '../../../styles/index.scss';
 
-.footer{
-    // border: solid 1px gold;
-    height: 24.66%; 
+.footer {
+    height: 24.66%;
     display: $flex;
     overflow: $hidden;
     font-family: font();
-    .play-store{
-        // border: solid 1px red;
+
+    .play-store {
         @include d_flex($flex, column, $center, $center);
         width: 43.66%;
         background-image: url("../../../assets/advertising/footer/Rectangle\ 4.png");
-        .play{
-             //dimensões originais(410W x 159.8H) divisão por 1.2
-            @include size(133.16px, 341.66px);  
-            cursor: $pointer;   
+
+        .play {
+            //dimensões originais(410W x 159.8H) divisão por 1.2
+            @include size(133.16px, 341.66px);
+            cursor: $pointer;
             transition-property: all;
             transition-duration: 0.5s;
-            &:hover{
-                @include size(146.47px, 375.82px); 
+
+            &:hover {
+                @include size(146.47px, 375.82px);
             }
         }
-        .phone{
+
+        .phone {
             //dimensões originais(523W x 355H) divisão por 1.2
             @include size(295.83px, 435.83px);
             margin-top: $hundred_pixel;
         }
     }
-    .contact{
-        // border: solid 1px darkblue;
+
+    .contact {
         width: 56.34%;
-        .titulo{
+
+        .titulo {
             @include d_flex($flex, row, $center, end);
-            border: solid 1px darkblue;
             height: 30%;
-            .title{
+
+            .title {
                 //dimensões originais(659W x 63.32H) divisão por 1.6
                 @include size(39.57px, 411.87px);
             }
         }
-        .form-social{
-            border: solid 1px darkmagenta;
-            height: 60%;
+
+        .form-social {
+            height: 65%;
+            overflow: $hidden;
+            display: $flex;
+
+            .form {
+                @include size($hundred_percent, 80%);
+                padding: 30px;
+
+                .formulary {
+                    margin-top: $hundred_pixel*1.5;
+                }
+            }
+
+            .social {
+                @include size($hundred_percent, 20%);
+                @include d_flex($flex, column, start, start);
+
+                img {
+                    cursor: $pointer;
+                    margin-top: 30px;
+                }
+
+                .github {
+                    margin-top: $hundred_pixel;
+                }
+            }
         }
-        .copy{
-            border: solid 1px darkgoldenrod;
+
+        .copy {
             @include f_size(small);
-            height: 10%;
+            @include d_flex($flex, row, end, start);
+            height: 5%;
             color: $third;
+
+            strong {
+                margin-right: 10%;
+            }
         }
     }
 }

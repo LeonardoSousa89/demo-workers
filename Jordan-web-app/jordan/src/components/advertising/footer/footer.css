@@ -32,16 +32,39 @@
       flex-direction: row;
       justify-content: center;
       align-items: end;
-      border: solid 1px darkblue;
       height: 30%; }
       .footer .contact .titulo .title {
         height: 39.57px;
         width: 411.87px; }
     .footer .contact .form-social {
-      border: solid 1px darkmagenta;
-      height: 60%; }
+      height: 65%;
+      overflow: hidden;
+      display: flex; }
+      .footer .contact .form-social .form {
+        height: 100%;
+        width: 80%;
+        padding: 30px; }
+        .footer .contact .form-social .form .formulary {
+          margin-top: 150px; }
+      .footer .contact .form-social .social {
+        height: 100%;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start; }
+        .footer .contact .form-social .social img {
+          cursor: pointer;
+          margin-top: 30px; }
+        .footer .contact .form-social .social .github {
+          margin-top: 100px; }
     .footer .contact .copy {
-      border: solid 1px darkgoldenrod;
       font-size: small;
-      height: 10%;
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      align-items: start;
+      height: 5%;
       color: #192c54; }
+      .footer .contact .copy strong {
+        margin-right: 10%; }
