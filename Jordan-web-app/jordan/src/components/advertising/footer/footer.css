@@ -3,14 +3,15 @@
 .footer {
   height: 24.66%;
   display: flex;
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: "Bebas Neue", sans-serif; }
   .footer .play-store {
-    width: 43.66%;
-    background-image: url("../../../assets/advertising/footer/Rectangle 4.png");
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    width: 43.66%;
+    background-image: url("../../../assets/advertising/footer/Rectangle 4.png"); }
     .footer .play-store .play {
       height: 133.16px;
       width: 341.66px;
@@ -26,6 +27,21 @@
       margin-top: 100px; }
   .footer .contact {
     width: 56.34%; }
-    .footer .contact .title {
-      height: 39.57px;
-      width: 411.87px; }
+    .footer .contact .titulo {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: end;
+      border: solid 1px darkblue;
+      height: 30%; }
+      .footer .contact .titulo .title {
+        height: 39.57px;
+        width: 411.87px; }
+    .footer .contact .form-social {
+      border: solid 1px darkmagenta;
+      height: 60%; }
+    .footer .contact .copy {
+      border: solid 1px darkgoldenrod;
+      font-size: small;
+      height: 10%;
+      color: #192c54; }

@@ -21,8 +21,13 @@ function Footer() {
         <div className="titulo">
           <img className="title" src={Title} alt="titulo" />
         </div>
-        <div className="form-social"></div>
-        <div className="copy"></div>
+        <div className="form-social">
+            <div className="form">form</div>
+            <div className="social">social</div>
+        </div>
+        <div className="copy">
+          <strong>&copy;2023 Jordan possui todos os direitos reservados.</strong>
+        </div>
       </div>
     </div>
   );

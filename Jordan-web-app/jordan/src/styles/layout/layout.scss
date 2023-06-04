@@ -1,5 +1,9 @@
 @import '../variables/variables.scss';
 
+@function font(){
+    @return $font; 
+}
+
 @mixin display($scr) {
     display: $scr;
 }
@@ -27,10 +31,6 @@
     width: $wdt;
 }
 
-@mixin f_size($font) {
-    font-size: $font;
-}
-
 @mixin radius($bdr) {
     border-radius: $bdr;
 }
@@ -42,4 +42,31 @@
 
 @mixin percent($p_vh) {
     margin: $p_vh;
+}
+
+@mixin f_size($font) {
+    @if($font == small){
+        font-size: small;
+    }
+    @if($font == x-small){
+        font-size: x-small;
+    }
+    @if($font == xx-small){
+        font-size: xx-small;
+    }
+    @if($font == medium){
+        font-size: medium;
+    }
+    @if($font == large){
+        font-size: large;
+    }
+    @if($font == x-large){
+        font-size: x-large;
+    }
+    @if($font == xx-large){
+        font-size: xx-large;
+    }
+    @if($font == larger){
+        font-size: larger;
+    }
 }
