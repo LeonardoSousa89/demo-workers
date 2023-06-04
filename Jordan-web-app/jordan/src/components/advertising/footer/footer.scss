@@ -1,4 +1,37 @@
+@import '../../../styles/index.scss';
+
 .footer{
+    // border: solid 1px gold;
     height: 24.66%; 
-    border: solid 1px gold;
+    display: $flex;
+    overflow: $hidden;
+    .play-store{
+        // border: solid 1px red;
+        width: 43.66%;
+        background-image: url("../../../assets/advertising/footer/Rectangle\ 4.png");
+        @include d_flex($flex, column, $center, $center);
+        .play{
+             //dimensões originais(410W x 159.8H) divisão por 1.2
+            @include size(133.16px, 341.66px);  
+            cursor: $pointer;   
+            transition-property: all;
+            transition-duration: 0.5s;
+            &:hover{
+                @include size(146.47px, 375.82px); 
+            }
+        }
+        .phone{
+            //dimensões originais(523W x 355H) divisão por 1.2
+            @include size(295.83px, 435.83px);
+            margin-top: 100px;
+        }
+    }
+    .contact{
+        border: solid 1px darkblue;
+        width: 56.34%;
+        .title{
+            //dimensões originais(659W x 63.32H) divisão por 1.6
+            @include size(39.57px, 411.87px);
+        }
+    }
 }

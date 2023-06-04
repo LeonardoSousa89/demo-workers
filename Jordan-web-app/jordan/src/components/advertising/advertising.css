@@ -18,7 +18,7 @@
           height: 100%;
           width: 575.77px; }
     .main .banner-relatorio-xslx-pdf {
-      background-image: url("../../assets/advertising/main/Rectangle.png");
+      background-color: rgba(25, 44, 84, 0.1);
       height: 45.67%;
       overflow: hidden;
       display: flex;

@@ -4,8 +4,12 @@ obs* a medida que instalar as dependências instalar também os tipos
 https://www.npmjs.com/package/react-router-dom
 https://www.npmjs.com/package/@types/react-router-dom
 
-https://www.npmjs.com/package/react-helmet
 https://www.npmjs.com/package/react-bootstrap
+https://www.npmjs.com/package/@types/react-bootstrap
+https://www.npmjs.com/package/bootstrap
+https://www.npmjs.com/package/@types/bootstrap
+
+https://www.npmjs.com/package/react-helmet
 https://www.npmjs.com/package/react-redux
 https://www.npmjs.com/package/redux
 https://www.npmjs.com/package/redux-thunk

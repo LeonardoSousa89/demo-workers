@@ -1,3 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 .footer {
   height: 24.66%;
-  border: solid 1px gold; }
+  display: flex;
+  overflow: hidden; }
+  .footer .play-store {
+    width: 43.66%;
+    background-image: url("../../../assets/advertising/footer/Rectangle 4.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .footer .play-store .play {
+      height: 133.16px;
+      width: 341.66px;
+      cursor: pointer;
+      transition-property: all;
+      transition-duration: 0.5s; }
+      .footer .play-store .play:hover {
+        height: 146.47px;
+        width: 375.82px; }
+    .footer .play-store .phone {
+      height: 295.83px;
+      width: 435.83px;
+      margin-top: 100px; }
+  .footer .contact {
+    border: solid 1px darkblue;
+    width: 56.34%; }
+    .footer .contact .title {
+      height: 39.57px;
+      width: 411.87px; }

@@ -3,10 +3,8 @@
 .main {
     height: 58.67%;
 
-
     @media(max-width: 1024px) {
         .banner-agenda-info {
-
             overflow: $hidden;
             display: $flex;
             height: 54.33%;
@@ -29,8 +27,7 @@
         }
 
         .banner-relatorio-xslx-pdf {
-            background-image: url("../../assets/advertising/main/Rectangle.png");
-
+            background-color: rgba(25, 44, 84, 0.1);    
             height: 45.67%;
             overflow: $hidden;
             @include d_flex($flex, column, $center, $center);
