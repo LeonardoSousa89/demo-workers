@@ -34,8 +34,8 @@
       align-items: end;
       height: 30%; }
       .footer .contact .titulo .title {
-        height: 39.57px;
-        width: 411.87px; }
+        color: #192c54;
+        font-size: x-large; }
     .footer .contact .form-social {
       height: 65%;
       overflow: hidden;

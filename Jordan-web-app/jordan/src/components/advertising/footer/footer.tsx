@@ -9,7 +9,6 @@ import { toast } from 'react-toastify';
 
 import Play from "../../../assets/advertising/footer/pt-br_badge_web_generic (1).png";
 import Phone from "../../../assets/advertising/footer/5-smartphone-png-image 1.png";
-import Title from "../../../assets/advertising/footer/title.png";
 import Github from "../../../assets/advertising/header/github.png";
 import Instagram from "../../../assets/advertising/header/instagram.png";
 import Facebook from "../../../assets/advertising/header/facebook.png";
@@ -55,7 +54,7 @@ function Footer() {
       </div>
       <div className="contact">
         <div className="titulo">
-          <img className="title" src={Title} alt="titulo" />
+          <h2 className="title">Acesse nossas redes sociais ou deixe um comentário!</h2>
         </div>
         <div className="form-social">
 

@@ -38,8 +38,8 @@
             height: 30%;
 
             .title {
-                //dimensões originais(659W x 63.32H) divisão por 1.6
-                @include size(39.57px, 411.87px);
+                color: $third;
+                @include f_size(x-large);
             }
         }
 
