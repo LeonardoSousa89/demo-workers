@@ -2,7 +2,7 @@
 
 .header {
     height: 16.67%;
-    background-image: url('../../../assets/advertising/header/Rectangle.png');
+    background: rgba(25, 44, 84, 0.6);
 
     @media(max-width: 1024px) {
         @include d_flex($flex, row, $center, $center);
