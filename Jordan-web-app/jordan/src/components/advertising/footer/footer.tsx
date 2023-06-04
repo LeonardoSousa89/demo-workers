@@ -31,12 +31,12 @@ function Footer() {
       return "por favor, insira um comentário!";
   };
 
-  const sendComment = () => send(email, comment, verifyFields, toast, clean)
-
   const clean = (): void => {
     setEmail("");
     setComment("");
   };
+  
+  const sendComment = () => send(email, comment, verifyFields, toast, clean)
 
   return (
     <div className="footer">
