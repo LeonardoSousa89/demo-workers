@@ -2,7 +2,7 @@ function Icon(props: {
   src: any;
   alt: string;
   className: string;
-  onClick: any;
+  onClick?: any;
 }) {
   return (
     <img

@@ -55,5 +55,8 @@ const facebook = (): void => {
 const youtube = (): void => {
   redirect("https://www.youtube.com/channel/UCrJUpc391D5z9KKl9FcOy4A");
 };
+const play = (): void => {
+  redirect("https://pt.wix.com/website-template/view/html/1936?originUrl=https%3A%2F%2Fpt.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=0a405a20-9139-4dea-9674-ffa0ef4a5b8b");
+};
 
-export { send, redirect, github, linkedin, instagram, facebook, youtube };
+export { send, redirect, github, linkedin, instagram, facebook, youtube, play };

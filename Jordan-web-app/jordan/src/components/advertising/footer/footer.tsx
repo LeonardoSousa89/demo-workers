@@ -5,7 +5,7 @@ import InputGroup from "react-bootstrap/InputGroup";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Button from "react-bootstrap/Button";
 
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 
 import Play from "../../../assets/advertising/footer/pt-br_badge_web_generic (1).png";
 import Phone from "../../../assets/advertising/footer/5-smartphone-png-image 1.png";
@@ -17,11 +17,17 @@ import Youtube from "../../../assets/advertising/header/youtube.png";
 
 import { useEffect, useState } from "react";
 
-import { send } from '../../../services/advertising/service'
+import {
+  send,
+  github,
+  facebook,
+  instagram,
+  linkedin,
+  youtube,
+  play,
+} from "../../../services/advertising/service";
 
 import Icon from "../props/icon";
-
-import { redirect } from "../../../services/advertising/service";
 
 function Footer() {
   const [email, setEmail] = useState("");
@@ -38,30 +44,22 @@ function Footer() {
     setEmail("");
     setComment("");
   };
-  
-  const sendComment = () => send(email, comment, verifyFields, toast, clean)
+
+  const sendComment = () => send(email, comment, verifyFields, toast, clean);
 
   return (
     <div className="footer">
       <div className="play-store">
-        <img
-          className="play"
-          src={Play}
-          alt="play"
-          onClick={() =>
-            window.open(
-              "https://pt.wix.com/website-template/view/html/1936?originUrl=https%3A%2F%2Fpt.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=0a405a20-9139-4dea-9674-ffa0ef4a5b8b"
-            )
-          }
-        />
-        <img className="phone" src={Phone} alt="phone" />
+        <Icon className="play" src={Play} alt={"play"} onClick={play} />
+        <Icon className="phone" src={Phone} alt={"phone"} />
       </div>
       <div className="contact">
         <div className="titulo">
-          <h2 className="title">Acesse nossas redes sociais ou deixe um comentário!</h2>
+          <h2 className="title">
+            Acesse nossas redes sociais ou deixe um comentário!
+          </h2>
         </div>
         <div className="form-social">
-
           <div className="form">
             <div className="formulary">
               {/* input email */}
@@ -108,53 +106,35 @@ function Footer() {
             </div>
           </div>
           <div className="social">
-            <img
+            <Icon
               className="github"
               src={Github}
-              alt="social"
-              onClick={() =>
-                window.open(
-                  "https://github.com/LeonardoSousa89/demo-workers/tree/redesign"
-                )
-              }
+              alt={"social"}
+              onClick={github}
             />
-            <img
+            <Icon
               className="linkedin"
               src={Linkedin}
-              alt="social"
-              onClick={() =>
-                window.open(
-                  "https://www.linkedin.com/company/jordan-app/about/?viewAsMember=true"
-                )
-              }
+              alt={"social"}
+              onClick={linkedin}
             />
-            <img
+            <Icon
               className="instagram"
               src={Instagram}
-              alt="social"
-              onClick={() =>
-                window.open("https://www.instagram.com/jordanapplication")
-              }
+              alt={"social"}
+              onClick={instagram}
             />
-            <img
+            <Icon
               className="facebook"
               src={Facebook}
-              alt="social"
-              onClick={() =>
-                window.open(
-                  "https://www.facebook.com/profile.php?id=100093243430633"
-                )
-              }
+              alt={"social"}
+              onClick={facebook}
             />
-            <img
+            <Icon
               className="youtube"
               src={Youtube}
-              alt="social"
-              onClick={() =>
-                window.open(
-                  "https://www.youtube.com/channel/UCrJUpc391D5z9KKl9FcOy4A"
-                )
-              }
+              alt={"social"}
+              onClick={youtube}
             />
           </div>
         </div>
