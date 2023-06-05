@@ -11,32 +11,20 @@ import Linkedin from "../../../assets/advertising/header/linkedin.png";
 import Youtube from "../../../assets/advertising/header/youtube.png";
 import Acesse_aqui from "../../../assets/advertising/header/acesse_aqui.png";
 
-import Icon from "./icon";
+import Icon from "../props/icon";
 
-import { redirect } from "../../../services/advertising/service";
+import {
+  github,
+  facebook,
+  instagram,
+  linkedin,
+  youtube,
+} from "../../../services/advertising/service";
 
 function Header() {
   const navigate = useNavigate();
 
   const welcome = (): void => navigate("/welcome");
-
-  const github = (): void => {
-    redirect("https://github.com/LeonardoSousa89/demo-workers/tree/redesign");
-  };
-  const linkedin = (): void => {
-    redirect(
-      "https://www.linkedin.com/company/jordan-app/about/?viewAsMember=true"
-    );
-  };
-  const instagram = (): void => {
-    redirect("https://www.instagram.com/jordanapplication");
-  };
-  const facebook = (): void => {
-    redirect("https://www.facebook.com/profile.php?id=100093243430633");
-  };
-  const youtube = (): void => {
-    redirect("https://www.youtube.com/channel/UCrJUpc391D5z9KKl9FcOy4A");
-  };
 
   return (
     <div className="header">

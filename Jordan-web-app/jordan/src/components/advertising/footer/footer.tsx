@@ -19,6 +19,10 @@ import { useEffect, useState } from "react";
 
 import { send } from '../../../services/advertising/service'
 
+import Icon from "../props/icon";
+
+import { redirect } from "../../../services/advertising/service";
+
 function Footer() {
   const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");
