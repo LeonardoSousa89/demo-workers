@@ -66,16 +66,16 @@ function Header() {
         </div>
 
         <div className="banner">
-          <img src={Banner} alt="banner" />
+          <Icon className="" src={Banner} alt="banner" />
         </div>
       </div>
 
       <div className="app-access-desktop">
         <div className="logo">
-          <img src={Logo} alt="logo" />
+          <Icon className="" src={Logo} alt="logo" />
         </div>
         <div className="acesse-aqui">
-          <img src={Acesse_aqui} alt="logo" onClick={() => welcome()} />
+          <Icon className="" src={Acesse_aqui} alt="logo" onClick={welcome} />
         </div>
       </div>
       {/* desktop */}
