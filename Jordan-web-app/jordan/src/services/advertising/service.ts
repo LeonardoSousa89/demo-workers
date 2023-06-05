@@ -37,4 +37,9 @@ async function send(email: string,
 
 }
 
-export { send };
+function redirect(path: string){
+  
+  window.open(path)
+}
+
+export { send, redirect };

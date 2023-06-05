@@ -12,7 +12,7 @@
         height: 16.67%;
         background: rgba(25, 44, 84, 0.6);
 
-        .social-banner {
+        .social-banner-desktop {
             overflow: $hidden;
             @include size($hundred_percent, 44.22%);
 
@@ -48,7 +48,7 @@
             }
         }
 
-        .app-access {
+        .app-access-desktop {
             overflow: $hidden;
             @include size($hundred_percent, 55.78%);
 
@@ -71,12 +71,20 @@
                 }
             }
         }
+
     }
 
     //mobile tablet
     @media(max-width: 991px) {
-        // height: 13.09%;
-        display: $none;
+        border: solid 1px red;
+        height: 13.09%;
+        background: white;
+        .social-banner-desktop{
+            display: $none;
+        }
+        .app-access-desktop{
+            display: $none;
+        }
     }
 
     //mobile smartphone
