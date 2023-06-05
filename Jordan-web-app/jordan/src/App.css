@@ -4,9 +4,10 @@
   margin: 0;
   padding: 0; }
 
-body {
-  height: 3568px; }
-  body .App {
-    height: 3568px; }
-    body .App .advertising {
-      height: 3568px; }
+@media (max-width: 1024px) {
+  body .App .advertising {
+    height: 3568px; } }
+
+@media (max-width: 991px) {
+  body .App .advertising {
+    height: 7452px; } }

@@ -1,89 +1,106 @@
 @import '../../../styles/index.scss';
 
 .footer {
-    height: 24.66%;
-    display: $flex;
-    overflow: $hidden;
-    font-family: font();
-
-    .play-store {
-        @include d_flex($flex, column, $center, $center);
-        width: 43.66%;
-        background-image: url("../../../assets/advertising/footer/Rectangle\ 4.png");
-
-        .play {
-            //dimensões originais(410W x 159.8H) divisão por 1.2
-            @include size(133.16px, 341.66px);
-            cursor: $pointer;
-            transition-property: all;
-            transition-duration: 0.5s;
-
-            &:hover {
-                @include size(146.47px, 375.82px);
-            }
-        }
-
-        .phone {
-            //dimensões originais(523W x 355H) divisão por 1.2
-            @include size(295.83px, 435.83px);
-            margin-top: $hundred_pixel;
-        }
+     
+    //desktop
+    @media(max-width: 1444px){
+        //code here
     }
 
-    .contact {
-        width: 56.34%;
+    @media(max-width:1024px) {
+        height: 24.66%;
+        display: $flex;
+        overflow: $hidden;
+        font-family: font();
 
-        .titulo {
-            @include d_flex($flex, row, $center, end);
-            height: 30%;
+        .play-store {
+            @include d_flex($flex, column, $center, $center);
+            width: 43.66%;
+            background-image: url("../../../assets/advertising/footer/Rectangle\ 4.png");
 
-            .title {
-                color: $third;
-                @include f_size(x-large);
-            }
-        }
+            .play {
+                //dimensões originais(410W x 159.8H) divisão por 1.2
+                @include size(133.16px, 341.66px);
+                cursor: $pointer;
+                transition-property: all;
+                transition-duration: 0.5s;
 
-        .form-social {
-            height: 65%;
-            overflow: $hidden;
-            display: $flex;
-
-            .form {
-                @include size($hundred_percent, 80%);
-                padding: 30px;
-
-                .formulary {
-                    margin-top: $hundred_pixel*1.5;
+                &:hover {
+                    @include size(146.47px, 375.82px);
                 }
             }
 
-            .social {
-                @include size($hundred_percent, 20%);
-                @include d_flex($flex, column, start, start);
+            .phone {
+                //dimensões originais(523W x 355H) divisão por 1.2
+                @include size(295.83px, 435.83px);
+                margin-top: $hundred_pixel;
+            }
+        }
 
-                img {
-                    cursor: $pointer;
-                    margin-top: 30px;
-                    &:hover{
-                        opacity: 0.8;
+        .contact {
+            width: 56.34%;
+
+            .titulo {
+                @include d_flex($flex, row, $center, end);
+                height: 30%;
+
+                .title {
+                    color: $third;
+                    @include f_size(x-large);
+                }
+            }
+
+            .form-social {
+                height: 65%;
+                overflow: $hidden;
+                display: $flex;
+
+                .form {
+                    @include size($hundred_percent, 80%);
+                    padding: 30px;
+
+                    .formulary {
+                        margin-top: $hundred_pixel*1.5;
                     }
                 }
 
-                .github {
-                    margin-top: $hundred_pixel;
+                .social {
+                    @include size($hundred_percent, 20%);
+                    @include d_flex($flex, column, start, start);
+
+                    img {
+                        cursor: $pointer;
+                        margin-top: 30px;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+
+                    .github {
+                        margin-top: $hundred_pixel;
+                    }
+                }
+            }
+
+            .copy {
+                @include f_size(small);
+                @include d_flex($flex, row, end, start);
+                height: 5%;
+                color: $third;
+
+                strong {
+                    margin-right: 10%;
                 }
             }
         }
-
-        .copy {
-            @include f_size(small);
-            @include d_flex($flex, row, end, start);
-            height: 5%;
-            color: $third;
-
-            strong {
-                margin-right: 10%;
-            }
-        }
     }
+
+    //mobile tablet
+    @media(max-width: 991px) {
+        height: 36.34%;
+        display: $none;
+    }
+
+    //mobile smartphone
 }

@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-.main {
-  height: 58.67%; }
-  @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+  .main {
+    height: 58.67%; }
     .main .banner-agenda-info {
       overflow: hidden;
       display: flex;
@@ -28,3 +28,8 @@
         justify-content: space-between;
         margin-top: 100px;
         width: 80%; } }
+
+@media (max-width: 991px) {
+  .main {
+    height: 50.57%;
+    display: none; } }

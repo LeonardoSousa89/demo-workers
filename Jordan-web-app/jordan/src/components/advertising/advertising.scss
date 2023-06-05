@@ -1,9 +1,14 @@
 @import '../../styles/index.scss';
 
 .main {
-    height: 58.67%;
-
+    
+    //desktop
+    @media(max-width: 1444px){
+        //code here
+    }
+    
     @media(max-width: 1024px) {
+        height: 58.67%;
         .banner-agenda-info {
             overflow: $hidden;
             display: $flex;
@@ -36,4 +41,12 @@
             }
         }
     }
+
+    //mobile tablet
+    @media(max-width: 991px) {
+        height: 50.57%;
+        display: $none;
+    }
+
+    //mobile smartphone
 }

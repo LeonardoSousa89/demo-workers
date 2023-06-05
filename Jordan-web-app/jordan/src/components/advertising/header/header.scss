@@ -1,11 +1,16 @@
 @import '../../../styles/index.scss';
 
 .header {
-    height: 16.67%;
-    background: rgba(25, 44, 84, 0.6);
-
+     
+    //desktop
+    @media(max-width: 1444px){
+        //code here
+    }
+    
     @media(max-width: 1024px) {
         @include d_flex($flex, row, $center, $center);
+        height: 16.67%;
+        background: rgba(25, 44, 84, 0.6);
 
         .social-banner {
             overflow: $hidden;
@@ -68,4 +73,11 @@
         }
     }
 
+    //mobile tablet
+    @media(max-width: 991px) {
+        // height: 13.09%;
+        display: $none;
+    }
+
+    //mobile smartphone
 }
