@@ -1,9 +1,9 @@
 @import '../../../styles/index.scss';
 
 .footer {
-     
+
     //desktop
-    @media(max-width: 1444px){
+    @media(max-width: 1444px) {
         //code here
     }
 
@@ -13,7 +13,7 @@
         overflow: $hidden;
         font-family: font();
 
-        .play-store {
+        .play-store-desktop {
             @include d_flex($flex, column, $center, $center);
             width: 43.66%;
             background-image: url("../../../assets/advertising/footer/Rectangle\ 4.png");
@@ -37,7 +37,7 @@
             }
         }
 
-        .contact {
+        .contact-desktop {
             width: 56.34%;
 
             .titulo {
@@ -99,7 +99,12 @@
     //mobile tablet
     @media(max-width: 991px) {
         height: 36.34%;
-        display: $none;
+        .play-store-desktop{
+            display: $none;
+        }
+        .contact-desktop{
+            display: $none;
+        }
     }
 
     //mobile smartphone

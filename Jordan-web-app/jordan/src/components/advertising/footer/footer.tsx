@@ -49,11 +49,12 @@ function Footer() {
 
   return (
     <div className="footer">
-      <div className="play-store">
+        {/* desktop */}
+      <div className="play-store-desktop">
         <Icon className="play" src={Play} alt={"play"} onClick={play} />
         <Icon className="phone" src={Phone} alt={"phone"} />
       </div>
-      <div className="contact">
+      <div className="contact-desktop">
         <div className="titulo">
           <h2 className="title">
             Acesse nossas redes sociais ou deixe um comentário!
@@ -144,7 +145,8 @@ function Footer() {
           </strong>
         </div>
       </div>
-    </div>
+        {/* desktop */}
+   </div>
   );
 }
 
