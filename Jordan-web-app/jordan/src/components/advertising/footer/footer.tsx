@@ -27,7 +27,7 @@ import {
   play,
 } from "../../../services/advertising/service";
 
-import Icon from "../props/icon";
+import Icon from "../../props/icon";
 
 function Footer() {
   const [email, setEmail] = useState("");

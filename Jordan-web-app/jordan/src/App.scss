@@ -18,5 +18,15 @@ body {
                 height: $mobile;
             }
         }
+
+        .welcome{
+            @media(max-width:1444px){
+                border: solid 1px darkred;
+            }
+            @media(max-width:1024px){
+            }
+            @media(max-width:991px){
+            }
+        }
     }
 }

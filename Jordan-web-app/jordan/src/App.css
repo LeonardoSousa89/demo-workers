@@ -11,3 +11,7 @@
 @media (max-width: 991px) {
   body .App .advertising {
     height: 7452px; } }
+
+@media (max-width: 1444px) {
+  body .App .welcome {
+    border: solid 1px darkred; } }

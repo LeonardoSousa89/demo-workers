@@ -11,7 +11,7 @@ import Linkedin from "../../../assets/advertising/header/linkedin.png";
 import Youtube from "../../../assets/advertising/header/youtube.png";
 import Acesse_aqui from "../../../assets/advertising/header/acesse_aqui.png";
 
-import Icon from "../props/icon";
+import Icon from "../../props/icon";
 
 import {
   github,
