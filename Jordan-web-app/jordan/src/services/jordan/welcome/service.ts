@@ -1,12 +1,9 @@
-import { firestore } from "../../db";
-import {
-  collection,
-  addDoc,
-  doc,
-  getDoc,
-  getDocs,
-  setDoc,
-} from "firebase/firestore";
 
+function animation(duration: number, navigate: any){
 
-export {  };
+  setTimeout(function(){
+    navigate()
+  }, duration)
+} 
+
+export { animation };
