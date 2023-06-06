@@ -1,0 +1,25 @@
+@import '../../../../styles/index.scss';
+
+.title {
+    height: 100vh;
+
+    //desktop
+    @media(max-width:1444px) {
+        @include d_flex($flex, row, $center, $center);
+    }
+
+    //mobile-tablet
+    @media(max-width:991px) {
+        .logo {
+            @include size(208px, 468px);
+        }
+    }
+
+    //mobile-smartphone
+    @media(max-width:659px) {
+        .logo {
+            @include size(112px, 251px);
+        }
+    }
+
+}

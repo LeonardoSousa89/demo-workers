@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.title {
+  height: 100vh; }
+  @media (max-width: 1444px) {
+    .title {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; } }
+  @media (max-width: 991px) {
+    .title .logo {
+      height: 208px;
+      width: 468px; } }
+  @media (max-width: 659px) {
+    .title .logo {
+      height: 112px;
+      width: 251px; } }
