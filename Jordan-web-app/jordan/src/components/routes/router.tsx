@@ -3,6 +3,7 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import Advertising  from '../advertising/advertising'
 import Error  from '../error/error'
 import Welcome  from '../jordan/pages/welcome/welcome'
+import Dashboard from '../jordan/pages/dashboard/dashboard'
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -14,6 +15,7 @@ export default (props: any)=>{
       <Routes>
         <Route path="/"  element={<Advertising/>} />
         <Route path="/welcome" element={<Welcome/>} />
+        <Route path="/dashboard" element={<Dashboard/>} />
         <Route path="/*" element={<Error/>} />
       </Routes>
     </BrowserRouter>
