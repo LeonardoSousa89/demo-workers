@@ -28,8 +28,7 @@ function Header() {
 
   return (
     <div className="header">
-      {/* desktop */}
-      <div className="social-banner-desktop">
+      <div className="social-banner">
         <div className="social">
           <div className="social-container">
             <Icon
@@ -38,24 +37,28 @@ function Header() {
               alt={"social"}
               onClick={github}
             />
+
             <Icon
               className="linkedin"
               src={Linkedin}
               alt={"social"}
               onClick={linkedin}
             />
+
             <Icon
               className="instagram"
               src={Instagram}
               alt={"social"}
               onClick={instagram}
             />
+
             <Icon
               className="facebook"
               src={Facebook}
               alt={"social"}
               onClick={facebook}
             />
+
             <Icon
               className="youtube"
               src={Youtube}
@@ -70,23 +73,16 @@ function Header() {
         </div>
       </div>
 
-      <div className="app-access-desktop">
+      <div className="app-access">
         <div className="logo">
           <Icon className="" src={Logo} alt="logo" />
         </div>
+
         <div className="acesse-aqui">
           <Icon className="" src={Acesse_aqui} alt="logo" onClick={welcome} />
         </div>
+
       </div>
-      {/* desktop */}
-
-      {/* mobile-tablet */}
-
-      {/* mobile-tablet */}
-
-      {/* mobile-smartphone */}
-
-      {/* mobile-smartphone */}
     </div>
   );
 }

@@ -10,9 +10,9 @@
     @media(max-width: 1024px) {
         @include d_flex($flex, row, $center, $center);
         height: 16.67%;
-        background: rgba(25, 44, 84, 0.6);
-
-        .social-banner-desktop {
+        
+        .social-banner {
+            background: rgba(25, 44, 84, 0.6);
             overflow: $hidden;
             @include size($hundred_percent, 44.22%);
 
@@ -48,7 +48,8 @@
             }
         }
 
-        .app-access-desktop {
+        .app-access {
+            background: rgba(25, 44, 84, 0.6);
             overflow: $hidden;
             @include size($hundred_percent, 55.78%);
 
@@ -76,14 +77,22 @@
 
     //mobile tablet
     @media(max-width: 991px) {
-        border: solid 1px red;
-        height: 13.09%;
-        background: $light;
-        .social-banner-desktop{
-            display: $none;
+        flex-direction: column-reverse;
+        .social-banner{
+            @include size(46.47%, 100vw);
+            .social{
+                height: 24.46%;
+                .social-container{
+                    width: 50%;
+                }
+            }
+            .banner{
+                background: rgba(25, 44, 84, 0.6);
+                height: 75.54%;
+            }
         }
-        .app-access-desktop{
-            display: $none;
+        .app-access{
+            @include size(53.53%, 100vw);
         }
     }
 
