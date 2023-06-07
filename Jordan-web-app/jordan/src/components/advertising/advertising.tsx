@@ -3,7 +3,6 @@ import "../../App.css";
 
 import Lista from '../../assets/advertising/main/desktop-banner-agenda.png'
 import Lista_tablet from '../../assets/advertising/main/3d-illustration-of-agenda-book-tablet.png'
-import Lista_smartphone from '../../assets/advertising/main/3d-illustration-of-agenda-book-smartphone.png'
 import Titulo from '../../assets/advertising/main/titulo.png'
 import Pdf from '../../assets/advertising/main/pdf.png'
 import Xslx from '../../assets/advertising/main/excel.png'
@@ -34,7 +33,7 @@ function Advertising() {
               <Icon 
                 className="lista-mobile" 
                 src={Lista_tablet} 
-                alt="beneficios" />
+                alt="banner agenda" />
              {/* tablet banner */}
 
             </div>
