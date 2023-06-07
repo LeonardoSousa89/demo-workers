@@ -4,6 +4,8 @@
   .header .banner .banner-text-mobile1 {
     display: none; }
   .header .banner .banner-text-mobile2 {
+    display: none; }
+  .header .solid {
     display: none; } }
 
 @media (max-width: 1024px) {
@@ -47,7 +49,7 @@
       height: 100%;
       width: 55.78%;
       overflow: hidden; }
-      .header .app-access .logo > img {
+      .header .app-access .logo .banner-logo {
         height: 244.55px;
         width: 546.66px;
         margin-top: 20%; }
@@ -101,8 +103,48 @@
         .header .app-access .logo .banner-logo {
           height: 157px;
           width: 353px;
-          margin-bottom: 63px; } }
+          margin-bottom: 63px; }
+      .header .app-access .solid {
+        color: #fff;
+        display: block;
+        margin-top: 20%;
+        box-shadow: 0 0 5px #fff; } }
 
 @media (max-width: 641px) {
-  .header {
-    display: none; } }
+  .header .social-banner .social .social-container {
+    width: 60%; }
+  .header .social-banner .banner .banner-text-mobile1 {
+    font-size: 35px; }
+  .header .social-banner .banner .banner-text-mobile2 {
+    font-size: 35px; }
+  .header .app-access .logo .banner-logo {
+    margin-top: 40%; }
+  .header .app-access .acesse-aqui .banner-acesse-aqui {
+    height: 97.12px;
+    width: 309.4px; } }
+
+@media (max-width: 641px) and (orientation: landscape) {
+  .header .logo {
+    height: 50%; } }
+
+@media (max-width: 501px) {
+  .header .social-banner .social {
+    align-items: flex-start; }
+    .header .social-banner .social .social-container {
+      width: 100%; }
+  .header .social-banner .banner {
+    padding: 10%;
+    text-align: center; }
+    .header .social-banner .banner .banner-text-mobile1 {
+      margin-bottom: 50px; }
+  .header .app-access .logo .banner-logo {
+    height: 128px;
+    width: 287px; } }
+
+@media (max-width: 476px) {
+  .header .app-access .solid {
+    margin-top: 30%; } }
+
+@media (max-width: 361px) {
+  .header .app-access .solid {
+    margin-top: 40%; } }

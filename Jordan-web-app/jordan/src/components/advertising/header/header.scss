@@ -4,7 +4,7 @@
      
     //desktop
     @media(max-width: 1444px){
-        //code here
+
         .banner{
             .banner-text-mobile1{
                 display: $none;
@@ -12,6 +12,10 @@
             .banner-text-mobile2{
                 display: $none;
             }
+        }
+
+        .solid{
+            display: $none;
         }
     }
     
@@ -60,10 +64,12 @@
             @include size($hundred_percent, 55.78%);
             overflow: $hidden;
 
-            .logo>img {
-                //dimensões originais(656W x 293.47H) divisão por 1,2  
-                @include size(244.55px, 546.66px);
-                margin-top: 20%;
+            .logo {
+                .banner-logo{
+                    //dimensões originais(656W x 293.47H) divisão por 1,2  
+                    @include size(244.55px, 546.66px);
+                    margin-top: 20%;
+                }
             }
 
             .acesse-aqui {
@@ -124,14 +130,100 @@
                     margin-bottom: 63px;                   
                 }
             }
-            .acesse-aqui{
-                // border: solid 1px darkmagenta;
-            }   
+
+            .solid{
+                color: $light;
+                display: block;
+                margin-top: 20%;
+                box-shadow: 0 0 5px $light;
+            }
         }
     }
 
     //mobile smartphone
     @media(max-width: 641px){
-        display: $none;
+        .social-banner{
+            
+            .social{
+                .social-container{
+                    width: 60%;
+                }
+            }
+
+            .banner{
+                .banner-text-mobile1{
+                    @include f_size(35px);
+                }
+                .banner-text-mobile2{
+                    @include f_size(35px);
+                }
+            }
+        }
+
+        .app-access{
+            .logo{
+                .banner-logo{
+                    margin-top: 40%;
+                }
+            }
+            .acesse-aqui{
+                .banner-acesse-aqui{
+                    @include size(97.12px, 309.4px);
+                }
+            }
+        }
+
     }
+
+    @media(max-width: 641px) and (orientation: landscape){
+        .logo{
+            height: 50%;
+        }
+    }
+
+    @media(max-width: 501px){
+        .social-banner{
+            
+            .social{
+                align-items: flex-start;
+                .social-container{
+                    width: 100%;
+                }
+            }
+
+            .banner{
+                padding: 10%;
+                text-align: $center;
+                .banner-text-mobile1{
+                    margin-bottom: 50px;
+                }
+            }
+        }
+
+        .app-access{
+            .logo{
+                .banner-logo{
+                    @include size(128px, 287px);
+                }
+            }
+
+        }
+    }
+
+    @media(max-width: 476px){
+        .app-access{
+            .solid{
+                margin-top: 30%;
+            }
+        }
+    }
+
+    @media(max-width: 361px){
+        .app-access{
+            .solid{
+                margin-top: 40%;
+            }
+        }
+    }
+    
 }

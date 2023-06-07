@@ -25,12 +25,14 @@ function Header() {
   const navigate = useNavigate();
 
   const welcome = (): void => navigate("/welcome");
-
+  
   return (
     <div className="header">
       <div className="social-banner">
         <div className="social">
           <div className="social-container">
+            
+            
             <Icon
               className="github"
               src={Github}
@@ -89,6 +91,8 @@ function Header() {
         <div className="acesse-aqui">
           <Icon className="banner-acesse-aqui" src={Acesse_aqui} alt="logo" onClick={welcome} />
         </div>
+
+        <hr className="solid"></hr>
 
       </div>
     </div>
