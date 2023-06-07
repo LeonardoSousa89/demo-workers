@@ -4,7 +4,12 @@
     
     //desktop
     @media(max-width: 1444px){
-        //code here
+        .banner-lista-mobile{
+            display: $none;
+        }
+        .text-lista-mobile{
+            display: $none;
+        }
     }
     
     @media(max-width: 1024px) {
@@ -45,8 +50,88 @@
     //mobile tablet
     @media(max-width: 991px) {
         height: 50.57%;
-        display: $none;
+        .banner-agenda-info {
+            background:rgba(25, 44, 84, 0.4);
+            .lista-agenda{
+                flex-direction: column;
+                .lista{
+                    display: $none;
+                }
+                .banner-lista-mobile{
+                    // border: solid 1px red;
+                    display: $flex;
+                    justify-content: $center;
+                    align-items: $center;
+                    height: 50%;
+                    width: 100vw;
+                }
+                .text-lista-mobile{
+                    // border: solid 1px red;
+                    @include f_size(xx-large);
+                    display: $flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    color: $light;
+                    display: $flex;
+                    font-weight: bold;
+                    height: 50%;
+                    li{
+                        background: rgba(25, 44, 84, 0.8);
+                        padding: 10px;
+                        box-shadow: 0 0 10px $light;
+                    }
+                }
+            }
+        }
     }
 
-    //mobile smartphone
+    // mobile smartphone
+    @media(max-width: 619px){
+        .banner-agenda-info {
+            .lista-agenda{
+                .banner-lista-mobile{
+                    height: 35%;
+                }
+                .text-lista-mobile{
+                    height: 65%;
+                    padding: 3em;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 521px){
+        .banner-agenda-info {
+            .lista-agenda{
+                .banner-lista-mobile{
+                    .lista-mobile{
+                        //dimensões originais(334W x 308H) multiplica por 1,2 
+                        @include size(369.60px, 400.8px); 
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 457px){
+        .banner-agenda-info {
+            .lista-agenda{
+                .text-lista-mobile{
+                    padding: 20px;
+                    width: 100vw;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 301px){
+        .banner-agenda-info {
+            .lista-agenda{
+                .text-lista-mobile{
+                    @include f_size(large);
+                }
+            }
+        }
+    }
+   
 }
