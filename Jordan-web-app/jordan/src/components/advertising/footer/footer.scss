@@ -44,7 +44,7 @@
                 @include d_flex($flex, row, $center, end);
                 height: 30%;
 
-                .titles {
+                .banner-title {
                     @include f_size(x-large);
                     color: $third;
                 }

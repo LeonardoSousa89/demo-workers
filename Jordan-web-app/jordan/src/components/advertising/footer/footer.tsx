@@ -55,7 +55,7 @@ function Footer() {
       </div>
       <div className="contact">
         <div className="titulo">
-          <h2 className="titles">
+          <h2 className="banner-title">
             Acesse nossas redes sociais ou deixe um comentário!
           </h2>
         </div>
