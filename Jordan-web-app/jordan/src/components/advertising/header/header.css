@@ -1,17 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@media (max-width: 1444px) {
+  .header .banner .banner-text-mobile1 {
+    display: none; }
+  .header .banner .banner-text-mobile2 {
+    display: none; } }
+
 @media (max-width: 1024px) {
   .header {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background: rgba(25, 44, 84, 0.6);
     height: 16.67%; }
     .header .social-banner {
-      background: rgba(25, 44, 84, 0.6);
-      overflow: hidden;
       height: 100%;
-      width: 44.22%; }
+      width: 44.22%;
+      overflow: hidden; }
       .header .social-banner .social {
         height: 65.05%;
         width: 100%;
@@ -38,10 +44,9 @@
           height: 138.66px;
           width: 457.33px; }
     .header .app-access {
-      background: rgba(25, 44, 84, 0.6);
-      overflow: hidden;
       height: 100%;
-      width: 55.78%; }
+      width: 55.78%;
+      overflow: hidden; }
       .header .app-access .logo > img {
         height: 244.55px;
         width: 546.66px;
@@ -69,8 +74,35 @@
         .header .social-banner .social .social-container {
           width: 50%; }
       .header .social-banner .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
         background: rgba(25, 44, 84, 0.6);
         height: 75.54%; }
+        .header .social-banner .banner .banner-img-desktop {
+          display: none; }
+        .header .social-banner .banner .banner-text-mobile1 {
+          font-size: 45px;
+          font-weight: bold;
+          display: flex; }
+        .header .social-banner .banner .banner-text-mobile2 {
+          font-size: 45px;
+          font-weight: bold;
+          display: flex; }
     .header .app-access {
       height: 53.53%;
-      width: 100vw; } }
+      width: 100vw; }
+      .header .app-access .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .header .app-access .logo .banner-logo {
+          height: 157px;
+          width: 353px;
+          margin-bottom: 63px; } }
+
+@media (max-width: 641px) {
+  .header {
+    display: none; } }

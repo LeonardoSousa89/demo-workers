@@ -36,6 +36,7 @@
         height: 30%; }
         .footer .contact-desktop .titulo .title {
           color: #192c54;
+          font-size: x-large;
           font-size: x-large; }
       .footer .contact-desktop .form-social {
         height: 65%;
@@ -62,6 +63,7 @@
           .footer .contact-desktop .form-social .social .github {
             margin-top: 100px; }
       .footer .contact-desktop .copy {
+        font-size: small;
         font-size: small;
         display: flex;
         flex-direction: row;

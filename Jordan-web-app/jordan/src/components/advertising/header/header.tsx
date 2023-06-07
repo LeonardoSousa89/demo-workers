@@ -69,17 +69,25 @@ function Header() {
         </div>
 
         <div className="banner">
-          <Icon className="" src={Banner} alt="banner" />
+          <Icon className="banner-img-desktop" src={Banner} alt="banner" />
+          
+          {/* mobile */}
+          <div>
+            <h1 className="banner-text-mobile1">SUA AGENDA DIGITAL!</h1>
+            <h1 className="banner-text-mobile2"> IDEAL PARA SEU NEGÓCIO!</h1>
+          </div>
+          {/* mobile */}
+
         </div>
       </div>
 
       <div className="app-access">
         <div className="logo">
-          <Icon className="" src={Logo} alt="logo" />
+          <Icon className="banner-logo" src={Logo} alt="logo" />
         </div>
 
         <div className="acesse-aqui">
-          <Icon className="" src={Acesse_aqui} alt="logo" onClick={welcome} />
+          <Icon className="banner-acesse-aqui" src={Acesse_aqui} alt="logo" onClick={welcome} />
         </div>
 
       </div>

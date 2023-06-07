@@ -5,16 +5,24 @@
     //desktop
     @media(max-width: 1444px){
         //code here
+        .banner{
+            .banner-text-mobile1{
+                display: $none;
+            }
+            .banner-text-mobile2{
+                display: $none;
+            }
+        }
     }
     
     @media(max-width: 1024px) {
         @include d_flex($flex, row, $center, $center);
+        background: rgba(25, 44, 84, 0.6);
         height: 16.67%;
         
         .social-banner {
-            background: rgba(25, 44, 84, 0.6);
-            overflow: $hidden;
             @include size($hundred_percent, 44.22%);
+            overflow: $hidden;
 
             .social {
                 @include size(65.05%, $hundred_percent);
@@ -49,9 +57,8 @@
         }
 
         .app-access {
-            background: rgba(25, 44, 84, 0.6);
-            overflow: $hidden;
             @include size($hundred_percent, 55.78%);
+            overflow: $hidden;
 
             .logo>img {
                 //dimensões originais(656W x 293.47H) divisão por 1,2  
@@ -87,14 +94,44 @@
                 }
             }
             .banner{
+                @include d_flex($flex, column, $center, $center);
+                color: $light;
                 background: rgba(25, 44, 84, 0.6);
                 height: 75.54%;
+                .banner-img-desktop{
+                    display: $none;
+                }
+                .banner-text-mobile1{
+                    @include f_size(45px);
+                    font-weight: bold;
+                    display: $flex;
+                }
+                .banner-text-mobile2{
+                    @include f_size(45px);
+                    font-weight: bold;
+                    display: $flex;
+                }
             }
         }
         .app-access{
             @include size(53.53%, 100vw);
+            .logo{
+                display: $flex;
+                justify-content: $center;
+                align-items: $center;
+                .banner-logo{
+                    @include size(157px, 353px);
+                    margin-bottom: 63px;                   
+                }
+            }
+            .acesse-aqui{
+                // border: solid 1px darkmagenta;
+            }   
         }
     }
 
     //mobile smartphone
+    @media(max-width: 641px){
+        display: $none;
+    }
 }

@@ -69,4 +69,7 @@
     @if($font == larger){
         font-size: larger;
     }
+    @else{
+        font-size: $font;
+    }
 }
