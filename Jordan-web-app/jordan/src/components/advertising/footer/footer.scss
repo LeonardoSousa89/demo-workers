@@ -2,15 +2,19 @@
 
 .footer {
 
+    // border: solid 2px darkred;
+    
     //desktop
     @media(max-width: 1444px) {
+
+        height: 24.66%;
+        width: 100vw;
+
         //code here
     }
 
     @media(max-width:1024px) {
-        height: 24.66%;
         display: $flex;
-        overflow: $hidden;
         font-family: font();
         
         .play-store {
@@ -98,14 +102,40 @@
 
     //mobile tablet
     @media(max-width: 991px) {
+
         height: 36.34%;
+
+        flex-direction: column;
         .play-store{
-            display: $none;
+            // border: solid 2px darkcyan;
+            @include size(42.71%, 100vw);
+            .play{
+                @include size(266px, 686px);
+            }
+            .phone{
+                @include size(516px, 760px);
+            }
         }
         .contact{
-            display: $none;
+            // border: solid 2px darkred;
+            @include size(57.29%, 100vw);
+
         }
     }
 
     //mobile smartphone
+    @media(max-width: 769px){
+        // height: ;
+        .play-store{
+            .play{
+                @include size(127px, 326px);
+            }
+            .phone{
+                @include size(239px, 352px);
+            }
+        }
+        .contact{
+
+        }
+    }
 }

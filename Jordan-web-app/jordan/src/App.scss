@@ -11,10 +11,13 @@ body {
     .App {
 
         .advertising {
-            @media(max-width:1024px) {
+
+            //pcs largos e médios
+            @media(max-width:1444px) {
                 height: $desktop;
             }
 
+            //tablets e smartphones
             @media(max-width:991px) {
                 height: $mobile;
 

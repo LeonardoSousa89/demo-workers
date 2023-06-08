@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@media (max-width: 1024px) {
+@media (max-width: 1444px) {
   .footer {
     height: 24.66%;
+    width: 100vw; } }
+
+@media (max-width: 1024px) {
+  .footer {
     display: flex;
-    overflow: hidden;
     font-family: "Bebas Neue", sans-serif; }
     .footer .play-store {
       display: flex;
@@ -76,8 +79,25 @@
 
 @media (max-width: 991px) {
   .footer {
-    height: 36.34%; }
+    height: 36.34%;
+    flex-direction: column; }
     .footer .play-store {
-      display: none; }
+      height: 42.71%;
+      width: 100vw; }
+      .footer .play-store .play {
+        height: 266px;
+        width: 686px; }
+      .footer .play-store .phone {
+        height: 516px;
+        width: 760px; }
     .footer .contact {
-      display: none; } }
+      height: 57.29%;
+      width: 100vw; } }
+
+@media (max-width: 769px) {
+  .footer .play-store .play {
+    height: 127px;
+    width: 326px; }
+  .footer .play-store .phone {
+    height: 239px;
+    width: 352px; } }

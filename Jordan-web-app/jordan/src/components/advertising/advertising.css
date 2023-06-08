@@ -1,41 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @media (max-width: 1444px) {
-  .main .banner-lista-mobile {
-    display: none; }
-  .main .text-lista-mobile {
-    display: none; }
-  .main .mobile-titulo {
-    display: none; } }
+  .main {
+    height: 58.67%;
+    width: 100vw; }
+    .main .banner-lista-mobile {
+      display: none; }
+    .main .text-lista-mobile {
+      display: none; }
+    .main .mobile-titulo {
+      display: none; } }
 
 @media (max-width: 1024px) {
-  .main {
-    height: 58.67%; }
-    .main .banner-agenda-info {
-      overflow: hidden;
+  .main .banner-agenda-info {
+    overflow: hidden;
+    display: flex;
+    height: 54.33%;
+    background: rgba(25, 44, 84, 0.4); }
+    .main .banner-agenda-info .lista-agenda {
       display: flex;
-      height: 54.33%;
-      background: rgba(25, 44, 84, 0.4); }
-      .main .banner-agenda-info .lista-agenda {
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .main .banner-agenda-info .lista-agenda .lista {
-          height: 861.66px;
-          width: 1092.5px; }
-    .main .banner-relatorio-xslx-pdf {
-      background-color: rgba(25, 44, 84, 0.1);
-      height: 45.67%;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center; }
-      .main .banner-relatorio-xslx-pdf .icons {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 100px;
-        width: 80%; } }
+      .main .banner-agenda-info .lista-agenda .lista {
+        height: 861.66px;
+        width: 1092.5px; }
+  .main .banner-relatorio-xslx-pdf {
+    background-color: rgba(25, 44, 84, 0.1);
+    height: 45.67%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main .banner-relatorio-xslx-pdf .icons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 100px;
+      width: 80%; } }
 
 @media (max-width: 991px) {
   .main {
@@ -93,7 +94,7 @@
         height: 370px;
         width: 272px; } }
 
-@media (max-width: 619px) {
+@media (max-width: 769px) {
   .main .banner-agenda-info .lista-agenda .banner-lista-mobile {
     height: 35%; }
   .main .banner-agenda-info .lista-agenda .text-lista-mobile {

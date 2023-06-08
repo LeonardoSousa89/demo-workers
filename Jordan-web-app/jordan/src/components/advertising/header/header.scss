@@ -1,9 +1,15 @@
 @import '../../../styles/index.scss';
 
 .header {
-   
+    
+    // border: solid 2px darkblue;
+    
     //desktop
     @media(max-width: 1444px){
+
+        height: 16.67%;
+        width: 100vw;
+
         .banner{
             .banner-text-mobile1{
                 display: $none;
@@ -22,7 +28,6 @@
         // border: solid 3px red;
         @include d_flex($flex, row, $center, $center);
         background: rgba(25, 44, 84, 0.6);
-        height: 16.67%;
         
         .social-banner {
             // border: solid 3px darkblue;
@@ -100,6 +105,9 @@
     
     //mobile tablet
     @media(max-width: 991px) {
+
+        height: 13.09%;
+
         flex-direction: column-reverse;
         .social-banner{
             @include size(46.47%, 100vw);
@@ -152,7 +160,7 @@
     }
 
     //mobile smartphone
-    @media(max-width: 641px){
+    @media(max-width: 769px){
         .social-banner{
             
             .social{

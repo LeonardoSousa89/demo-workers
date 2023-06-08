@@ -49,16 +49,21 @@ function Footer() {
 
   return (
     <div className="footer">
+      
       <div className="play-store">
         <Icon className="play" src={Play} alt={"play"} onClick={play} />
         <Icon className="phone" src={Phone} alt={"phone"} />
       </div>
+
       <div className="contact">
+
         <div className="titulo">
+          
           <h2 className="banner-title">
             Acesse nossas redes sociais ou deixe um comentário!
           </h2>
         </div>
+
         <div className="form-social">
           <div className="form">
             <div className="formulary">
@@ -138,6 +143,7 @@ function Footer() {
             />
           </div>
         </div>
+        
         <div className="copy">
           <strong>
             &copy;2023 Jordan possui todos os seus direitos reservados.
