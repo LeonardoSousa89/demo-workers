@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @media (max-width: 1444px) {
   .header {
-    height: 16.67%;
-    width: 100vw; }
+    height: 16.67%; }
     .header .banner .banner-text-mobile1 {
       display: none; }
     .header .banner .banner-text-mobile2 {
@@ -114,17 +113,19 @@
         box-shadow: 0 0 5px #fff; } }
 
 @media (max-width: 769px) {
-  .header .social-banner .social .social-container {
-    width: 60%; }
-  .header .social-banner .banner .banner-text-mobile1 {
-    font-size: 35px; }
-  .header .social-banner .banner .banner-text-mobile2 {
-    font-size: 35px; }
-  .header .app-access .logo .banner-logo {
-    margin-top: 40%; }
-  .header .app-access .acesse-aqui .banner-acesse-aqui {
-    height: 97.12px;
-    width: 309.4px; } }
+  .header {
+    height: 11.66%; }
+    .header .social-banner .social .social-container {
+      width: 60%; }
+    .header .social-banner .banner .banner-text-mobile1 {
+      font-size: 35px; }
+    .header .social-banner .banner .banner-text-mobile2 {
+      font-size: 35px; }
+    .header .app-access .logo .banner-logo {
+      margin-top: 40%; }
+    .header .app-access .acesse-aqui .banner-acesse-aqui {
+      height: 97.12px;
+      width: 309.4px; } }
 
 @media (max-width: 641px) and (orientation: landscape) {
   .header .logo {

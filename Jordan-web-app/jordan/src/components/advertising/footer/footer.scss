@@ -8,7 +8,6 @@
     @media(max-width: 1444px) {
 
         height: 24.66%;
-        width: 100vw;
 
         //code here
     }
@@ -125,7 +124,9 @@
 
     //mobile smartphone
     @media(max-width: 769px){
-        // height: ;
+        
+        height: 40.44%;
+
         .play-store{
             .play{
                 @include size(127px, 326px);

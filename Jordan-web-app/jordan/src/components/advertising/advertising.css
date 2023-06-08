@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @media (max-width: 1444px) {
   .main {
-    height: 58.67%;
-    width: 100vw; }
+    height: 58.67%; }
     .main .banner-lista-mobile {
       display: none; }
     .main .text-lista-mobile {
@@ -95,11 +94,13 @@
         width: 272px; } }
 
 @media (max-width: 769px) {
-  .main .banner-agenda-info .lista-agenda .banner-lista-mobile {
-    height: 35%; }
-  .main .banner-agenda-info .lista-agenda .text-lista-mobile {
-    height: 65%;
-    padding: 3em; } }
+  .main {
+    height: 47.9%; }
+    .main .banner-agenda-info .lista-agenda .banner-lista-mobile {
+      height: 35%; }
+    .main .banner-agenda-info .lista-agenda .text-lista-mobile {
+      height: 65%;
+      padding: 3em; } }
 
 @media (max-width: 521px) {
   .main .banner-agenda-info .lista-agenda .banner-lista-mobile .lista-mobile {

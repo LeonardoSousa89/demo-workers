@@ -8,7 +8,6 @@
     @media(max-width: 1444px) {
 
         height: 58.67%;
-        width: 100vw;
 
         .banner-lista-mobile {
             display: $none;
@@ -144,6 +143,9 @@
 
     // mobile smartphone
     @media(max-width: 769px) {
+
+        height: 47.9%;
+
         .banner-agenda-info {
             .lista-agenda {
                 .banner-lista-mobile {
