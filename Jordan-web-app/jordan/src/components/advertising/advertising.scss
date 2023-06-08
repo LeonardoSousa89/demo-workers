@@ -1,37 +1,45 @@
 @import '../../styles/index.scss';
 
 .main {
-    
+
     //desktop
-    @media(max-width: 1444px){
-        .banner-lista-mobile{
+    @media(max-width: 1444px) {
+        .banner-lista-mobile {
             display: $none;
         }
-        .text-lista-mobile{
+
+        .text-lista-mobile {
+            display: $none;
+        }
+
+        .mobile-titulo {
             display: $none;
         }
     }
-    
+
     @media(max-width: 1024px) {
         height: 58.67%;
+
         .banner-agenda-info {
             overflow: $hidden;
             display: $flex;
             height: 54.33%;
             background: rgba(25, 44, 84, 0.4);
-           .lista-agenda{
+
+            .lista-agenda {
                 display: $flex;
                 justify-content: $center;
                 align-items: $center;
-                .lista{
+
+                .lista {
                     //dimensões originais(1311W x 1034.91H) divisão por 1,2  
                     @include size(861.66px, 1092.5px);
                 }
-           }
+            }
         }
 
         .banner-relatorio-xslx-pdf {
-            background-color: rgba(25, 44, 84, 0.1);    
+            background-color: rgba(25, 44, 84, 0.1);
             height: 45.67%;
             overflow: $hidden;
             @include d_flex($flex, column, $center, $center);
@@ -50,21 +58,26 @@
     //mobile tablet
     @media(max-width: 991px) {
         height: 50.57%;
+
         .banner-agenda-info {
-            background:rgba(25, 44, 84, 0.4);
-            .lista-agenda{
+            background: rgba(25, 44, 84, 0.4);
+
+            .lista-agenda {
                 flex-direction: column;
-                .lista{
+
+                .lista {
                     display: $none;
                 }
-                .banner-lista-mobile{
+
+                .banner-lista-mobile {
                     display: $flex;
                     justify-content: $center;
                     align-items: $center;
                     height: 50%;
                     width: 100vw;
                 }
-                .text-lista-mobile{
+
+                .text-lista-mobile {
                     @include f_size(xx-large);
                     display: $flex;
                     flex-direction: column;
@@ -73,24 +86,65 @@
                     display: $flex;
                     font-weight: bold;
                     height: 50%;
-                    li{
-                        background: rgba(25, 44, 84, 0.8);
+
+                    li {
                         padding: 10px;
-                        box-shadow: 0 0 10px $light;
                     }
+                }
+            }
+        }
+
+        .banner-relatorio-xslx-pdf {
+            // border: solid 2px brown;
+
+            .titulo {
+                // border: solid 1px red;
+                @include size(10%, 100vw);
+
+                .desktop-titulo {
+                    display: $none;
+                }
+
+                .mobile-titulo {
+                    display: block;
+                    text-align: $center;
+                    position: relative;
+                    top: 70%;
+
+                    h2 {
+                        @include f_size(x-large);
+                        color: $third;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .icons {
+                @include d_flex($flex, column, space-evenly, $center);
+                // border: solid 1px orangered;
+                height: 90%;
+                width: 100vw;
+
+                .pdf {
+                    @include size(333px, 333px);
+                }
+
+                .xlsx {
+                    @include size(370px, 272px);
                 }
             }
         }
     }
 
     // mobile smartphone
-    @media(max-width: 619px){
+    @media(max-width: 619px) {
         .banner-agenda-info {
-            .lista-agenda{
-                .banner-lista-mobile{
+            .lista-agenda {
+                .banner-lista-mobile {
                     height: 35%;
                 }
-                .text-lista-mobile{
+
+                .text-lista-mobile {
                     height: 65%;
                     padding: 3em;
                 }
@@ -98,23 +152,23 @@
         }
     }
 
-    @media(max-width: 521px){
+    @media(max-width: 521px) {
         .banner-agenda-info {
-            .lista-agenda{
-                .banner-lista-mobile{
-                    .lista-mobile{
+            .lista-agenda {
+                .banner-lista-mobile {
+                    .lista-mobile {
                         //dimensões originais(334W x 308H) multiplica por 1,2 
-                        @include size(369.60px, 400.8px); 
+                        @include size(369.60px, 400.8px);
                     }
                 }
             }
         }
     }
 
-    @media(max-width: 457px){
+    @media(max-width: 457px) {
         .banner-agenda-info {
-            .lista-agenda{
-                .text-lista-mobile{
+            .lista-agenda {
+                .text-lista-mobile {
                     padding: 20px;
                     width: 100vw;
                 }
@@ -122,14 +176,14 @@
         }
     }
 
-    @media(max-width: 301px){
+    @media(max-width: 301px) {
         .banner-agenda-info {
-            .lista-agenda{
-                .text-lista-mobile{
+            .lista-agenda {
+                .text-lista-mobile {
                     @include f_size(large);
                 }
             }
         }
     }
-   
+
 }

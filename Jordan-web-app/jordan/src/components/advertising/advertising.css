@@ -4,6 +4,8 @@
   .main .banner-lista-mobile {
     display: none; }
   .main .text-lista-mobile {
+    display: none; }
+  .main .mobile-titulo {
     display: none; } }
 
 @media (max-width: 1024px) {
@@ -61,9 +63,35 @@
           font-weight: bold;
           height: 50%; }
           .main .banner-agenda-info .lista-agenda .text-lista-mobile li {
-            background: rgba(25, 44, 84, 0.8);
-            padding: 10px;
-            box-shadow: 0 0 10px #fff; } }
+            padding: 10px; }
+    .main .banner-relatorio-xslx-pdf .titulo {
+      height: 10%;
+      width: 100vw; }
+      .main .banner-relatorio-xslx-pdf .titulo .desktop-titulo {
+        display: none; }
+      .main .banner-relatorio-xslx-pdf .titulo .mobile-titulo {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 70%; }
+        .main .banner-relatorio-xslx-pdf .titulo .mobile-titulo h2 {
+          font-size: x-large;
+          font-size: x-large;
+          color: #192c54;
+          font-weight: bold; }
+    .main .banner-relatorio-xslx-pdf .icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 90%;
+      width: 100vw; }
+      .main .banner-relatorio-xslx-pdf .icons .pdf {
+        height: 333px;
+        width: 333px; }
+      .main .banner-relatorio-xslx-pdf .icons .xlsx {
+        height: 370px;
+        width: 272px; } }
 
 @media (max-width: 619px) {
   .main .banner-agenda-info .lista-agenda .banner-lista-mobile {

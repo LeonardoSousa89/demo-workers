@@ -16,6 +16,7 @@ function Advertising() {
     <div className="advertising">
       <Header />
       <div className="main">
+
         <div className="banner-agenda-info">
          <div className="lista-agenda">
             
@@ -29,12 +30,10 @@ function Advertising() {
             {/* mobile */}
             <div className="banner-lista-mobile">
 
-            {/* tablet banner */}
               <Icon 
                 className="lista-mobile" 
                 src={Lista_tablet} 
                 alt="banner agenda" />
-             {/* tablet banner */}
 
             </div>
 
@@ -51,15 +50,29 @@ function Advertising() {
 
          </div>
         </div>
+
         <div className="banner-relatorio-xslx-pdf">
+          
           <div className="titulo">
-              <img src={Titulo} alt="titulo" />
+              
+              {/* desktop */}
+              <Icon className="desktop-titulo" src={Titulo} alt="titulo" />
+              {/* desktop */}
+
+              {/* mobile */}
+              <div className="mobile-titulo">
+                <h2>GERE RELATÓRIOS E ANOTAÇÕES EM PDF OU XLSX!</h2>
+              </div>
+              {/* mobile */}
           </div>
+          
           <div className="icons"> 
-            <img src={Pdf} alt="icone pdf" />
-            <img src={Xslx} alt="icone excel" />
+            <Icon className="pdf" src={Pdf} alt="icone pdf" />
+            <Icon className="xlsx" src={Xslx} alt="icone excel" />
           </div>
+
         </div>
+
       </div>
       <Footer />
     </div>
