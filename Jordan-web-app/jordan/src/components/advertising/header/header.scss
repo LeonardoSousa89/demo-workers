@@ -1,10 +1,9 @@
 @import '../../../styles/index.scss';
 
 .header {
-     
+   
     //desktop
     @media(max-width: 1444px){
-
         .banner{
             .banner-text-mobile1{
                 display: $none;
@@ -13,33 +12,38 @@
                 display: $none;
             }
         }
-
+        
         .solid{
             display: $none;
         }
     }
     
     @media(max-width: 1024px) {
+        // border: solid 3px red;
         @include d_flex($flex, row, $center, $center);
         background: rgba(25, 44, 84, 0.6);
         height: 16.67%;
         
         .social-banner {
+            // border: solid 3px darkblue;
             @include size($hundred_percent, 44.22%);
             overflow: $hidden;
 
             .social {
+                // border: solid 3px darkgoldenrod;
                 @include size(65.05%, $hundred_percent);
                 display: $flex;
                 align-items: $center;
                 justify-content: $center;
 
                 .social-container {
+                    // border: solid 3px darkkhaki;
                     display: $flex;
                     justify-content: space-evenly;
                     width: 80%;
                     
                     img {
+                        // border: solid 3px darkmagenta;
                         cursor: $pointer;
                         &:hover{
                             opacity: 0.8;
@@ -49,10 +53,12 @@
             }
 
             .banner {
+                // border: solid 3px darkcyan;
                 @include size(34.95%, $hundred_percent);
                 @include d_flex($flex, row, flex-end, end);
 
                 img {
+                    // border: solid 3px darkgrey;
                     width: 100%;
                     //dimensões originais(636.87W x 209.05H) divisão por 1,5   
                     @include size(138.66px, 457.33px);
@@ -61,10 +67,12 @@
         }
 
         .app-access {
+            // border: solid 3px darkgreen;
             @include size($hundred_percent, 55.78%);
             overflow: $hidden;
 
             .logo {
+                // border: solid 3px darkorchid;
                 .banner-logo{
                     //dimensões originais(656W x 293.47H) divisão por 1,2  
                     @include size(244.55px, 546.66px);
@@ -73,8 +81,10 @@
             }
 
             .acesse-aqui {
+                // border: solid 3px darkorange;
                 @include d_flex($flex, row, $center, $center);
                 img {
+                    // border: solid 3px darkred;
                     cursor: $pointer;
                     //dimensões originais(446W x 140.71H) divisão por 1,2  
                     @include size(117.25px, 371.66px);
@@ -87,7 +97,7 @@
         }
 
     }
-
+    
     //mobile tablet
     @media(max-width: 991px) {
         flex-direction: column-reverse;
@@ -126,6 +136,7 @@
                 justify-content: $center;
                 align-items: $center;
                 .banner-logo{
+
                     @include size(157px, 353px);
                     margin-bottom: 63px;                   
                 }
