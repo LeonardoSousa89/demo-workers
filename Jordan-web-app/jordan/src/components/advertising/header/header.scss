@@ -6,7 +6,19 @@
     @media(max-width: 1444px){
 
         height: 16.67%;
-
+        .social-banner{
+            .social{
+                .social-container{
+                    .github,
+                    .linkedin,
+                    .instagram,
+                    .facebook,
+                    .youtube{
+                        @include size(50px, 50px);
+                    }
+                }
+            }
+        }
         .banner{
             .banner-text-mobile1{
                 display: $none;

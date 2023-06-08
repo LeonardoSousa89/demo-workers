@@ -3,6 +3,13 @@
 @media (max-width: 1444px) {
   .header {
     height: 16.67%; }
+    .header .social-banner .social .social-container .github,
+    .header .social-banner .social .social-container .linkedin,
+    .header .social-banner .social .social-container .instagram,
+    .header .social-banner .social .social-container .facebook,
+    .header .social-banner .social .social-container .youtube {
+      height: 50px;
+      width: 50px; }
     .header .banner .banner-text-mobile1 {
       display: none; }
     .header .banner .banner-text-mobile2 {

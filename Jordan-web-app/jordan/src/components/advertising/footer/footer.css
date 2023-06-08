@@ -2,7 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @media (max-width: 1444px) {
   .footer {
-    height: 24.66%; } }
+    height: 24.66%; }
+    .footer .contact .form-social .social .github,
+    .footer .contact .form-social .social .facebook,
+    .footer .contact .form-social .social .linkedin,
+    .footer .contact .form-social .social .instagram,
+    .footer .contact .form-social .social .youtube {
+      height: 50px;
+      width: 50px; } }
 
 @media (max-width: 1024px) {
   .footer {
