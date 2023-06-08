@@ -2,9 +2,7 @@
 
 .main {
 
-    // border: solid 2px darkgoldenrod;
-    
-    //desktop
+    //desktop ...
     @media(max-width: 1444px) {
 
         height: 58.67%;
@@ -59,7 +57,7 @@
         }
     }
 
-    //mobile tablet
+    //mobile tablet ...
     @media(max-width: 991px) {
 
         height: 50.57%;
@@ -100,10 +98,9 @@
         }
 
         .banner-relatorio-xslx-pdf {
-            // border: solid 2px brown;
 
             .titulo {
-                // border: solid 1px red;
+
                 @include size(10%, 100vw);
 
                 .desktop-titulo {
@@ -115,6 +112,7 @@
                     text-align: $center;
                     position: relative;
                     top: 70%;
+                    padding: 10px;
 
                     h2 {
                         @include f_size(x-large);
@@ -125,8 +123,9 @@
             }
 
             .icons {
+
                 @include d_flex($flex, column, space-evenly, $center);
-                // border: solid 1px orangered;
+
                 height: 90%;
                 width: 100vw;
 
@@ -141,13 +140,15 @@
         }
     }
 
-    // mobile smartphone
+    // mobile smartphone ...
     @media(max-width: 769px) {
 
         height: 47.9%;
 
         .banner-agenda-info {
+
             .lista-agenda {
+
                 .banner-lista-mobile {
                     height: 35%;
                 }
@@ -162,9 +163,13 @@
 
     @media(max-width: 521px) {
         .banner-agenda-info {
+
             .lista-agenda {
+
                 .banner-lista-mobile {
+
                     .lista-mobile {
+
                         //dimensões originais(334W x 308H) multiplica por 1,2 
                         @include size(369.60px, 400.8px);
                     }
@@ -174,9 +179,13 @@
     }
 
     @media(max-width: 457px) {
+
         .banner-agenda-info {
+
             .lista-agenda {
+
                 .text-lista-mobile {
+
                     padding: 20px;
                     width: 100vw;
                 }

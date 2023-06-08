@@ -11,7 +11,7 @@ body .App .advertising {
       height: 3568px; } }
   @media (max-width: 991px) {
     body .App .advertising {
-      height: 7452px; } }
+      height: 7000px; } }
 
 @media (max-width: 1444px) {
   body .App .welcome {

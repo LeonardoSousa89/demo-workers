@@ -65,8 +65,8 @@
           .footer .contact .form-social .social .github {
             margin-top: 100px; }
       .footer .contact .copy {
-        font-size: small;
-        font-size: small;
+        font-size: large;
+        font-size: large;
         display: flex;
         flex-direction: row;
         justify-content: end;
@@ -91,14 +91,57 @@
         width: 760px; }
     .footer .contact {
       height: 57.29%;
-      width: 100vw; } }
+      width: 100vw; }
+      .footer .contact .titulo {
+        padding: 20px;
+        height: 10%; }
+      .footer .contact .form-social {
+        flex-direction: column;
+        height: 85%; }
+        .footer .contact .form-social .form {
+          width: 100%;
+          padding: 100px; }
+        .footer .contact .form-social .social {
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          padding: 0; }
+          .footer .contact .form-social .social .github,
+          .footer .contact .form-social .social .facebook,
+          .footer .contact .form-social .social .linkedin,
+          .footer .contact .form-social .social .instagram,
+          .footer .contact .form-social .social .youtube {
+            height: 80px;
+            width: 80px; }
+          .footer .contact .form-social .social .github {
+            margin: 0; }
+      .footer .contact .copy {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        .footer .contact .copy strong {
+          margin: 0; } }
 
 @media (max-width: 769px) {
   .footer {
     height: 40.44%; }
-    .footer .play-store .play {
-      height: 127px;
-      width: 326px; }
-    .footer .play-store .phone {
-      height: 239px;
-      width: 352px; } }
+    .footer .play-store {
+      height: 21.40%; }
+      .footer .play-store .play {
+        height: 127px;
+        width: 326px; }
+      .footer .play-store .phone {
+        height: 239px;
+        width: 352px; }
+    .footer .contact {
+      height: 78.6%; }
+      .footer .contact .form-social .form {
+        padding: 60px; }
+      .footer .contact .form-social .social .github,
+      .footer .contact .form-social .social .facebook,
+      .footer .contact .form-social .social .linkedin,
+      .footer .contact .form-social .social .instagram,
+      .footer .contact .form-social .social .youtube {
+        height: 120px;
+        width: 120px; } }

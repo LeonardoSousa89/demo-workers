@@ -2,8 +2,6 @@
 
 .header {
     
-    // border: solid 2px darkblue;
-    
     //desktop
     @media(max-width: 1444px){
 
@@ -18,37 +16,37 @@
             }
         }
         
-        .solid{
-            display: $none;
-        }
     }
     
     @media(max-width: 1024px) {
-        // border: solid 3px red;
+
         @include d_flex($flex, row, $center, $center);
         background: rgba(25, 44, 84, 0.6);
         
         .social-banner {
-            // border: solid 3px darkblue;
+          
             @include size($hundred_percent, 44.22%);
+
             overflow: $hidden;
 
             .social {
-                // border: solid 3px darkgoldenrod;
+         
                 @include size(65.05%, $hundred_percent);
+
                 display: $flex;
                 align-items: $center;
                 justify-content: $center;
 
                 .social-container {
-                    // border: solid 3px darkkhaki;
+                
                     display: $flex;
                     justify-content: space-evenly;
                     width: 80%;
                     
                     img {
-                        // border: solid 3px darkmagenta;
+                       
                         cursor: $pointer;
+
                         &:hover{
                             opacity: 0.8;
                         }
@@ -57,12 +55,13 @@
             }
 
             .banner {
-                // border: solid 3px darkcyan;
+              
                 @include size(34.95%, $hundred_percent);
+
                 @include d_flex($flex, row, flex-end, end);
 
                 img {
-                    // border: solid 3px darkgrey;
+                
                     width: 100%;
                     //dimensões originais(636.87W x 209.05H) divisão por 1,5   
                     @include size(138.66px, 457.33px);
@@ -71,12 +70,13 @@
         }
 
         .app-access {
-            // border: solid 3px darkgreen;
+           
             @include size($hundred_percent, 55.78%);
+
             overflow: $hidden;
 
             .logo {
-                // border: solid 3px darkorchid;
+             
                 .banner-logo{
                     //dimensões originais(656W x 293.47H) divisão por 1,2  
                     @include size(244.55px, 546.66px);
@@ -85,11 +85,13 @@
             }
 
             .acesse-aqui {
-                // border: solid 3px darkorange;
+                
                 @include d_flex($flex, row, $center, $center);
+
                 img {
-                    // border: solid 3px darkred;
+                   
                     cursor: $pointer;
+
                     //dimensões originais(446W x 140.71H) divisão por 1,2  
                     @include size(117.25px, 371.66px);
 
@@ -109,52 +111,63 @@
 
         flex-direction: column-reverse;
         .social-banner{
+
             @include size(46.47%, 100vw);
+
             .social{
+
                 height: 24.46%;
+
                 .social-container{
+
                     width: 50%;
                 }
             }
             .banner{
+
                 @include d_flex($flex, column, $center, $center);
+
                 color: $light;
                 background: rgba(25, 44, 84, 0.6);
                 height: 75.54%;
+
                 .banner-img-desktop{
+
                     display: $none;
                 }
                 .banner-text-mobile1{
+
                     @include f_size(45px);
+
                     font-weight: bold;
                     display: $flex;
                 }
                 .banner-text-mobile2{
+
                     @include f_size(45px);
+
                     font-weight: bold;
                     display: $flex;
                 }
             }
         }
         .app-access{
+
             @include size(53.53%, 100vw);
+
             .logo{
                 display: $flex;
                 justify-content: $center;
                 align-items: $center;
+
                 .banner-logo{
 
                     @include size(157px, 353px);
-                    margin-bottom: 63px;                   
+
+                    // margin-bottom: 63px;                   
                 }
             }
 
-            .solid{
-                color: $light;
-                display: block;
-                margin-top: 20%;
-                box-shadow: 0 0 5px $light;
-            }
         }
     }
 
@@ -162,89 +175,7 @@
     @media(max-width: 769px){
 
         height: 11.66%;
-
-        .social-banner{
-            
-            .social{
-                .social-container{
-                    width: 60%;
-                }
-            }
-
-            .banner{
-                .banner-text-mobile1{
-                    @include f_size(35px);
-                }
-                .banner-text-mobile2{
-                    @include f_size(35px);
-                }
-            }
-        }
-
-        .app-access{
-            .logo{
-                .banner-logo{
-                    margin-top: 40%;
-                }
-            }
-            .acesse-aqui{
-                .banner-acesse-aqui{
-                    @include size(97.12px, 309.4px);
-                }
-            }
-        }
-
-    }
-
-    @media(max-width: 641px) and (orientation: landscape){
-        .logo{
-            height: 50%;
-        }
-    }
-
-    @media(max-width: 501px){
-        .social-banner{
-            
-            .social{
-                align-items: flex-start;
-                .social-container{
-                    width: 100%;
-                }
-            }
-
-            .banner{
-                padding: 10%;
-                text-align: $center;
-                .banner-text-mobile1{
-                    margin-bottom: 50px;
-                }
-            }
-        }
-
-        .app-access{
-            .logo{
-                .banner-logo{
-                    @include size(128px, 287px);
-                }
-            }
-
-        }
-    }
-
-    @media(max-width: 476px){
-        .app-access{
-            .solid{
-                margin-top: 30%;
-            }
-        }
-    }
-
-    @media(max-width: 361px){
-        .app-access{
-            .solid{
-                margin-top: 40%;
-            }
-        }
+       
     }
     
 }

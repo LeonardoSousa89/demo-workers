@@ -73,7 +73,8 @@
         display: block;
         text-align: center;
         position: relative;
-        top: 70%; }
+        top: 70%;
+        padding: 10px; }
         .main .banner-relatorio-xslx-pdf .titulo .mobile-titulo h2 {
           font-size: x-large;
           font-size: x-large;

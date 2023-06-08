@@ -2,25 +2,21 @@
 
 .footer {
 
-    // border: solid 2px darkred;
-    
     //desktop
     @media(max-width: 1444px) {
 
         height: 24.66%;
-
-        //code here
     }
 
     @media(max-width:1024px) {
         display: $flex;
         font-family: font();
-        
+
         .play-store {
             @include d_flex($flex, column, $center, $center);
             width: 43.66%;
             background-image: url("../../../assets/advertising/footer/Rectangle\ 4.png");
-            
+
             .play {
                 //dimensões originais(410W x 159.8H) divisão por 1.2
                 @include size(133.16px, 341.66px);
@@ -32,17 +28,17 @@
                     @include size(146.47px, 375.82px);
                 }
             }
-            
+
             .phone {
                 //dimensões originais(523W x 355H) divisão por 1.2
                 @include size(295.83px, 435.83px);
                 margin-top: $hundred_pixel;
             }
         }
-        
+
         .contact {
             width: 56.34%;
-            
+
             .titulo {
                 @include d_flex($flex, row, $center, end);
                 height: 30%;
@@ -87,7 +83,7 @@
             }
 
             .copy {
-                @include f_size(small);
+                @include f_size(large);
                 @include d_flex($flex, row, end, start);
                 height: 5%;
                 color: $third;
@@ -103,40 +99,106 @@
     @media(max-width: 991px) {
 
         height: 36.34%;
-
         flex-direction: column;
-        .play-store{
-            // border: solid 2px darkcyan;
+
+        .play-store {
             @include size(42.71%, 100vw);
-            .play{
+
+            .play {
                 @include size(266px, 686px);
             }
-            .phone{
+
+            .phone {
                 @include size(516px, 760px);
             }
         }
-        .contact{
-            // border: solid 2px darkred;
+
+        .contact {
             @include size(57.29%, 100vw);
+
+            .titulo {
+                padding: 20px;
+                height: 10%;
+            }
+
+            .form-social {
+                flex-direction: column;
+                height: 85%;
+
+                .form {
+                    width: 100%;
+                    padding: 100px;
+                }
+
+                .social {
+
+                    width: 100%;
+                    justify-content: $center;
+                    align-items: $center;
+                    padding: 0;
+
+                    .github,
+                    .facebook,
+                    .linkedin,
+                    .instagram,
+                    .youtube {
+                        @include size(80px, 80px);
+                    }
+
+                    .github {
+                        margin: 0;
+                    }
+
+                }
+            }
+
+            .copy {
+                @include d_flex($flex, row, $center, $center);
+                strong {
+                    margin: 0;
+                }
+            }
 
         }
     }
 
     //mobile smartphone
-    @media(max-width: 769px){
-        
+    @media(max-width: 769px) {
+
         height: 40.44%;
 
-        .play-store{
-            .play{
+        .play-store {
+
+            height: 21.40%;
+            .play {
                 @include size(127px, 326px);
             }
-            .phone{
+
+            .phone {
                 @include size(239px, 352px);
             }
         }
-        .contact{
 
+        .contact {
+
+            height: 78.6%;
+
+            .form-social {
+                .form {
+                    padding: 60px;
+                }
+                .social {
+
+                    .github,
+                    .facebook,
+                    .linkedin,
+                    .instagram,
+                    .youtube {
+                        @include size(120px, 120px);
+                    }
+
+                }
+            }
         }
     }
 }

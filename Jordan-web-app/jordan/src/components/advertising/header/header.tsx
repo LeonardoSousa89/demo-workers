@@ -92,8 +92,6 @@ function Header() {
           <Icon className="banner-acesse-aqui" src={Acesse_aqui} alt="logo" onClick={welcome} />
         </div>
 
-        <hr className="solid"></hr>
-
       </div>
     </div>
   );
