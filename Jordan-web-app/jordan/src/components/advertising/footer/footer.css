@@ -99,9 +99,13 @@
         flex-direction: column;
         height: 85%; }
         .footer .contact .form-social .form {
+          height: 30%;
           width: 100%;
-          padding: 100px; }
+          padding: 120px; }
+          .footer .contact .form-social .form .formulary {
+            margin: 0; }
         .footer .contact .form-social .social {
+          height: 70%;
           width: 100%;
           justify-content: center;
           align-items: center;
@@ -144,4 +148,5 @@
       .footer .contact .form-social .social .instagram,
       .footer .contact .form-social .social .youtube {
         height: 120px;
-        width: 120px; } }
+        width: 120px;
+        margin-bottom: 50px; } }

@@ -9,11 +9,11 @@ import { toast } from "react-toastify";
 
 import Play from "../../../assets/advertising/footer/pt-br_badge_web_generic (1).png";
 import Phone from "../../../assets/advertising/footer/5-smartphone-png-image 1.png";
-import Github from "../../../assets/advertising/header/github.png";
-import Instagram from "../../../assets/advertising/header/instagram.png";
+import Github from "../../../assets/global/github.png";
+import Instagram from "../../../assets/global/instagram.png";
 import Facebook from "../../../assets/advertising/header/facebook.png";
-import Linkedin from "../../../assets/advertising/header/linkedin.png";
-import Youtube from "../../../assets/advertising/header/youtube.png";
+import Linkedin from "../../../assets/global/linkedin.png";
+import Youtube from "../../../assets/global/youtube.png";
 
 import { useEffect, useState } from "react";
 
@@ -103,7 +103,7 @@ function Footer() {
 
               <Button
                 variant="primary"
-                style={{ width: "100%", color: "#192c54" }}
+                style={{ width: "100%", color: "#192c54", fontSize: "large" }}
                 onClick={sendComment}
               >
                 enviar
