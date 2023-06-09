@@ -176,7 +176,6 @@
 
                     @include size(157px, 353px);
 
-                    // margin-bottom: 63px;                   
                 }
             }
 
@@ -188,6 +187,65 @@
 
         height: 11.66%;
        
+        
+        .social-banner{
+
+            height: 58.11%;
+
+            .banner{
+                
+                padding: 25px;
+            }
+        }
+        .app-access{ 
+            
+            height: 41.89%;
+
+            padding: 50px;
+
+            .logo{
+
+                .banner-logo{
+                    margin: 0;
+                    @include size(128px, 287px);
+                }
+            }
+
+            .acesse-aqui{
+                .banner-acesse-aqui{
+                    @include size(81.61px, 260px);
+                }
+            }
+
+        }
     }
+
+    @media(max-width: 576px){
+
+        .social-banner{
+  
+
+            .banner{
+
+                text-align: center;
+
+                div{
+                    .banner-text-mobile1,
+                    .banner-text-mobile2{
+                        
+                        @include f_size(35px);
+                        margin: 40px 0px;
+                    }
+                }
+            }
+            .social{
+                .social-container{
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+
     
 }

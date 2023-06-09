@@ -225,4 +225,18 @@
             }
         }
     }
+
+    @media(max-width: 576px){
+
+        .contact {
+
+            .form-social{
+                
+                .social{
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+    
 }

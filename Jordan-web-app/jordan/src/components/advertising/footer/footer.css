@@ -157,3 +157,7 @@
         height: 120px;
         width: 120px;
         margin-bottom: 50px; } }
+
+@media (max-width: 576px) {
+  .footer .contact .form-social .social {
+    justify-content: space-between; } }
