@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @media (max-width: 1444px) {
   .main {
+    border: solid 5px darkcyan;
     height: 58.67%; }
     .main .banner-lista-mobile {
       display: none; }

@@ -2,26 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @media (max-width: 1444px) {
   .header {
-    height: 16.67%; }
-    .header .social-banner .social .social-container .github,
-    .header .social-banner .social .social-container .linkedin,
-    .header .social-banner .social .social-container .instagram,
-    .header .social-banner .social .social-container .facebook,
-    .header .social-banner .social .social-container .youtube {
-      height: 50px;
-      width: 50px; }
-    .header .banner .banner-text-mobile1 {
-      display: none; }
-    .header .banner .banner-text-mobile2 {
-      display: none; } }
-
-@media (max-width: 1024px) {
-  .header {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: rgba(25, 44, 84, 0.6); }
+    height: 16.67%;
+    background: rgba(25, 44, 84, 0.6);
+    overflow: hidden; }
     .header .social-banner {
       height: 100%;
       width: 44.22%;
@@ -36,40 +23,56 @@
           display: flex;
           justify-content: space-evenly;
           width: 80%; }
-          .header .social-banner .social .social-container img {
-            cursor: pointer; }
-            .header .social-banner .social .social-container img:hover {
-              opacity: 0.8; }
+          .header .social-banner .social .social-container .github,
+          .header .social-banner .social .social-container .linkedin,
+          .header .social-banner .social .social-container .instagram,
+          .header .social-banner .social .social-container .facebook,
+          .header .social-banner .social .social-container .youtube {
+            height: 50px;
+            width: 50px; }
       .header .social-banner .banner {
         height: 34.95%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: end; }
-        .header .social-banner .banner img {
-          width: 100%;
-          height: 138.66px;
-          width: 457.33px; }
+        width: 100%; }
+        .header .social-banner .banner .banner-text-mobile1 {
+          display: none; }
+        .header .social-banner .banner .banner-text-mobile2 {
+          display: none; }
     .header .app-access {
       height: 100%;
-      width: 55.78%;
-      overflow: hidden; }
-      .header .app-access .logo .banner-logo {
-        height: 244.55px;
-        width: 546.66px;
-        margin-top: 20%; }
-      .header .app-access .acesse-aqui {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center; }
-        .header .app-access .acesse-aqui img {
-          cursor: pointer;
-          height: 117.25px;
-          width: 371.66px; }
-          .header .app-access .acesse-aqui img:hover {
-            background: rgba(0, 0, 0, 0.4); } }
+      width: 55.78%; } }
+
+@media (max-width: 1024px) {
+  .header .social-banner .social .social-container img {
+    cursor: pointer; }
+    .header .social-banner .social .social-container img:hover {
+      opacity: 0.8; }
+  .header .social-banner .banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: end; }
+    .header .social-banner .banner img {
+      width: 100%;
+      height: 138.66px;
+      width: 457.33px; }
+  .header .app-access {
+    height: 100%;
+    width: 55.78%; }
+    .header .app-access .logo .banner-logo {
+      height: 244.55px;
+      width: 546.66px;
+      margin-top: 20%; }
+    .header .app-access .acesse-aqui {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .header .app-access .acesse-aqui img {
+        cursor: pointer;
+        height: 117.25px;
+        width: 371.66px; }
+        .header .app-access .acesse-aqui img:hover {
+          background: rgba(0, 0, 0, 0.4); } }
 
 @media (max-width: 991px) {
   .header {

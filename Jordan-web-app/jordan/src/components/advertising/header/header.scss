@@ -4,11 +4,34 @@
     
     //desktop
     @media(max-width: 1444px){
+        // border: solid 5px darkred;
+        @include d_flex($flex, row, $center, $center);
 
         height: 16.67%;
+
+        background: rgba(25, 44, 84, 0.6);
+        overflow: $hidden;
+
         .social-banner{
+            // border: solid 5px darkblue;
+            @include size($hundred_percent, 44.22%);
+
+            overflow: $hidden;
+
             .social{
+                // border: solid 5px darkkhaki;
+                @include size(65.05%, $hundred_percent);
+
+                display: $flex;
+                align-items: $center;
+                justify-content: $center;
+
                 .social-container{
+                    // border: solid 5px darkgray;
+                    display: $flex;
+                    justify-content: space-evenly;
+                    width: 80%;
+
                     .github,
                     .linkedin,
                     .instagram,
@@ -18,42 +41,40 @@
                     }
                 }
             }
+            .banner{
+                // border: solid 5px darkcyan;
+                
+                @include size(34.95%, $hundred_percent);
+
+                .banner-text-mobile1{
+                    display: $none;
+                }
+                .banner-text-mobile2{
+                    display: $none;
+                }
+            }
         }
-        .banner{
-            .banner-text-mobile1{
-                display: $none;
-            }
-            .banner-text-mobile2{
-                display: $none;
-            }
+
+        .app-access{
+            // border: solid 5px black;
+            @include size($hundred_percent, 55.78%);
         }
         
     }
     
     @media(max-width: 1024px) {
-
-        @include d_flex($flex, row, $center, $center);
-        background: rgba(25, 44, 84, 0.6);
         
         .social-banner {
-          
-            @include size($hundred_percent, 44.22%);
-
-            overflow: $hidden;
 
             .social {
-         
-                @include size(65.05%, $hundred_percent);
 
-                display: $flex;
-                align-items: $center;
-                justify-content: $center;
+                // @include size(65.05%, $hundred_percent);
 
                 .social-container {
                 
-                    display: $flex;
-                    justify-content: space-evenly;
-                    width: 80%;
+                    // display: $flex;
+                    // justify-content: space-evenly;
+                    // width: 80%;
                     
                     img {
                        
@@ -68,7 +89,7 @@
 
             .banner {
               
-                @include size(34.95%, $hundred_percent);
+                // @include size(34.95%, $hundred_percent);
 
                 @include d_flex($flex, row, flex-end, end);
 
@@ -84,8 +105,6 @@
         .app-access {
            
             @include size($hundred_percent, 55.78%);
-
-            overflow: $hidden;
 
             .logo {
              
