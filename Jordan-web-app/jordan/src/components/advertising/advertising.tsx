@@ -64,6 +64,7 @@ function Advertising() {
                 <h2>GERE RELATÓRIOS E ANOTAÇÕES EM PDF OU XLSX!</h2>
               </div>
               {/* mobile */}
+
           </div>
           
           <div className="icons"> 
@@ -92,8 +93,8 @@ function Advertising() {
 
             <span>
               <h2>Verifique se:</h2>
-                <li>A tela de seu monitor está abaixo de 100%</li>
-                <li>A largura (width) de seu dispositivo é maior que 1444 px</li>
+                <li>O percentual de tela de seu monitor no browser está abaixo de 100%</li>
+                <li>A largura (width) de seu dispositivo no browser é maior que 1444 px</li>
             </span>
         </div>
 
