@@ -2,6 +2,11 @@
 
 .header {
     
+    //smartv
+    @media(min-width: 1445px){
+        display: $none;
+    }
+
     //desktop
     @media(max-width: 1444px){
   

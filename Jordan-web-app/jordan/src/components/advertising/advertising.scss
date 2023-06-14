@@ -2,10 +2,41 @@
 
 .main {
 
+    @media(min-width: 1445px){
+        .smartv{    
+            color: $light;
+            background: linear-gradient(97deg, rgba(25, 44, 84, 0.9) 15%, rgba(25, 44, 84, 1.0) 85%);
+            height: 100vh;
+            display: flex;
+            justify-content: $center;
+            align-items: $center;
+            flex-direction: column;
+            padding: 5em;
+            h1{
+                margin-bottom: 50px;
+            }
+            li{
+                @include f_size(xx-large);
+            }
+        }
+        .banner-agenda-info,
+        .banner-relatorio-xslx-pdf
+        {
+            display: $none;
+        }
+    }
+
     //desktop ...
     @media(max-width: 1444px) {
+        
+        .smartv{
+            display: $none;
+        }
+
         border: solid 5px darkcyan;
         height: 58.67%;
+
+        overflow: $hidden;
 
         .banner-lista-mobile {
             display: $none;

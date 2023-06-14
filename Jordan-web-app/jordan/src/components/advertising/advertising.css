@@ -1,9 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@media (min-width: 1445px) {
+  .main .smartv {
+    color: #fff;
+    background: linear-gradient(97deg, rgba(25, 44, 84, 0.9) 15%, #192c54 85%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5em; }
+    .main .smartv h1 {
+      margin-bottom: 50px; }
+    .main .smartv li {
+      font-size: xx-large;
+      font-size: xx-large; }
+  .main .banner-agenda-info,
+  .main .banner-relatorio-xslx-pdf {
+    display: none; } }
+
 @media (max-width: 1444px) {
   .main {
     border: solid 5px darkcyan;
-    height: 58.67%; }
+    height: 58.67%;
+    overflow: hidden; }
+    .main .smartv {
+      display: none; }
     .main .banner-lista-mobile {
       display: none; }
     .main .text-lista-mobile {

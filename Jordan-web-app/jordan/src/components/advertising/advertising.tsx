@@ -73,6 +73,22 @@ function Advertising() {
 
         </div>
 
+        <div className="smartv">
+            <h1>Opa! Desculpe-nos o incômodo, porém verificamos
+                que você utiliza um dispositivo de tela maior que o 
+                desenvolvido para o app, no momento o aplicativo 
+                está disponível apenas para: </h1>
+              
+            <div className="lista-dispositivos">
+                
+                <li>computadores</li>
+                <li>notebooks</li>
+                <li>tablets</li>
+                <li>smartphones</li>
+
+            </div>
+        </div>
+
       </div>
       <Footer />
     </div>
