@@ -25,13 +25,12 @@
 
             .play {
                 //dimensões originais(410W x 159.8H) divisão por 1.2
-                @include size(133.16px, 341.66px);
                 cursor: $pointer;
                 transition-property: all;
                 transition-duration: 0.5s;
 
                 &:hover {         //+13,31px //+34,16px
-                    @include size(146.47px,  375.82px);
+                    @include size(159.78px,  444.16px);
                 }
             }
 
@@ -40,6 +39,16 @@
         .contact {  
 
             width: 56.34%;
+
+            .titulo {
+                @include d_flex($flex, row, $center, end);
+                height: 30%;
+
+                .banner-title {
+                    @include f_size(xx-large);
+                    color: $third;
+                }
+            }
 
             .form-social{
     
@@ -64,9 +73,6 @@
             .play {
                 //dimensões originais(410W x 159.8H) divisão por 1.2
                 @include size(133.16px, 341.66px);
-                cursor: $pointer;
-                transition-property: all;
-                transition-duration: 0.5s;
 
                 &:hover {       
                                  //+13,31px //+34,16px 
@@ -84,14 +90,12 @@
         .contact {
 
             .titulo {
-                @include d_flex($flex, row, $center, end);
-                height: 30%;
 
                 .banner-title {
                     @include f_size(x-large);
-                    color: $third;
                 }
             }
+
 
             .form-social {
                 height: 65%;
