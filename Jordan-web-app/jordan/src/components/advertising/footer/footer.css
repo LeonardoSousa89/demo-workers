@@ -17,9 +17,14 @@
       justify-content: center;
       align-items: center; }
       .footer .play-store .play {
+        height: 133.16px;
+        width: 341.66px;
         cursor: pointer;
         transition-property: all;
         transition-duration: 0.5s; }
+        .footer .play-store .play:hover {
+          height: 146.47px;
+          width: 375.82px; }
     .footer .contact {
       width: 56.34%; }
       .footer .contact .form-social .social .github,
