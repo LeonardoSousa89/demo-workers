@@ -3,12 +3,12 @@
 .footer {
 
 
-    //smartv
+    //smartv ...
     @media(min-width: 1445px){
         display: $none;
     }
 
-    //desktop
+    //desktop ...
     @media(max-width: 1444px) {
 
         height: 24.66%;
@@ -117,7 +117,7 @@
         }
     }
 
-    //mobile tablet
+    //mobile tablet ...
     @media(max-width: 991px) {
 
         height: 36.34%;
@@ -191,7 +191,7 @@
         }
     }
 
-    //mobile smartphone
+    //mobile smartphone ...
     @media(max-width: 769px) {
 
         height: 40.44%;
