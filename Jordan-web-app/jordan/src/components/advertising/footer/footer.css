@@ -6,7 +6,6 @@
 
 @media (max-width: 1444px) {
   .footer {
-    border: solid 5px darkmagenta;
     height: 24.66%; }
     .footer .contact .form-social .social .github,
     .footer .contact .form-social .social .facebook,

@@ -81,12 +81,20 @@ function Advertising() {
               
             <div className="lista-dispositivos">
                 
-                <li>computadores</li>
-                <li>notebooks</li>
-                <li>tablets</li>
-                <li>smartphones</li>
+                <li>Computadores</li>
+                <li>Notebooks</li>
+                <li>Tablets</li>
+                <li>Smartphones</li>
 
             </div>
+
+            <br />
+
+            <span>
+              <h2>Verifique se:</h2>
+                <li>A tela de seu monitor está abaixo de 100%</li>
+                <li>A largura (width) de seu dispositivo é maior que 1444 px</li>
+            </span>
         </div>
 
       </div>
