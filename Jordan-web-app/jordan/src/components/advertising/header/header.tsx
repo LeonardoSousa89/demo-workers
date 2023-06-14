@@ -2,7 +2,6 @@ import "./header.css";
 
 import { useNavigate } from "react-router-dom";
 
-import Banner from "../../../assets/advertising/header/marketing.png";
 import Logo from "../../../assets/advertising/header/x-logo.png";
 import Github from "../../../assets/global/github.png";
 import Instagram from "../../../assets/global/instagram.png";
@@ -71,14 +70,11 @@ function Header() {
         </div>
 
         <div className="banner">
-          <Icon className="banner-img-desktop" src={Banner} alt="banner" />
           
-          {/* mobile */}
           <div>
-            <h1 className="banner-text-mobile1">SUA AGENDA DIGITAL!</h1>
-            <h1 className="banner-text-mobile2"> IDEAL PARA SEU NEGÓCIO!</h1>
+            <h1 className="banner-text1">SUA AGENDA DIGITAL!</h1>
+            <h1 className="banner-text2"> IDEAL PARA SEU NEGÓCIO!</h1>
           </div>
-          {/* mobile */}
 
         </div>
       </div>

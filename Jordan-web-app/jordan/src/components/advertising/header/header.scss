@@ -4,7 +4,7 @@
     
     //desktop
     @media(max-width: 1444px){
-        // border: solid 5px darkred;
+  
         @include d_flex($flex, row, $center, $center);
 
         height: 16.67%;
@@ -13,13 +13,13 @@
         overflow: $hidden;
 
         .social-banner{
-            // border: solid 5px darkblue;
-            @include size($hundred_percent, 44.22%);
+       
+            @include size($hundred_percent, 50%);
 
             overflow: $hidden;
 
             .social{
-                // border: solid 5px darkkhaki;
+            
                 @include size(65.05%, $hundred_percent);
 
                 display: $flex;
@@ -27,10 +27,10 @@
                 justify-content: $center;
 
                 .social-container{
-                    // border: solid 5px darkgray;
+               
                     display: $flex;
                     justify-content: space-evenly;
-                    width: 80%;
+                    width: 60%;
 
                     .github,
                     .linkedin,
@@ -42,40 +42,87 @@
                 }
             }
             .banner{
-                // border: solid 5px darkcyan;
-                
+        
                 @include size(34.95%, $hundred_percent);
+                
+                background: rgba(25, 44, 84, 0.8);
+                color: $light;
+                
+                @include d_flex($flex, row, end, $center);
+                
+                div{
+          
+                    padding: 2em;
+                    overflow: $hidden;
 
-                .banner-text-mobile1{
-                    display: $none;
-                }
-                .banner-text-mobile2{
-                    display: $none;
+                    display: $flex;
+                    flex-direction: column;
+                    justify-content: $center;
+                    
+                    width: 86%;
+                    height: $hundred_percent;
+
+                    .banner-text1{
+                        @include f_size(40px);
+                        font-weight: bold;
+                    }
+                    .banner-text2{
+                        @include f_size(40px);
+                        font-weight: bold;
+                    }
                 }
             }
         }
 
         .app-access{
-            // border: solid 5px black;
-            @include size($hundred_percent, 55.78%);
+    
+            @include size($hundred_percent, 50%);
+
+            .logo{
+           
+                @include d_flex($flex, row, $center, end);
+                height: 70%;
+            }
+
+            .acesse-aqui{
+             
+                @include d_flex($flex, row, $center, $center);
+                height: 30%;
+            }
         }
         
     }
-    
+
+    @media(max-width: 1373px){
+        .app-access {
+           
+            @include size($hundred_percent, 55.78%);
+
+            .logo {
+
+                align-items: $center;   
+
+                .banner-logo{
+
+                    //dimensões originais(656W x 293.47H) divisão por 1,2 - (100px) 
+                    @include size(144.55px, 446.66px);
+                }
+            }
+        }
+    }
+
     @media(max-width: 1024px) {
         
         .social-banner {
 
             .social {
 
-                // @include size(65.05%, $hundred_percent);
+                @include size(65.05%, $hundred_percent);
 
                 .social-container {
-                
-                    // display: $flex;
-                    // justify-content: space-evenly;
-                    // width: 80%;
                     
+                    width: 80%;
+
                     img {
                        
                         cursor: $pointer;
@@ -89,15 +136,22 @@
 
             .banner {
               
-                // @include size(34.95%, $hundred_percent);
+                @include size(34.95%, $hundred_percent);
 
                 @include d_flex($flex, row, flex-end, end);
 
-                img {
-                
+                div{
+                    
                     width: 100%;
-                    //dimensões originais(636.87W x 209.05H) divisão por 1,5   
-                    @include size(138.66px, 457.33px);
+
+                    .banner-text1{
+                        @include f_size(29px);
+                        font-weight: bold;
+                    }
+                    .banner-text2{
+                        @include f_size(29px);
+                        font-weight: bold;
+                    }
                 }
             }
         }
@@ -107,11 +161,13 @@
             @include size($hundred_percent, 55.78%);
 
             .logo {
-             
+
+                align-items: $center;   
+
                 .banner-logo{
-                    //dimensões originais(656W x 293.47H) divisão por 1,2  
-                    @include size(244.55px, 546.66px);
-                    margin-top: 20%;
+
+                    //dimensões originais(656W x 293.47H) divisão por 1,2 - (100px) 
+                    @include size(144.55px, 446.66px);
                 }
             }
 
@@ -166,19 +222,19 @@
 
                     display: $none;
                 }
-                .banner-text-mobile1{
 
-                    @include f_size(45px);
+                div{
+                    
+                    @include size(100%, 80%);
 
-                    font-weight: bold;
-                    display: $flex;
-                }
-                .banner-text-mobile2{
+                    .banner-text1{
 
-                    @include f_size(45px);
+                        @include f_size(45px);
+                    }
+                    .banner-text2{
 
-                    font-weight: bold;
-                    display: $flex;
+                        @include f_size(45px);
+                    }   
                 }
             }
         }
@@ -214,6 +270,7 @@
             .banner{
                 
                 padding: 25px;
+
             }
         }
         .app-access{ 
@@ -249,8 +306,8 @@
                 text-align: center;
 
                 div{
-                    .banner-text-mobile1,
-                    .banner-text-mobile2{
+                    .banner-text1,
+                    .banner-text2{
                         
                         @include f_size(35px);
                         margin: 40px 0px;

@@ -11,7 +11,7 @@
     overflow: hidden; }
     .header .social-banner {
       height: 100%;
-      width: 44.22%;
+      width: 50%;
       overflow: hidden; }
       .header .social-banner .social {
         height: 65.05%;
@@ -22,7 +22,7 @@
         .header .social-banner .social .social-container {
           display: flex;
           justify-content: space-evenly;
-          width: 80%; }
+          width: 60%; }
           .header .social-banner .social .social-container .github,
           .header .social-banner .social .social-container .linkedin,
           .header .social-banner .social .social-container .instagram,
@@ -32,36 +32,86 @@
             width: 50px; }
       .header .social-banner .banner {
         height: 34.95%;
-        width: 100%; }
-        .header .social-banner .banner .banner-text-mobile1 {
-          display: none; }
-        .header .social-banner .banner .banner-text-mobile2 {
-          display: none; }
+        width: 100%;
+        background: rgba(25, 44, 84, 0.8);
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center; }
+        .header .social-banner .banner div {
+          padding: 2em;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 86%;
+          height: 100%; }
+          .header .social-banner .banner div .banner-text1 {
+            font-size: 40px;
+            font-weight: bold; }
+          .header .social-banner .banner div .banner-text2 {
+            font-size: 40px;
+            font-weight: bold; }
     .header .app-access {
       height: 100%;
-      width: 55.78%; } }
+      width: 50%; }
+      .header .app-access .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+        height: 70%; }
+      .header .app-access .acesse-aqui {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 30%; } }
+
+@media (max-width: 1373px) {
+  .header .app-access {
+    height: 100%;
+    width: 55.78%; }
+    .header .app-access .logo {
+      align-items: center; }
+      .header .app-access .logo .banner-logo {
+        height: 144.55px;
+        width: 446.66px; } }
 
 @media (max-width: 1024px) {
-  .header .social-banner .social .social-container img {
-    cursor: pointer; }
-    .header .social-banner .social .social-container img:hover {
-      opacity: 0.8; }
+  .header .social-banner .social {
+    height: 65.05%;
+    width: 100%; }
+    .header .social-banner .social .social-container {
+      width: 80%; }
+      .header .social-banner .social .social-container img {
+        cursor: pointer; }
+        .header .social-banner .social .social-container img:hover {
+          opacity: 0.8; }
   .header .social-banner .banner {
+    height: 34.95%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: end; }
-    .header .social-banner .banner img {
-      width: 100%;
-      height: 138.66px;
-      width: 457.33px; }
+    .header .social-banner .banner div {
+      width: 100%; }
+      .header .social-banner .banner div .banner-text1 {
+        font-size: 29px;
+        font-weight: bold; }
+      .header .social-banner .banner div .banner-text2 {
+        font-size: 29px;
+        font-weight: bold; }
   .header .app-access {
     height: 100%;
     width: 55.78%; }
-    .header .app-access .logo .banner-logo {
-      height: 244.55px;
-      width: 546.66px;
-      margin-top: 20%; }
+    .header .app-access .logo {
+      align-items: center; }
+      .header .app-access .logo .banner-logo {
+        height: 144.55px;
+        width: 446.66px; }
     .header .app-access .acesse-aqui {
       display: flex;
       flex-direction: row;
@@ -95,14 +145,13 @@
         height: 75.54%; }
         .header .social-banner .banner .banner-img-desktop {
           display: none; }
-        .header .social-banner .banner .banner-text-mobile1 {
-          font-size: 45px;
-          font-weight: bold;
-          display: flex; }
-        .header .social-banner .banner .banner-text-mobile2 {
-          font-size: 45px;
-          font-weight: bold;
-          display: flex; }
+        .header .social-banner .banner div {
+          height: 100%;
+          width: 80%; }
+          .header .social-banner .banner div .banner-text1 {
+            font-size: 45px; }
+          .header .social-banner .banner div .banner-text2 {
+            font-size: 45px; }
     .header .app-access {
       height: 53.53%;
       width: 100vw; }
@@ -135,8 +184,8 @@
 @media (max-width: 576px) {
   .header .social-banner .banner {
     text-align: center; }
-    .header .social-banner .banner div .banner-text-mobile1,
-    .header .social-banner .banner div .banner-text-mobile2 {
+    .header .social-banner .banner div .banner-text1,
+    .header .social-banner .banner div .banner-text2 {
       font-size: 35px;
       margin: 40px 0px; }
   .header .social-banner .social .social-container {
