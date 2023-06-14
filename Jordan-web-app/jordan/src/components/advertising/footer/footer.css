@@ -6,86 +6,89 @@
 
 @media (max-width: 1444px) {
   .footer {
-    height: 24.66%; }
-    .footer .contact .form-social .social .github,
-    .footer .contact .form-social .social .facebook,
-    .footer .contact .form-social .social .linkedin,
-    .footer .contact .form-social .social .instagram,
-    .footer .contact .form-social .social .youtube {
-      height: 50px;
-      width: 50px; } }
-
-@media (max-width: 1024px) {
-  .footer {
+    height: 24.66%;
     display: flex;
     font-family: "Bebas Neue", sans-serif; }
     .footer .play-store {
+      width: 43.66%;
+      background-image: url("../../../assets/advertising/footer/Rectangle 4.png");
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      width: 43.66%;
-      background-image: url("../../../assets/advertising/footer/Rectangle 4.png"); }
+      align-items: center; }
       .footer .play-store .play {
-        height: 133.16px;
-        width: 341.66px;
         cursor: pointer;
         transition-property: all;
         transition-duration: 0.5s; }
-        .footer .play-store .play:hover {
-          height: 146.47px;
-          width: 375.82px; }
-      .footer .play-store .phone {
-        height: 295.83px;
-        width: 435.83px;
-        margin-top: 100px; }
     .footer .contact {
       width: 56.34%; }
-      .footer .contact .titulo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: end;
-        height: 30%; }
-        .footer .contact .titulo .banner-title {
-          font-size: x-large;
-          font-size: x-large;
-          color: #192c54; }
-      .footer .contact .form-social {
-        height: 65%;
-        overflow: hidden;
-        display: flex; }
-        .footer .contact .form-social .form {
-          height: 100%;
-          width: 80%;
-          padding: 30px; }
-          .footer .contact .form-social .form .formulary {
-            margin-top: 150px; }
-        .footer .contact .form-social .social {
-          height: 100%;
-          width: 20%;
-          display: flex;
-          flex-direction: column;
-          justify-content: start;
-          align-items: start; }
-          .footer .contact .form-social .social img {
-            cursor: pointer;
-            margin-top: 30px; }
-            .footer .contact .form-social .social img:hover {
-              opacity: 0.8; }
-          .footer .contact .form-social .social .github {
-            margin-top: 100px; }
-      .footer .contact .copy {
-        font-size: large;
-        font-size: large;
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        align-items: start;
-        height: 5%;
-        color: #192c54; }
-        .footer .contact .copy strong {
-          margin-right: 10%; } }
+      .footer .contact .form-social .social .github,
+      .footer .contact .form-social .social .facebook,
+      .footer .contact .form-social .social .linkedin,
+      .footer .contact .form-social .social .instagram,
+      .footer .contact .form-social .social .youtube {
+        height: 50px;
+        width: 50px; } }
+
+@media (max-width: 1024px) {
+  .footer .play-store .play {
+    height: 133.16px;
+    width: 341.66px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s; }
+    .footer .play-store .play:hover {
+      height: 146.47px;
+      width: 375.82px; }
+  .footer .play-store .phone {
+    height: 295.83px;
+    width: 435.83px;
+    margin-top: 100px; }
+  .footer .contact .titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    height: 30%; }
+    .footer .contact .titulo .banner-title {
+      font-size: x-large;
+      font-size: x-large;
+      color: #192c54; }
+  .footer .contact .form-social {
+    height: 65%;
+    overflow: hidden;
+    display: flex; }
+    .footer .contact .form-social .form {
+      height: 100%;
+      width: 80%;
+      padding: 30px; }
+      .footer .contact .form-social .form .formulary {
+        margin-top: 150px; }
+    .footer .contact .form-social .social {
+      height: 100%;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start; }
+      .footer .contact .form-social .social img {
+        cursor: pointer;
+        margin-top: 30px; }
+        .footer .contact .form-social .social img:hover {
+          opacity: 0.8; }
+      .footer .contact .form-social .social .github {
+        margin-top: 100px; }
+  .footer .contact .copy {
+    font-size: large;
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: start;
+    height: 5%;
+    color: #192c54; }
+    .footer .contact .copy strong {
+      margin-right: 10%; } }
 
 @media (max-width: 991px) {
   .footer {
