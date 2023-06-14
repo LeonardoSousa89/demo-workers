@@ -25,39 +25,41 @@
     overflow: hidden; }
     .main .smartv {
       display: none; }
-    .main .banner-lista-mobile {
-      display: none; }
-    .main .text-lista-mobile {
-      display: none; }
-    .main .mobile-titulo {
-      display: none; } }
-
-@media (max-width: 1024px) {
-  .main .banner-agenda-info {
-    overflow: hidden;
-    display: flex;
-    height: 54.33%;
-    background: rgba(25, 44, 84, 0.4); }
-    .main .banner-agenda-info .lista-agenda {
+    .main .banner-agenda-info {
+      overflow: hidden;
       display: flex;
+      height: 54.33%;
+      background: rgba(25, 44, 84, 0.4); }
+      .main .banner-agenda-info .banner-lista-mobile {
+        display: none; }
+      .main .banner-agenda-info .text-lista-mobile {
+        display: none; }
+      .main .banner-agenda-info .lista-agenda {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+    .main .banner-relatorio-xslx-pdf {
+      background-color: rgba(25, 44, 84, 0.1);
+      height: 45.67%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center; }
-      .main .banner-agenda-info .lista-agenda .lista {
-        height: 861.66px;
-        width: 1092.5px; }
-  .main .banner-relatorio-xslx-pdf {
-    background-color: rgba(25, 44, 84, 0.1);
-    height: 45.67%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .main .banner-relatorio-xslx-pdf .icons {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 100px;
-      width: 80%; } }
+      .main .banner-relatorio-xslx-pdf .titulo .mobile-titulo {
+        display: none; }
+      .main .banner-relatorio-xslx-pdf .icons {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 100px;
+        width: 80%; } }
+
+@media (max-width: 1024px) {
+  .main .banner-agenda-info .lista-agenda .lista {
+    height: 861.66px;
+    width: 1092.5px; }
+  .main .banner-relatorio-xslx-pdf .icons {
+    justify-content: space-between; } }
 
 @media (max-width: 991px) {
   .main {

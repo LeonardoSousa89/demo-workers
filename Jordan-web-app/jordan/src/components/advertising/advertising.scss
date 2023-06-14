@@ -28,7 +28,7 @@
 
     //desktop ...
     @media(max-width: 1444px) {
-        
+
         .smartv{
             display: $none;
         }
@@ -37,31 +37,56 @@
 
         overflow: $hidden;
 
-        .banner-lista-mobile {
-            display: $none;
-        }
+        .banner-agenda-info{
 
-        .text-lista-mobile {
-            display: $none;
-        }
+            .banner-lista-mobile {
+                display: $none;
+            }
+    
+            .text-lista-mobile {
+                display: $none;
+            }
 
-        .mobile-titulo {
-            display: $none;
-        }
-    }
-
-    @media(max-width: 1024px) {
-
-        .banner-agenda-info {
             overflow: $hidden;
             display: $flex;
             height: 54.33%;
             background: rgba(25, 44, 84, 0.4);
 
-            .lista-agenda {
-                display: $flex;
+            .lista-agenda{
+                 display: $flex;
                 justify-content: $center;
                 align-items: $center;
+            }
+        }
+        
+        .banner-relatorio-xslx-pdf{
+
+            background-color: rgba(25, 44, 84, 0.1);
+            height: 45.67%;
+            overflow: $hidden;
+            @include d_flex($flex, column, $center, $center);
+            
+            .titulo{
+
+                .mobile-titulo {
+                    display: $none;
+                }
+            }
+
+            .icons {
+                display: $flex;
+                justify-content: space-evenly;
+                margin-top: 100px;
+                width: 80%;
+            }
+        }
+    }
+
+    @media(max-width: 1024px) {
+      
+        .banner-agenda-info {
+
+            .lista-agenda {
 
                 .lista {
                     //dimensões originais(1311W x 1034.91H) divisão por 1,2  
@@ -71,18 +96,10 @@
         }
 
         .banner-relatorio-xslx-pdf {
-            background-color: rgba(25, 44, 84, 0.1);
-            height: 45.67%;
-            overflow: $hidden;
-            @include d_flex($flex, column, $center, $center);
-
             .titulo {}
 
             .icons {
-                display: $flex;
                 justify-content: space-between;
-                margin-top: 100px;
-                width: 80%;
             }
         }
     }
