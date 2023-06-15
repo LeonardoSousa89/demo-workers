@@ -51,15 +51,44 @@
             }
 
             .form-social{
-    
+
+                height: 65%;
+                overflow: $hidden;
+                display: $flex;
+                
+                .form {
+                    @include size($hundred_percent, 80%);
+                    padding: 60px;
+
+                    .formulary {
+                        margin-top: $hundred_pixel*1.5;
+                    }
+                }
+
                 .social{
-    
+                    
+                    @include size($hundred_percent, 20%);
+                    @include d_flex($flex, column, start, start);
+
+                    img {
+                        cursor: $pointer;
+                        margin-top: 30px;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+
                     .github,
                     .facebook,
                     .linkedin,
                     .instagram,
                     .youtube {
                         @include size(50px, 50px);
+                    }
+
+                    .github {
+                        margin-top: $hundred_pixel*0.7;
                     }
                 }
             }
@@ -98,31 +127,15 @@
 
 
             .form-social {
-                height: 65%;
-                overflow: $hidden;
-                display: $flex;
 
                 .form {
-                    @include size($hundred_percent, 80%);
+            
                     padding: 30px;
-
-                    .formulary {
-                        margin-top: $hundred_pixel*1.5;
-                    }
                 }
 
                 .social {
-                    @include size($hundred_percent, 20%);
-                    @include d_flex($flex, column, start, start);
 
-                    img {
-                        cursor: $pointer;
-                        margin-top: 30px;
-
-                        &:hover {
-                            opacity: 0.8;
-                        }
-                    }
+                    img {}
 
                     .github {
                         margin-top: $hundred_pixel;
