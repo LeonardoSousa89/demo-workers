@@ -297,5 +297,13 @@
             }
         }
     }
+
+    @media(max-width: 350px){
+        .play-store{
+            .play{
+                @include size(107px, 306px);
+            }
+        }
+    }
     
 }

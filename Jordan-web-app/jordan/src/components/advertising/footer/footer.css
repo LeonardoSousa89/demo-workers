@@ -180,3 +180,8 @@
   .footer .contact .copy {
     font-size: small;
     font-size: small; } }
+
+@media (max-width: 350px) {
+  .footer .play-store .play {
+    height: 107px;
+    width: 306px; } }
