@@ -65,7 +65,18 @@
             height: 50px;
             width: 50px; }
           .footer .contact .form-social .social .github {
-            margin-top: 70px; } }
+            margin-top: 70px; }
+      .footer .contact .copy {
+        font-size: large;
+        font-size: large;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: start;
+        height: 5%;
+        color: #192c54; }
+        .footer .contact .copy strong {
+          margin-right: 15%; } }
 
 @media (max-width: 1024px) {
   .footer .play-store .play {
@@ -85,17 +96,8 @@
     padding: 30px; }
   .footer .contact .form-social .social .github {
     margin-top: 100px; }
-  .footer .contact .copy {
-    font-size: large;
-    font-size: large;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: start;
-    height: 5%;
-    color: #192c54; }
-    .footer .contact .copy strong {
-      margin-right: 10%; } }
+  .footer .contact .copy strong {
+    margin-right: 10%; } }
 
 @media (max-width: 991px) {
   .footer {
@@ -174,4 +176,7 @@
 
 @media (max-width: 576px) {
   .footer .contact .form-social .social {
-    justify-content: space-between; } }
+    justify-content: space-between; }
+  .footer .contact .copy {
+    font-size: small;
+    font-size: small; } }

@@ -92,6 +92,17 @@
                     }
                 }
             }
+
+            .copy {
+                @include f_size(large);
+                @include d_flex($flex, row, end, start);
+                height: 5%;
+                color: $third;
+
+                strong {
+                    margin-right: 15%;
+                }
+            }
         }
     }
 
@@ -144,10 +155,6 @@
             }
 
             .copy {
-                @include f_size(large);
-                @include d_flex($flex, row, end, start);
-                height: 5%;
-                color: $third;
 
                 strong {
                     margin-right: 10%;
@@ -282,8 +289,10 @@
                 }
             }
 
-            //não está respondendo mais a nehum comando em nehum bloco
             .copy{
+                
+                @include f_size(small);
+
                 strong{}
             }
         }
