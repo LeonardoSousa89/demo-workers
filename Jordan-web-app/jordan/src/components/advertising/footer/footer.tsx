@@ -11,7 +11,7 @@ import Play from "../../../assets/advertising/footer/pt-br_badge_web_generic (1)
 import Phone from "../../../assets/advertising/footer/5-smartphone-png-image 1.png";
 import Github from "../../../assets/global/github.png";
 import Instagram from "../../../assets/global/instagram.png";
-import Facebook from "../../../assets/advertising/header/facebook.png";
+import Facebook from "../../../assets/global/facebook.png";
 import Linkedin from "../../../assets/global/linkedin.png";
 import Youtube from "../../../assets/global/youtube.png";
 

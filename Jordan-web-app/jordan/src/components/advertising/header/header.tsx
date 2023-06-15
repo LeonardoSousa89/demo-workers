@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Logo from "../../../assets/advertising/header/x-logo.png";
 import Github from "../../../assets/global/github.png";
 import Instagram from "../../../assets/global/instagram.png";
-import Facebook from "../../../assets/advertising/header/facebook.png";
+import Facebook from "../../../assets/global/facebook.png";
 import Linkedin from "../../../assets/global/linkedin.png";
 import Youtube from "../../../assets/global/youtube.png";
 import Acesse_aqui from "../../../assets/advertising/header/acesse_aqui.png";

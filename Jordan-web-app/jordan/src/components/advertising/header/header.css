@@ -28,9 +28,9 @@
           justify-content: space-evenly;
           width: 60%; }
           .header .social-banner .social .social-container .github,
+          .header .social-banner .social .social-container .facebook,
           .header .social-banner .social .social-container .linkedin,
           .header .social-banner .social .social-container .instagram,
-          .header .social-banner .social .social-container .facebook,
           .header .social-banner .social .social-container .youtube {
             height: 50px;
             width: 50px; }
