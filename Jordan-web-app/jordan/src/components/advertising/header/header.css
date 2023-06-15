@@ -194,3 +194,8 @@
       margin: 40px 0px; }
   .header .social-banner .social .social-container {
     width: 100%; } }
+
+@media (max-width: 400px) {
+  .header .social-banner .banner div .banner-text1,
+  .header .social-banner .banner div .banner-text2 {
+    font-size: 32px; } }

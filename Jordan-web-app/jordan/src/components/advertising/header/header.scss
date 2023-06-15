@@ -328,5 +328,22 @@
         
     }
 
+    @media(max-width: 400px){
+        .social-banner{
+
+            .banner{
+    
+    
+                div{
+                    .banner-text1,
+                    .banner-text2{
+
+                        @include f_size(32px);
+                    }
+                }
+            }
+        }
+    }
+
     
 }
