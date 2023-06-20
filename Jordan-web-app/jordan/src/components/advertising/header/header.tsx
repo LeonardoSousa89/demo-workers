@@ -2,7 +2,7 @@ import "./header.css";
 
 import { useNavigate } from "react-router-dom";
 
-import Logo from "../../../assets/advertising/header/x-logo.png";
+import Logo from "../../../assets/global/logomarca.png";
 import Github from "../../../assets/global/github.png";
 import Instagram from "../../../assets/global/instagram.png";
 import Facebook from "../../../assets/global/facebook.png";
