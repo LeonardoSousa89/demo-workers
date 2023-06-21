@@ -146,10 +146,10 @@
                     local_data=JSON.parse(local_data)
                 }
 
-                //após iniciar o array ele é setado na variávelo criada
+                //aqui se inseri os elementos no array criado
                 local_data.push(data)
                 
-                //após tudo correto, salvamos o array no localStorage
+                //após tudo OK, salvamos o array no localStorage
                 localStorage.setItem('data', JSON.stringify(local_data))
             })
         }
