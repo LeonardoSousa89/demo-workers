@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            padding: 1em;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 50vh;
+        }
+        h3{
+            margin-bottom: 50px;
+        }
+        button{
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .enviar{
+            display: none;
+        }
+        .user_personalized_field{
+            margin-bottom: 5px;
+            outline: none;
+            border: solid 0.5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h3>Teste de Campo Personalizado</h3>
+    
+        <button class="criar_campos">criar campos</button>
+        
+        <button class="enviar" onclick="enviar_dados(Event)">salvar</button>
+
+    </div>
+    <button class="obter" onclick="obter_dados(Event)">obter dados</button>
+    
+
+    <script>
+        /*
+            Este é um teste de execução operacional,
+            deverá ser reconstruído através da biblioteca 
+            react.js, para funcionalidades reais da aplicação.
+        */
+        const doc=document
+
+        const container=doc.querySelector('.container') 
+        const criar_campos=doc.querySelector('.criar_campos')
+        const enviar=doc.querySelector('.enviar')
+        
+        async function getIp(){
+            
+            /*
+                Esta API oferece a funcionalidade de obtenção
+                dos endereços ip e até mesmo informações de 
+                geolocalização.
+            */
+            try{
+                
+                const url='https://api.ipify.org'
+
+                const req=await fetch(url, { method: 'GET' })
+                const ipAddress=await req.text()
+
+                localStorage.setItem('USER_IP', JSON.stringify(ipAddress))
+
+            }catch(e){
+
+                alert('erro ao tentar obter o ip público do usuário')
+
+                setInterval(function(){
+                    
+                    doc.location.reload()
+
+                }, 6000)
+            }
+        }
+
+        getIp()
+
+        //pode-se utilizar o pattern builder para este procedimento
+        criar_campos.addEventListener('click', function(e){
+            e.preventDefault()
+
+            const input_key=doc.createElement('input')
+            input_key.setAttribute('class', 'user_personalized_field_key')
+            input_key.setAttribute('placeholder', 'key')
+            input_key.style='margin: 3px 3px'
+
+            const input_value=doc.createElement('input')
+            input_value.setAttribute('class', 'user_personalized_field_value')
+            input_value.setAttribute('placeholder', 'value')
+            input_value.style='margin: 3px 3px'
+
+            const container_input=doc.createElement('div')
+            container_input.setAttribute('class', 'big_dad')
+            container_input.append(input_key)
+            container_input.append(input_value)
+
+            container.appendChild(container_input).before(enviar)
+
+            if(container_input.after(enviar)){
+                container_input.style='display: none'
+            }
+
+            enviar.style='display: flex'
+        })
+
+        function enviar_dados(){
+
+            const container_input=doc.querySelectorAll('.big_dad')
+
+            console.log(container_input)
+
+            container_input.forEach(e=>{
+
+                userElementKey=e.childNodes[0].value
+                userElementValue=e.childNodes[1].value
+                
+                let data={ [userElementKey]: userElementValue  }
+
+                // verifica se existe o array de dados no localStorage
+                let local_data=localStorage.getItem('data')
+
+                //caso não exista o array de dados ele inserirá um array vazio
+                if(!local_data){
+                    local_data=[]
+                }
+
+                //caso exista ele converterá os elementos de string para json
+                else{
+                    local_data=JSON.parse(local_data)
+                }
+
+                //após iniciar o array ele é setado na variávelo criada
+                local_data.push(data)
+                
+                //após tudo correto, salvamos o array no localStorage
+                localStorage.setItem('data', JSON.stringify(local_data))
+            })
+        }
+
+        function obter_dados(){
+
+            let local_data=localStorage.getItem('data')
+            
+            if(!local_data){
+
+                alert('não há dados no storage')
+            
+            }
+
+            else{
+
+                local_data=JSON.parse(local_data)
+                
+                local_data.map(e=>{
+                    
+                })
+
+            }
+        }
+
+    </script>
+</body>
+</html>
