@@ -129,6 +129,10 @@
                 userElementKey=e.childNodes[0].value
                 userElementValue=e.childNodes[1].value
                 
+                /*
+                    O uso de [] ao redor do elemento, serve para extrair
+                    o valor do campo.       
+                */
                 let data={ [userElementKey]: userElementValue  }
 
                 // verifica se existe o array de dados no localStorage
@@ -167,7 +171,7 @@
                 local_data=JSON.parse(local_data)
                 
                 local_data.map(e=>{
-                    
+                    console.log(e)
                 })
 
             }
