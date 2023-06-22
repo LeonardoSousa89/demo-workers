@@ -51,7 +51,7 @@
     <div class="container">
         <h3>Teste de Campo Personalizado</h3>
     
-        <button class="criar_campos">criar campos</button>
+        <button class="criar_campos" onclick="criar_campos(Event)">criar campos</button>
         
         <button class="enviar" onclick="enviar_dados(Event)">salvar</button>
 
@@ -70,14 +70,13 @@
 
     <script>
         /*
-            Este é um teste de execução operacional,
+            Este é um teste de execução operacional/funcional,
             deverá ser reconstruído através da biblioteca 
             react.js, para funcionalidades reais da aplicação.
         */
         const doc=document
 
         const container=doc.querySelector('.container') 
-        const criar_campos=doc.querySelector('.criar_campos')
         const enviar=doc.querySelector('.enviar')
         
         async function getIp(){
@@ -110,10 +109,76 @@
 
         getIp()
 
-        //pode-se utilizar o pattern builder para este procedimento
-        criar_campos.addEventListener('click', function(e){
-            e.preventDefault()
+        function enviar_dados(){
+            
+            const form_2_campos={
+                user_personalized_field_key: doc.querySelector('.user_personalized_field_key'),
+                user_personalized_field_value: doc.querySelector('.user_personalized_field_value')
+            }
 
+            let id=Math.random(3)
+            
+            id_converted_to_string=String(id).substring(2, 13)
+
+            if(form_2_campos.user_personalized_field_key  &&
+               form_2_campos.user_personalized_field_key.value ){
+
+                let data={  
+                    [id_converted_to_string]: [
+                            {
+                                [form_2_campos.user_personalized_field_key.value]: form_2_campos.user_personalized_field_value.value
+                        }
+                    ] 
+                }
+
+                // verifica se existe o array de dados no localStorage
+                let local_data=localStorage.getItem('data')
+
+                //caso não exista o array de dados ele inserirá um array vazio
+                if(!local_data){
+                    local_data=[]
+                }
+
+                //caso exista ele converterá os elementos de string para json
+                else{
+                    local_data=JSON.parse(local_data)
+                }
+
+                //aqui se inseri os elementos no array criado
+                local_data.push(data)
+                
+                //após tudo OK, salvamos o array no localStorage
+                localStorage.setItem('data', JSON.stringify(local_data))
+            }
+
+        }
+
+        function obter_dados(){
+
+            let user_ip=localStorage.getItem('USER_IP')
+            let local_data=localStorage.getItem('data')
+            
+            if(!local_data){
+
+                alert('não há dados no storage')
+            
+            }
+
+            else{
+
+                local_data=JSON.parse(local_data)
+                user_ip=JSON.parse(user_ip)
+                
+                console.log('host do usuário: '+user_ip)
+
+                local_data.map(e=>{
+                    console.log(e)
+                })
+
+            }
+        }
+
+        function criar_2_campos(){
             const input_key=doc.createElement('input')
             input_key.setAttribute('class', 'user_personalized_field_key')
             input_key.setAttribute('placeholder', 'key')
@@ -136,73 +201,207 @@
             }
 
             enviar.style='display: flex'
-        })
-
-        function enviar_dados(){
-
-            const container_input=doc.querySelectorAll('.big_dad')
-
-            container_input.forEach(e=>{
-
-                userElementKey=e.childNodes[0].value
-                userElementValue=e.childNodes[1].value
-                
-                /*
-                    O uso de [] ao redor do elemento, serve para extrair
-                    o valor do campo.       
-                */
-                let data={ [userElementKey]: userElementValue  }
-
-                // verifica se existe o array de dados no localStorage
-                let local_data=localStorage.getItem('data')
-
-                //caso não exista o array de dados ele inserirá um array vazio
-                if(!local_data){
-                    local_data=[]
-                }
-
-                //caso exista ele converterá os elementos de string para json
-                else{
-                    local_data=JSON.parse(local_data)
-                }
-
-                //aqui se inseri os elementos no array criado
-                local_data.push(data)
-                
-                //após tudo OK, salvamos o array no localStorage
-                localStorage.setItem('data', JSON.stringify(local_data))
-
-                doc.location.reload()
-            })
         }
 
-        function obter_dados(){
+        function criar_6_campos(){
+            const input_key1=doc.createElement('input')
+            input_key1.setAttribute('class', 'user_personalized_field_key1')
+            input_key1.setAttribute('placeholder', 'key')
+            input_key1.style='margin: 3px 3px'
 
-            let user_ip=localStorage.getItem('USER_IP')
-            let local_data=localStorage.getItem('data')
-            
-            if(!local_data){
+            const input_value1=doc.createElement('input')
+            input_value1.setAttribute('class', 'user_personalized_field_value1')
+            input_value1.setAttribute('placeholder', 'value')
+            input_value1.style='margin: 3px 3px'
 
-                alert('não há dados no storage')
-            
+            const input_key2=doc.createElement('input')
+            input_key2.setAttribute('class', 'user_personalized_field_key2')
+            input_key2.setAttribute('placeholder', 'key')
+            input_key2.style='margin: 3px 3px'
+
+            const input_value2=doc.createElement('input')
+            input_value2.setAttribute('class', 'user_personalized_field_value2')
+            input_value2.setAttribute('placeholder', 'value')
+            input_value2.style='margin: 3px 3px'
+
+            const input_key3=doc.createElement('input')
+            input_key3.setAttribute('class', 'user_personalized_field_key3')
+            input_key3.setAttribute('placeholder', 'key')
+            input_key3.style='margin: 3px 3px'
+
+            const input_value3=doc.createElement('input')
+            input_value3.setAttribute('class', 'user_personalized_field_value3')
+            input_value3.setAttribute('placeholder', 'value')
+            input_value3.style='margin: 3px 3px'
+
+            const container_input=doc.createElement('div')
+            container_input.setAttribute('class', 'big_dad')
+            container_input.append(input_key1)
+            container_input.append(input_value1)
+            container_input.append(input_key2)
+            container_input.append(input_value2)
+            container_input.append(input_key3)
+            container_input.append(input_value3)
+
+            container.appendChild(container_input).before(enviar)
+
+            if(container_input.after(enviar)){
+                container_input.style='display: none'
             }
 
-            else{
+            enviar.style='display: flex'
+        }
 
-                local_data=JSON.parse(local_data)
-                
-                console.log('host do usuário: ' + user_ip)
+        function criar_10_campos(){
+            const input_key1=doc.createElement('input')
+            input_key1.setAttribute('class', 'user_personalized_field_key1')
+            input_key1.setAttribute('placeholder', 'key')
+            input_key1.style='margin: 3px 3px'
 
-                local_data.map(e=>{
-                    console.log(e)
-                })
+            const input_value1=doc.createElement('input')
+            input_value1.setAttribute('class', 'user_personalized_field_value1')
+            input_value1.setAttribute('placeholder', 'value')
+            input_value1.style='margin: 3px 3px'
+
+            const input_key2=doc.createElement('input')
+            input_key2.setAttribute('class', 'user_personalized_field_key2')
+            input_key2.setAttribute('placeholder', 'key')
+            input_key2.style='margin: 3px 3px'
+
+            const input_value2=doc.createElement('input')
+            input_value2.setAttribute('class', 'user_personalized_field_value2')
+            input_value2.setAttribute('placeholder', 'value')
+            input_value2.style='margin: 3px 3px'
+
+            const input_key3=doc.createElement('input')
+            input_key3.setAttribute('class', 'user_personalized_field_key3')
+            input_key3.setAttribute('placeholder', 'key')
+            input_key3.style='margin: 3px 3px'
+
+            const input_value3=doc.createElement('input')
+            input_value3.setAttribute('class', 'user_personalized_field_value3')
+            input_value3.setAttribute('placeholder', 'value')
+            input_value3.style='margin: 3px 3px'
+
+            const input_key4=doc.createElement('input')
+            input_key4.setAttribute('class', 'user_personalized_field_key4')
+            input_key4.setAttribute('placeholder', 'key')
+            input_key4.style='margin: 3px 3px'
+
+            const input_value4=doc.createElement('input')
+            input_value4.setAttribute('class', 'user_personalized_field_value4')
+            input_value4.setAttribute('placeholder', 'value')
+            input_value4.style='margin: 3px 3px'
+
+            const input_key5=doc.createElement('input')
+            input_key5.setAttribute('class', 'user_personalized_field_key5')
+            input_key5.setAttribute('placeholder', 'key')
+            input_key5.style='margin: 3px 3px'
+
+            const input_value5=doc.createElement('input')
+            input_value5.setAttribute('class', 'user_personalized_field_value5')
+            input_value5.setAttribute('placeholder', 'value')
+            input_value5.style='margin: 3px 3px'
+
+            const container_input=doc.createElement('div')
+            container_input.setAttribute('class', 'big_dad')
+            container_input.append(input_key1)
+            container_input.append(input_value1)
+            container_input.append(input_key2)
+            container_input.append(input_value2)
+            container_input.append(input_key3)
+            container_input.append(input_value3)
+            container_input.append(input_key4)
+            container_input.append(input_value4)
+            container_input.append(input_key5)
+            container_input.append(input_value5)
+
+            container.appendChild(container_input).before(enviar)
+
+            if(container_input.after(enviar)){
+                container_input.style='display: none'
+            }
+
+            enviar.style='display: flex'
+        }
+
+        //deve-se utilizar o pattern builder para este procedimento
+        //somente 2 campos
+        function criar_campos(){
+
+            let user_response=prompt('digite uma das opções [ 2 | 6 | 10 ]:')
+
+            let value=Number(user_response)
+
+            if(value === 2){
+                criar_2_campos()
+            }
+            if(value === 6){
+                criar_6_campos()
+            }
+            if(value === 10){
+                criar_10_campos()
+            }
+
+        }
+
+        function verifica_campos(){
+
+            //2 campos
+
+            const form_6_campos={
+                user_personalized_field_key1: doc.querySelector('.user_personalized_field_key1'),
+                user_personalized_field_value1: doc.querySelector('.user_personalized_field_value1'),
+                user_personalized_field_key2: doc.querySelector('.user_personalized_field_key2'),
+                user_personalized_field_value2: doc.querySelector('.user_personalized_field_value2'),
+                user_personalized_field_key3: doc.querySelector('.user_personalized_field_key3'),
+                user_personalized_field_value3: doc.querySelector('.user_personalized_field_value3')
+            }
+
+            const form_10_campos={
+                user_personalized_field_key1: doc.querySelector('.user_personalized_field_key1'),
+                user_personalized_field_value1: doc.querySelector('.user_personalized_field_value1'),
+                user_personalized_field_key2: doc.querySelector('.user_personalized_field_key2'),
+                user_personalized_field_value2: doc.querySelector('.user_personalized_field_value2'),
+                user_personalized_field_key3: doc.querySelector('.user_personalized_field_key3'),
+                user_personalized_field_value3: doc.querySelector('.user_personalized_field_value3'),
+                user_personalized_field_key4: doc.querySelector('.user_personalized_field_key4'),
+                user_personalized_field_value4: doc.querySelector('.user_personalized_field_value4'),
+                user_personalized_field_key5: doc.querySelector('.user_personalized_field_key5'),
+                user_personalized_field_value5: doc.querySelector('.user_personalized_field_value5'),
+            }
+
+            //2 campos
+
+            //6 campos
+            if(form_6_campos.user_personalized_field_key1    &&
+               form_6_campos.user_personalized_field_value1  &&
+               form_6_campos.user_personalized_field_key2    &&
+               form_6_campos.user_personalized_field_value2  &&
+               form_6_campos.user_personalized_field_key3    &&
+               form_6_campos.user_personalized_field_value3){
 
             }
+
+            //10 campos
+            if(form_10_campos.user_personalized_field_key1    &&
+               form_10_campos.user_personalized_field_value1  &&
+               form_10_campos.user_personalized_field_key2    &&
+               form_10_campos.user_personalized_field_value2  &&
+               form_10_campos.user_personalized_field_key3    &&
+               form_10_campos.user_personalized_field_value3  &&
+               form_10_campos.user_personalized_field_key4    &&
+               form_10_campos.user_personalized_field_value4  &&
+               form_10_campos.user_personalized_field_key5    &&
+               form_10_campos.user_personalized_field_value5){
+
+            }
+
         }
 
         function deletar_dados(){
 
-            const user_response=prompt('deseja realmente deletar os dados(digite sim)?')
+            const user_response=prompt('deseja realmente deletar os dados (digite: sim)?')
 
             let local_data=localStorage.getItem('data')
             
