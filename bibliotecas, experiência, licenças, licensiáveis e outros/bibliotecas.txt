@@ -1,5 +1,11 @@
 
 obs* a medida que instalar as dependências instalar também os tipos
+
+https://code.likeagirl.io/how-to-use-sass-scss-in-anime-js-ed039f45d042
+https://animejs.com/
+https://www.npmjs.com/package/animejs
+https://www.npmjs.com/package/@types/animejs
+https://www.npmjs.com/package/react-anime
  
 https://www.npmjs.com/package/react-router-dom
 https://www.npmjs.com/package/@types/react-router-dom
