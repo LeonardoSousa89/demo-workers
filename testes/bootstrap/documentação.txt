@@ -1,0 +1,44 @@
+documentação oficial
+https://getbootstrap.com
+
+flexbox
+https://getbootstrap.com/docs/5.3/utilities/flex/
+
+typography
+https://getbootstrap.com/docs/5.3/content/typography/#global-settings
+
+breakpoints
+https://getbootstrap.com/docs/5.3/layout/breakpoints/#core-concepts
+
+jumbotrom
+https://getbootstrap.com/docs/5.3/migration/#jumbotron
+
+card
+https://getbootstrap.com/docs/5.3/components/card/
+
+text
+https://getbootstrap.com/docs/5.3/utilities/text/
+
+navbar
+https://getbootstrap.com/docs/5.3/components/navbar/
+
+color
+https://getbootstrap.com/docs/5.3/helpers/color-background/
+
+sizing
+https://getbootstrap.com/docs/5.3/utilities/sizing/
+
+buttons
+https://getbootstrap.com/docs/5.3/components/buttons/
+
+shadows
+https://getbootstrap.com/docs/5.3/utilities/shadows/
+
+close button
+https://getbootstrap.com/docs/5.3/components/close-button/
+
+breadcrumb
+https://getbootstrap.com/docs/5.3/components/breadcrumb/
+
+grid system
+https://getbootstrap.com/docs/5.3/layout/grid/
