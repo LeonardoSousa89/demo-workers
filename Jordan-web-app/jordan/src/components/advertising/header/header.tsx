@@ -21,6 +21,7 @@ import {
 } from "../../../services/advertising/service";
 
 function Header() {
+
   const navigate = useNavigate();
 
   const welcome = (): void => navigate("/welcome");
@@ -30,7 +31,6 @@ function Header() {
       <div className="social-banner">
         <div className="social">
           <div className="social-container">
-            
             
             <Icon
               className="github"
@@ -66,6 +66,7 @@ function Header() {
               alt={"social"}
               onClick={youtube}
             />
+
           </div>
         </div>
 

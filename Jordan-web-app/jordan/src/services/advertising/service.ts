@@ -1,11 +1,7 @@
 import { firestore } from "../db";
 import {
   collection,
-  addDoc,
-  doc,
-  getDoc,
-  getDocs,
-  setDoc,
+  addDoc
 } from "firebase/firestore";
 
 import { Sugestao } from "./model";
