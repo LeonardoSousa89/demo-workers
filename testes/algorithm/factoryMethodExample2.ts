@@ -56,7 +56,7 @@ const card = cardFactory.getData('element of card')
 console.log(card)
 
 /*
-    refreências
+    referências:
     https://refactoring.guru/pt-br/design-patterns/factory-method/typescript/example
     https://www.youtube.com/watch?v=KouxYcDA2HA
     https://github.com/LeonardoSousa89/design-patterns-typescript/tree/master

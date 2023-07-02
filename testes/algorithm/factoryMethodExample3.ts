@@ -80,7 +80,7 @@ const card3 = cardFactory.getData()
 card3.client('Leonardo Sousa', 'dado 3')
 
 /*
-    refreências
+    referências:
     https://refactoring.guru/pt-br/design-patterns/factory-method/typescript/example
     https://www.youtube.com/watch?v=KouxYcDA2HA
     https://github.com/LeonardoSousa89/design-patterns-typescript/tree/master
