@@ -12,13 +12,23 @@ import Acesse_aqui from "../../../assets/advertising/header/acesse_aqui.png";
 
 import Icon from "../../props/icon";
 
+// import {
+//   github,
+//   facebook,
+//   instagram,
+//   linkedin,
+//   youtube
+// } from "../../../services/advertising/service";
+
+//teste para inserção de códigos utilizando princípios de SOLID
 import {
   github,
   facebook,
   instagram,
   linkedin,
-  youtube,
-} from "../../../services/advertising/service";
+  youtube
+} from "../../../test/SOLID/link/service"
+//teste para inserção de códigos utilizando princípios de SOLID
 
 function Header() {
 
@@ -36,35 +46,35 @@ function Header() {
               className="github"
               src={Github}
               alt={"social"}
-              onClick={github}
+              onClick={github.createAction()}
             />
 
             <Icon
               className="linkedin"
               src={Linkedin}
               alt={"social"}
-              onClick={linkedin}
+              onClick={linkedin.createAction()}
             />
 
             <Icon
               className="instagram"
               src={Instagram}
               alt={"social"}
-              onClick={instagram}
+              onClick={instagram.createAction()}
             />
 
             <Icon
               className="facebook"
               src={Facebook}
               alt={"social"}
-              onClick={facebook}
+              onClick={facebook.createAction()}
             />
 
             <Icon
               className="youtube"
               src={Youtube}
               alt={"social"}
-              onClick={youtube}
+              onClick={youtube.createAction()}
             />
 
           </div>
